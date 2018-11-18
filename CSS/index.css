@@ -9,28 +9,91 @@
   clear: both;
 }
 
-
-
-
 /* Style Rules for Navigation Bar */
 
 #nav_header {
-  background-color: black;
-  height: 100px;
+  background-color: transparent;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.nav_header_links {
+  color: #DAA520;
+  float: left;
+  line-height: 50px;
+  list-style-type: none;
+  margin: 0px 0px 0px 50px;
+}
+
+#nav_header_link_first {
+  margin: 0px;
+}
+
+#nav_header_links_box {
+  display: inline-block;
+  height: 50px;
+}
+
+/* Style Rules for our Main Background */
+
+#main_background {
+  background-color: #132541;
+  border-bottom: 5px solid #DAA520;
+  height: 450px;
+  text-align: center;
   width: 100%;
 }
 
-#nav_header_logo {
-  height: 100px;
-  width: 200px;
+#main_background_titles {
+  padding-top: 85px;
+  width: 100%;
 }
 
+.main_background_titles_text {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#main_background_titles_text_big {
+  font-size: 42px;
+  margin: 15px 0px 0px 0px;
+}
+
+#main_background_titles_text_small {
+  font-size: 36px;
+  margin: 35px 0px 0px 0px;
+}
+
+#main_background_links_box {
+  display: inline-block;
+}
+
+.main_background_button {
+  background-color: transparent;
+  border: 2px solid #DAA520;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 100px 15px 0px 15px;
+  padding: 10px 0px 10px 0px;
+  transition: 0.1s;
+  width: 150px;
+}
+
+.main_background_button:hover {
+  background-color: #DAA520;
+}
 
 /* Style Rules for our Footer Bar */
 
 #footer {
   background-color: #F6F6F7;
-  height: 400px;
+  height: 350px;
   width: 100%;
 }
 
@@ -57,9 +120,6 @@
   margin: 30px 15px 0px 0px;
   padding: 7px;
   width: 25px;
-}
-
-#footer_middle {
 }
 
 .footer_title {
@@ -94,6 +154,6 @@
 
 .footer_subsection {
   float: left;
-  height: 400px;
+  height: 350px;
   width: 25%;
 }

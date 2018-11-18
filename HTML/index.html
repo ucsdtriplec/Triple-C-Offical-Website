@@ -10,12 +10,72 @@
     </link>
     <link rel="stylesheet" type="text/css" href="../CSS/index.css">
     </link>
+    <script src="../JavaScript/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        var scroll_start = 0;
+        $(document).scroll(function() {
+          scroll_start = $(this).scrollTop();
+          if(scroll_start > 0) {
+            $("#nav_header").css('background-color', 'white');
+            $("#nav_header").css('border-bottom', '2px solid #DAA520');
+            $(".nav_header_links").css('color', '#132541');
+          } else {
+            $('#nav_header').css('background-color', 'transparent');
+            $("#nav_header").css('border-bottom', 'none');
+            $(".nav_header_links").css('color', '#DAA520');
+          }
+        });
+      });
+    </script>
   </head>
 
   <body>
     <div id="nav_header">
-      <!-- <img id="nav_header_logo" src="../Images/Logo.png">
-      </img> -->
+      <div id="nav_header_links_box">
+        <li id="nav_header_link_first" class="nav_header_links">
+          Home
+        </li>
+        <li class="nav_header_links">
+          Announcements
+        </li>
+        <li class="nav_header_links">
+          Projects
+        </li>
+        <li class="nav_header_links">
+          Teams
+        </li>
+        <li class="nav_header_links">
+          Mission
+        </li>
+      </div>
+    </div>
+
+    <div class="clearfix">
+    </div>
+
+    <div id="main_background">
+      <div id="main_background_titles">
+        <p id="main_background_titles_text_big" class="main_background_titles_text">
+          UC San Diego
+        </p>
+        <p id="main_background_titles_text_small" class="main_background_titles_text">
+          Chinese Computer Science Community
+        </p>
+      </div>
+
+      <div class="clearfix">
+      </div>
+
+      <div id="main_background_links_box">
+        <button class="main_background_button">
+          Learn More
+        </button>
+        <button class="main_background_button">
+          Sign Up
+        </button>
+      </div>
+
     </div>
 
 
@@ -64,6 +124,9 @@
         </div>
         <div class="footer_linke footer_right_links">
           Submit Idea
+        </div>
+        <div class="footer_linke footer_right_links">
+          FAQ
         </div>
       </div>
     </div>
