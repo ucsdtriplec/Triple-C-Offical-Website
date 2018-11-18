@@ -1,0 +1,99 @@
+/* Style Rules persistent throughout our webpage */
+
+* {
+  font-family: 'Dosis', sans-serif;
+  margin: 0px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+
+
+/* Style Rules for Navigation Bar */
+
+#nav_header {
+  background-color: black;
+  height: 100px;
+  width: 100%;
+}
+
+#nav_header_logo {
+  height: 100px;
+  width: 200px;
+}
+
+
+/* Style Rules for our Footer Bar */
+
+#footer {
+  background-color: #F6F6F7;
+  height: 400px;
+  width: 100%;
+}
+
+#footer_left {
+  margin: 0px 0px 0px 12.5%;
+}
+
+#footer_logo {
+  float: right;
+  height: 80px;
+  margin: 75px 0px 0px 0px;
+  width: 75%;
+}
+
+#footer_linkedin_icon {
+  margin: 30px 0px 0px 0px;
+}
+
+.footer_icons {
+  background-color: #4B4F54;
+  border-radius: 2px;
+  float: right;
+  height: 25px;
+  margin: 30px 15px 0px 0px;
+  padding: 7px;
+  width: 25px;
+}
+
+#footer_middle {
+}
+
+.footer_title {
+  border-bottom: 2px solid #4B4F54;
+  color: #4B4F54;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 75px 0px 0px 35%;
+  padding: 0px 0px 2.5px 0px;
+}
+
+.footer_links {
+  color: #4B4F54;
+  font-size: 18px;
+}
+
+.footer_middle_links {
+  margin: 25px 0px 0px 35%;
+}
+
+#footer_right {
+}
+
+.footer_right_links {
+  margin: 25px 0px 0px 0%;
+}
+
+#footer_title_right {
+  margin: 75px 0px 0px 0%;
+}
+
+.footer_subsection {
+  float: left;
+  height: 400px;
+  width: 25%;
+}
