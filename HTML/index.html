@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="../CSS/index.css">
     </link>
     <script src="../JavaScript/jquery-3.3.1.min.js"></script>
+    <script src="../JavaScript/TweenLite.min.js"></script>
+    <script src="../JavaScript/EasePack.min.js"></script>
     <script>
       $(document).ready(function(){
         var scroll_start = 0;
@@ -54,13 +56,19 @@
     <div class="clearfix">
     </div>
 
-    <div id="main_background">
+    <div id="main_background" class="container demo">
+     <div class="content">
+        <div id="large-header" class="large-header">
+          <canvas id="demo-canvas"></canvas>
+        </div>
+      </div>
+
       <div id="main_background_titles">
         <p id="main_background_titles_text_big" class="main_background_titles_text">
           UC San Diego
         </p>
         <p id="main_background_titles_text_small" class="main_background_titles_text">
-          Chinese Computer Science Community
+          Chinese Computer Community
         </p>
       </div>
 
@@ -74,6 +82,335 @@
         <button class="main_background_button">
           Sign Up
         </button>
+      </div>
+
+
+      <!-- <div class="container demo">
+     <div class="content">
+        <div id="large-header" class="large-header">
+          <canvas id="demo-canvas"></canvas>
+
+        </div>
+     </div>
+  </div> -->
+
+    </div>
+
+
+
+    <div class="clearfix">
+    </div>
+
+    <div id="announcements_background">
+      <img id="announcements_laptop_image" src="../Images/Laptop.png">
+      </img>
+      <div id="current_announcement">
+        <p class="current_announcement_text">
+          $ Event: Winter Quarter GBM
+        </p>
+        <p class="current_announcement_text">
+          $ Date: 01.01.2019
+        </p>
+        <p class="current_announcement_text">
+          $ Time: 8:00 PM - 10:00 PM
+        </p>
+        <p class="current_announcement_text">
+          $ Location: Price Center East Ballroom
+        </p>
+        <p class="current_announcement_text">
+          $ _
+        </p>
+      </div>
+
+      <div id="upcoming_announcements">
+        <h2 id="upcoming_announcements_title">
+          Announcements
+        </h2>
+        <div class="clearfix">
+        </div>
+        <div class="upcoming_announcements_element_box">
+          <img class="upcoming_announcements_icon" src="../Images/Thumbtack.png">
+          </img>
+          <p class="upcoming_announcements_text">
+            Winter General Body Meeting
+          </p>
+        </div>
+        <div class="upcoming_announcements_element_box">
+          <img class="upcoming_announcements_icon" src="../Images/Thumbtack.png">
+          </img>
+          <p class="upcoming_announcements_text">
+            Sign Up to be matched with an existing project
+          </p>
+        </div>
+        <div class="upcoming_announcements_element_box">
+          <img class="upcoming_announcements_icon" src="../Images/Thumbtack.png">
+          </img>
+          <p class="upcoming_announcements_text">
+            Learn Web Development with peers
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix">
+    </div>
+
+    <div id="projects">
+      <h2 id="project_title">
+        Projects
+      </h2>
+      <div class="clearfix">
+      </div>
+      <div class="underline navy">
+      </div>
+
+      <div class="clearfix">
+      </div>
+
+      <div id="projects_box">
+        <div id="project_one" class="projects_card">
+          <button class="project_button">
+            FlyerFighter
+          </button>
+        </div>
+        <div id="project_two" class="projects_card">
+          <button class="project_button">
+            Recommendation System
+          </button>
+        </div>
+        <div class="clearfix">
+        </div>
+        <div id="project_three" class="projects_card">
+          <button class="project_button">
+            iOS Application
+          </button>
+        </div>
+        <div id="project_four" class="projects_card">
+          <button class="project_button">
+            Official Website
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="clearfix">
+    </div>
+
+    <div id="team">
+      <h2 id="team_title">
+        Meet the Team
+      </h2>
+      <div class="underline white">
+      </div>
+      <div class="descriptions gold">
+        Meet our Leadership Board in charge of managing our diverse range of Teams.
+        <!-- Every team plays an important part in the success of Triple C!  -->
+      </div>
+
+      <div id="team_box">
+        <div class="team_card">
+          <img class="team_card_profile_picture" src="../Images/President.png">
+          </img>
+          <div class="team_card_text_box">
+            <p class="team_card_name_text">
+              Xinrui Zhou
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              Founder & President
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              4th Year
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              Computer Science
+            </p>
+          </div>
+        </div>
+
+        <div class="team_card">
+          <img class="team_card_profile_picture" src="../Images/VicePresident.png">
+          </img>
+          <div class="team_card_text_box">
+            <p class="team_card_name_text">
+              Yidong Luo
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              Founder & Vice President
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              3rd Year
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              Math - Computer Science
+            </p>
+          </div>
+        </div>
+
+        <div class="team_card">
+          <img class="team_card_profile_picture" src="../Images/StrategyOfficer.png">
+          </img>
+          <div class="team_card_text_box">
+            <p class="team_card_name_text">
+              Yuanyi Zhou
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              Founder & Strategy Officer
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              4th Year
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              ICAM
+            </p>
+          </div>
+        </div>
+
+        <div class="clearfix">
+        </div>
+
+        <div class="team_card">
+          <img class="team_card_profile_picture" src="../Images/HumanResource.png">
+          </img>
+          <div class="team_card_text_box">
+            <p class="team_card_name_text">
+              Xinlu Zhou
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              Human Resources
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              4th Year
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              Human Biology
+            </p>
+          </div>
+        </div>
+
+        <div class="team_card">
+          <img class="team_card_profile_picture" src="../Images/TechnicalChair.png">
+          </img>
+          <div class="team_card_text_box">
+            <p class="team_card_name_text">
+              Ryan Keng
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              Technical Chair
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              4th Year
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              Computer Science
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="team_card">
+          <img class="team_card_profile_picture" src="../Images/StrategyOfficer.png">
+          </img>
+          <div class="team_card_text_box">
+            <p class="team_card_name_text">
+              Yuanyi Zhou
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              Founder & Strategy Officer
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              4th Year
+            </p>
+            <div class="clearfix">
+            </div>
+            <p class="team_card_text">
+              ICAM
+            </p>
+          </div>
+        </div> -->
+
+        <div class="clearfix">
+        </div>
+
+        <div class="learn_more_text gold">
+          Learn More about our Team >>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix">
+    </div>
+
+    <div id="mission">
+      <h2 id="mission_title">
+        Mission
+      </h2>
+      <div class="clearfix">
+      </div>
+      <div class="underline gold">
+      </div>
+
+      <div class="clearfix">
+      </div>
+
+      <div id="mission_english_bubble">
+        <img class="mission_icon mission_english_icon" src="../Images/Bullhorn_navy.png">
+        </img>
+        <p class="mission_english_text navy">
+          "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical skill growth"
+        </p>
+      </div>
+
+      <div id="mission_chinese_bubble">
+        <img class="mission_icon mission_chinese_icon" src="../Images/Bullhorn_white.png">
+        </img>
+        <pre class="mission_chinese_text white">
+          "TripleC 是一个社团，也是一个创业孵化器。
+          TripleC 旨在 Project Based，自上而下学习和实践，经验
+          丰富的大佬带领勤奋的小白一起合伙创业。这是 UCSD
+          前所未有的创业孵化器社团！"
+       </pre>
+      </div>
+
+      <div class="clearfix">
+      </div>
+
+      <div class="full_mission_statement gold">
+        Full Mission Statement >>
       </div>
 
     </div>
@@ -131,6 +468,7 @@
       </div>
     </div>
     <script type="text/javascript" src="../JavaScript/index.js"></script>
+    <script src="../JavaScript/demo.js"></script>
   </body>
 
 </html>

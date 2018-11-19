@@ -9,6 +9,52 @@
   clear: both;
 }
 
+.underline {
+  height: 3px;
+  margin: 10px 0px 0px calc((100% - 40px)/2);
+  width: 40px;
+}
+
+.descriptions {
+  background-color: transparent !important;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 15px 0px 0px 25%;
+  text-align: center;
+  width: 50%;
+}
+
+.navy {
+  background-color: #132541;
+  color: #123541;
+}
+
+.white {
+  background-color: white;
+  color: white;
+}
+
+.gold {
+  background-color: #DAA520;
+  color: #DAA520;
+}
+
+.learn_more_text {
+  background-color: transparent !important;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 50px 0px 0px 0px;
+}
+
+.full_mission_statement {
+  background-color: transparent !important;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 225px calc((100% - 800px) / 2) 75px 0px;
+}
+
 /* Style Rules for Navigation Bar */
 
 #nav_header {
@@ -40,7 +86,7 @@
 /* Style Rules for our Main Background */
 
 #main_background {
-  background-color: #132541;
+  background-image: url("../Images/Star_background.png");
   border-bottom: 5px solid #DAA520;
   height: 450px;
   text-align: center;
@@ -87,6 +133,279 @@
 
 .main_background_button:hover {
   background-color: #DAA520;
+}
+
+
+/* Style Rules for Announcements */
+
+#announcements_background {
+  background-color: #F6F6F7;
+  width: 100%;
+}
+
+#announcements_laptop_image {
+  float: left;
+  height: 300px;
+  margin: 50px 0px 50px 18%;
+  width: 500px;
+}
+
+#current_announcement {
+  background-color: black;
+  float: left;
+  height: 234px;
+  margin: 77px 0px 50px calc(18% + 67px);
+  position: absolute;
+  width: 367px;
+  z-index: -1;
+}
+
+.current_announcement_text {
+  color: white;
+  font-family: 'Menlo-regular';
+  font-size: 13px;
+  margin: 10px 0px 0px 20px;
+}
+
+#upcoming_announcements {
+  float: right;
+  height: 290px;
+  margin: 60px 18% 50px 0px;
+  width: 375px;
+}
+
+#upcoming_announcements_title {
+  border-bottom: 2px solid #DAA520;
+  color: #132541;
+  float: left;
+}
+
+.upcoming_announcements_element_box {
+  height: 45px;
+  margin: 10px 0px 0px 0px;
+  width: 100%;
+}
+
+.upcoming_announcements_icon {
+  float: left;
+  height: 25px;
+  margin: 10px 0px 10px 0px;
+  width: 25px;
+}
+
+.upcoming_announcements_text {
+  color: #132541;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 45px;
+  margin: 0px 0px 0px 15px;
+}
+
+/* Style Rules for our Projects */
+
+#projects {
+  background-color: #F6F6F7;
+  padding: 50px 0px 50px 0px;
+  width: 100%;
+}
+
+#project_title {
+  color: #132541;
+  text-align: center;
+}
+
+#projects_box {
+  height: 500px;
+  margin: 25px 18% 25px 18%;
+  width: 64%;
+}
+
+.projects_card {
+  float: left;
+  height: 250px;
+  line-height: 250px;
+  width: 50%;
+}
+
+#project_one {
+  background-color: #132541;
+  /* background-image: url("../Images/Star_background.png"); */
+  background-image: url('../Images/ProjectOne.png');
+  background-size: cover;
+  text-align: center;
+}
+
+#project_two {
+  background-color: black;
+  background-image: url("../Images/Star_background.png");
+  /* background-image: url('../Images/ProjectTwo.png'); */
+  background-size: cover;
+  text-align: center;
+}
+
+#project_three {
+  background-color: black;
+  background-image: url("../Images/Star_background.png");
+  /* background-image: url('../Images/ProjectThree.png'); */
+  background-size: cover;
+  text-align: center;
+}
+
+#project_four {
+  background-color: #132541;
+  background-image: url("../Images/Star_background.png");
+  /* background-image: url('../Images/ProjectThree.png'); */
+  background-size: cover;
+  text-align: center;
+}
+
+.project_button {
+  background-color: #DAA520;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  vertical-align: middle;
+}
+
+/* Style Rules for our Team */
+
+#team {
+  background-color: #132541;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+#team_title {
+  /* border-bottom: 2px solid white; */
+  color: white;
+  margin: 0px 0px 0px 0px;
+  padding: 25px 0px 0px 0px;
+  display: inline-block;
+}
+
+#team_box {
+  margin: -25px 0px 75px calc((36% - 60px)/2);
+  width: calc(64% + 60px);
+}
+
+.team_card {
+  float: left;
+  height: 125px;
+  margin: 75px 10px 0px 10px;
+  width: calc(33.3% - 20px);
+}
+
+.team_card_profile_picture {
+  border: 4px solid #DAA520;
+  border-radius: 50%;
+  float: left;
+  height: 115px;
+  margin: 5px 0px 5px 0px;
+  width: 115px;
+}
+
+.team_card_text_box {
+  float: right;
+  height: 125px;
+  width: calc(100% - 115px - 8px);
+}
+
+.team_card_name_text {
+  color: #DAA520;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0px 0px 20px;
+}
+
+.team_card_text {
+  color: white;
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0px 0px 20px;
+}
+
+/* Style Rules for our Mission */
+
+#mission {
+  background-color: white;
+  height: 265px;
+  padding: 50px 0px 100px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+#mission_title {
+  /* border-bottom: 2px solid white; */
+  color: #DAA520;
+  margin: 0px 0px 0px 0px;
+  padding: 25px 0px 0px 0px;
+  display: inline-block;
+}
+
+#mission_english_bubble {
+  background-color: #DAA520;
+  border-radius: 10px;
+  float: left;
+  height: 115px;
+  margin: 25px 0px 0px calc((100% - 800px) / 2);
+  min-width: 450px;
+  position: absolute;
+  width: 450px;
+  z-index: 2;
+}
+
+#mission_chinese_bubble {
+  background-color: #132541;
+  border-radius: 10px;
+  height: 115px;
+  margin: 100px 0px 0px calc(((100% - 800px) / 2) + 350px);
+  min-width: 450px;
+  position: absolute;
+  width: 450px;
+  z-index: 1;
+}
+
+.mission_english_text {
+  background-color: transparent !important;
+  float: left;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+  margin: 20px 0px 0px 10px;
+  text-align: center;
+  width: 80%;
+}
+
+.mission_chinese_text {
+  background-color: transparent !important;
+  float: left;
+  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
+  margin: 15px 0px 0px 10px;
+  text-align: center;
+  width: 80%;
+}
+
+.mission_icon {
+  float: left;
+  height: 30px;
+  width: 30px;
+}
+
+.mission_english_icon {
+  margin: 20px 0px 0px 20px;
+}
+
+.mission_chinese_icon {
+  margin: 60px 0px 0px 30px;
 }
 
 /* Style Rules for our Footer Bar */
@@ -156,4 +475,37 @@
   float: left;
   height: 350px;
   width: 25%;
+}
+
+.content {
+  position: absolute;
+  height: 450px;
+  z-index: -1;
+}
+
+
+
+.large-header {
+   background: #132541;
+   height: 450px;
+   z-index: -1;
+}
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 4.2e;
+   letter-spacing: 0.1em;
+   z-index: -1;
+   height: 450px;
+}
+
+.main-title .thin {
+  height: 450px;
+   font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+   .demo .main-title {
+      font-size: 3em;
+   }
 }
