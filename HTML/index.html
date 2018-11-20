@@ -33,6 +33,7 @@
   </head>
 
   <body>
+
     <div id="nav_header">
       <div id="nav_header_links_box">
         <li id="nav_header_link_first" class="nav_header_links">
@@ -56,6 +57,23 @@
     <div class="clearfix">
     </div>
 
+    <!-- This is our QR Code -->
+    <div id="QRModal">
+      <!-- <div id="QRModal_close">
+      </div> -->
+      <div id="QRModal_title">
+        Join TripleC WeChat
+      </div>
+      <div class="clearfix">
+      </div>
+      <div id="QRModal_image">
+      </div>
+    </div>
+
+    <div class="clearfix">
+    </div>
+
+<div id="main_body">
     <div id="main_background" class="container demo">
      <div class="content">
         <div id="large-header" class="large-header">
@@ -102,8 +120,8 @@
     </div>
 
     <div id="announcements_background">
-      <img id="announcements_laptop_image" src="../Images/Laptop.png">
-      </img>
+      <div id="announcements_laptop_image">
+      </div>
       <div id="current_announcement">
         <p class="current_announcement_text">
           $ Event: Winter Quarter GBM
@@ -129,22 +147,22 @@
         <div class="clearfix">
         </div>
         <div class="upcoming_announcements_element_box">
-          <img class="upcoming_announcements_icon" src="../Images/Thumbtack.png">
-          </img>
+          <div class="upcoming_announcements_icon">
+          </div>
           <p class="upcoming_announcements_text">
             Winter General Body Meeting
           </p>
         </div>
         <div class="upcoming_announcements_element_box">
-          <img class="upcoming_announcements_icon" src="../Images/Thumbtack.png">
-          </img>
+          <div class="upcoming_announcements_icon" src="../Images/Thumbtack.png">
+          </div>
           <p class="upcoming_announcements_text">
             Sign Up to be matched with an existing project
           </p>
         </div>
         <div class="upcoming_announcements_element_box">
-          <img class="upcoming_announcements_icon" src="../Images/Thumbtack.png">
-          </img>
+          <div class="upcoming_announcements_icon" src="../Images/Thumbtack.png">
+          </div>
           <p class="upcoming_announcements_text">
             Learn Web Development with peers
           </p>
@@ -211,8 +229,8 @@
 
       <div id="team_box">
         <div class="team_card">
-          <img class="team_card_profile_picture" src="../Images/President.png">
-          </img>
+          <div id="president_image" class="team_card_profile_picture">
+          </div>
           <div class="team_card_text_box">
             <p class="team_card_name_text">
               Xinrui Zhou
@@ -236,7 +254,7 @@
         </div>
 
         <div class="team_card">
-          <img class="team_card_profile_picture" src="../Images/VicePresident.png">
+          <img id="VicePresident_image" class="team_card_profile_picture">
           </img>
           <div class="team_card_text_box">
             <p class="team_card_name_text">
@@ -261,7 +279,7 @@
         </div>
 
         <div class="team_card">
-          <img class="team_card_profile_picture" src="../Images/StrategyOfficer.png">
+          <img id="StrategyOfficer_image" class="team_card_profile_picture">
           </img>
           <div class="team_card_text_box">
             <p class="team_card_name_text">
@@ -289,7 +307,7 @@
         </div>
 
         <div class="team_card">
-          <img class="team_card_profile_picture" src="../Images/HumanResource.png">
+          <img id="HumanResources_image" class="team_card_profile_picture">
           </img>
           <div class="team_card_text_box">
             <p class="team_card_name_text">
@@ -314,7 +332,7 @@
         </div>
 
         <div class="team_card">
-          <img class="team_card_profile_picture" src="../Images/TechnicalChair.png">
+          <img id="TechnicalChair_image" class="team_card_profile_picture">
           </img>
           <div class="team_card_text_box">
             <p class="team_card_name_text">
@@ -381,30 +399,37 @@
       </h2>
       <div class="clearfix">
       </div>
-      <div class="underline gold">
+      <div class="underline navy">
       </div>
 
       <div class="clearfix">
       </div>
 
+      <div id="mission_ribbon_gold" class="mission_ribbons">
+      </div>
       <div id="mission_english_bubble">
-        <img class="mission_icon mission_english_icon" src="../Images/Bullhorn_navy.png">
-        </img>
+        <div class="mission_icon mission_english_icon">
+        </div>
         <p class="mission_english_text navy">
           "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical skill growth"
         </p>
       </div>
 
+
+      <div class="clearfix">
+      </div>
+
+      <div id="mission_ribbon_navy" class="mission_ribbons">
+      </div>
       <div id="mission_chinese_bubble">
-        <img class="mission_icon mission_chinese_icon" src="../Images/Bullhorn_white.png">
-        </img>
         <pre class="mission_chinese_text white">
-          "TripleC 是一个社团，也是一个创业孵化器。
-          TripleC 旨在 Project Based，自上而下学习和实践，经验
-          丰富的大佬带领勤奋的小白一起合伙创业。这是 UCSD
-          前所未有的创业孵化器社团！"
+          "TripleC 是一个社团，也是一个创业孵化器。TripleC 旨
+          在 Project Based，自上而下学习和实践，经验丰富的
+          大佬带领勤奋的小白一起合伙创业。这是 UCSD 前所未
+          有的创业孵化器社团！"
        </pre>
       </div>
+
 
       <div class="clearfix">
       </div>
@@ -421,16 +446,18 @@
 
     <div id="footer">
       <div id="footer_left" class="footer_subsection">
-        <img id="footer_logo" src="../Images/Logo.png">
-        </img>
+        <div id="footer_logo">
+        </div>
         <div class="clearfix">
         </div>
-        <img id="footer_linkedin_icon" class="footer_icons" src="../Images/LinkedIn.png">
+        <img id="footer_linkedin_icon" class="footer_icons" src="../Images/LinkedIn.png" onclick="window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
         </img>
-        <img class="footer_icons" src="../Images/Wechat.png">
+        <img onmouseover="displayWechatModal()" onmouseout="hideWechatModal()" class="footer_icons" src="../Images/Wechat.png">
         </img>
-        <img class="footer_icons" src="../Images/Mail.png">
-        </img>
+        <a href="mailto:ucsdtriplec@gmail.com">
+          <img class="footer_icons" src="../Images/Mail.png">
+          </img>
+        </a>
       </div>
 
       <div id="footer_middle" class="footer_subsection">
@@ -467,6 +494,12 @@
         </div>
       </div>
     </div>
+
+</div>
+    <div class="clearfix">
+    </div>
+
+
     <script type="text/javascript" src="../JavaScript/index.js"></script>
     <script src="../JavaScript/demo.js"></script>
   </body>

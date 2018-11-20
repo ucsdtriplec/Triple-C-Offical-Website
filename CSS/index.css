@@ -9,6 +9,10 @@
   clear: both;
 }
 
+body {
+  min-width: 1400px;
+}
+
 .underline {
   height: 3px;
   margin: 10px 0px 0px calc((100% - 40px)/2);
@@ -52,7 +56,7 @@
   float: right;
   font-size: 16px;
   font-weight: bold;
-  margin: 225px calc((100% - 800px) / 2) 75px 0px;
+  margin: 10px calc(((100% - 800px) / 2) - 30px) 50px 0px;
 }
 
 /* Style Rules for Navigation Bar */
@@ -144,6 +148,8 @@
 }
 
 #announcements_laptop_image {
+  background-image: url("../Images/Laptop.png");
+  background-size: cover;
   float: left;
   height: 300px;
   margin: 50px 0px 50px 18%;
@@ -156,7 +162,7 @@
   height: 234px;
   margin: 77px 0px 50px calc(18% + 67px);
   position: absolute;
-  width: 367px;
+  width: 374px;
   z-index: -1;
 }
 
@@ -187,6 +193,8 @@
 }
 
 .upcoming_announcements_icon {
+  background-image: url("../Images/Thumbtack.png");
+  background-size: cover;
   float: left;
   height: 25px;
   margin: 10px 0px 10px 0px;
@@ -301,6 +309,7 @@
 }
 
 .team_card_profile_picture {
+  background-size: cover;
   border: 4px solid #DAA520;
   border-radius: 50%;
   float: left;
@@ -331,11 +340,30 @@
   margin: 10px 0px 0px 20px;
 }
 
+#president_image {
+  background-image: url('../Images/President.png');
+}
+
+#VicePresident_image {
+  background-image: url("../Images/VicePresident.png");
+}
+
+#StrategyOfficer_image {
+  background-image: url("../Images/StrategyOfficer.png");
+}
+
+#HumanResources_image {
+  background-image: url("../Images/HumanResource.png");
+}
+
+#TechnicalChair_image {
+  background-image: url("../Images/TechnicalChair.png");
+}
+
 /* Style Rules for our Mission */
 
 #mission {
   background-color: white;
-  height: 265px;
   padding: 50px 0px 100px 0px;
   text-align: center;
   width: 100%;
@@ -343,7 +371,7 @@
 
 #mission_title {
   /* border-bottom: 2px solid white; */
-  color: #DAA520;
+  color: #132541;
   margin: 0px 0px 0px 0px;
   padding: 25px 0px 0px 0px;
   display: inline-block;
@@ -351,23 +379,22 @@
 
 #mission_english_bubble {
   background-color: #DAA520;
-  border-radius: 10px;
+  border-radius: 0px 10px 10px 0px;
   float: left;
-  height: 115px;
-  margin: 25px 0px 0px calc((100% - 800px) / 2);
+  height: 105px;
+  margin: 25px 0px 0px 0px;
   min-width: 450px;
-  position: absolute;
   width: 450px;
   z-index: 2;
 }
 
 #mission_chinese_bubble {
   background-color: #132541;
-  border-radius: 10px;
-  height: 115px;
-  margin: 100px 0px 0px calc(((100% - 800px) / 2) + 350px);
+  background-repeat: no-repeat;
+  border-radius: 10px 0px 0px 10px;
+  height: 105px;
+  margin: -75px 0px 0px calc(((100% - 800px) / 2) + 350px);
   min-width: 450px;
-  position: absolute;
   width: 450px;
   z-index: 1;
 }
@@ -378,9 +405,9 @@
   font-weight: bold;
   font-size: 18px;
   font-style: italic;
-  margin: 20px 0px 0px 10px;
+  margin: 15px 0px 0px calc((15% - 65px)/2);
   text-align: center;
-  width: 80%;
+  width: 85%;
 }
 
 .mission_chinese_text {
@@ -389,7 +416,7 @@
   font-weight: bold;
   font-size: 14px;
   font-style: italic;
-  margin: 15px 0px 0px 10px;
+  margin: -65px 0px 0px 80px;
   text-align: center;
   width: 80%;
 }
@@ -401,11 +428,33 @@
 }
 
 .mission_english_icon {
-  margin: 20px 0px 0px 20px;
+  background-image: url("../Images/MissionIconNavy.png");
+  background-size: cover;
+  margin: 20px 0px 0px 15px;
 }
 
 .mission_chinese_icon {
-  margin: 60px 0px 0px 30px;
+  margin: 45px 0px 0px 40px;
+}
+
+.mission_ribbons {
+  float: left;
+  height: 105px;
+  width: 35px;
+}
+
+#mission_ribbon_navy {
+  background-image: url("../Images/RibbonNavy.png");
+  background-size: cover;
+  float: right;
+  margin: -75px calc(50% - 434px) 0px 0px;
+}
+
+#mission_ribbon_gold {
+  background-image: url("../Images/RibbonGold.png");
+  background-size: cover;
+  float: left;
+  margin: 25px 0px 0px calc(50% - 434px);
 }
 
 /* Style Rules for our Footer Bar */
@@ -421,10 +470,12 @@
 }
 
 #footer_logo {
+  background-image: url("../Images/Logo.png");
+  background-size: cover;
   float: right;
   height: 80px;
   margin: 75px 0px 0px 0px;
-  width: 75%;
+  width: 290px;
 }
 
 #footer_linkedin_icon {
@@ -434,11 +485,16 @@
 .footer_icons {
   background-color: #4B4F54;
   border-radius: 2px;
+  cursor: pointer;
   float: right;
   height: 25px;
   margin: 30px 15px 0px 0px;
   padding: 7px;
   width: 25px;
+}
+
+.footer_icons:hover {
+  background-color: black;
 }
 
 .footer_title {
@@ -483,7 +539,50 @@
   z-index: -1;
 }
 
+#QRModal {
+  background-color: #132541;
+  border-radius: 5px;
+  display: none;
+  height: 325px;
+  position: fixed;
+  margin: 25vh 0px 0px calc((100% - 300px) / 2);
+  width: 300px;
+  transition: 0.5s;
+  z-index: 3;
+}
 
+#QRModal_close {
+  background-image: url("../Images/Close.png");
+  background-size: cover;
+  cursor: pointer;
+  float: right;
+  height: 20px;
+  margin: 15px 15px 15px 0px;
+  transition: 0.5s;
+  width: 20px;
+}
+
+#QRModal_close:hover {
+  opacity: 0.7;
+}
+
+#QRModal_title {
+  color: white;
+  float: left;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 25px 0px 0px 65px;
+}
+
+#QRModal_image {
+  background-image: url("../Images/WechatQR.png");
+  background-size: cover;
+  border-radius: 4px;
+  float: left;
+  height: 200px;
+  margin: 15px 0px 0px 50px;
+  width: 200px;
+}
 
 .large-header {
    background: #132541;
