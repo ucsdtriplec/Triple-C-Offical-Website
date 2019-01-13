@@ -1,514 +1,398 @@
 <!DOCTYPE html>
 
-
 <html>
   <head>
-    <title>
-      Triple C Website
-    </title>
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    </link>
-    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
-    </link>
-    <script src="../JavaScript/jquery-3.3.1.min.js"></script>
-    <script src="../JavaScript/TweenLite.min.js"></script>
-    <script src="../JavaScript/EasePack.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
     <script>
       $(document).ready(function(){
-        var scroll_start = 0;
-        $(document).scroll(function() {
-          scroll_start = $(this).scrollTop();
-          if(scroll_start > 0) {
-            $("#nav_header").css('background-color', 'white');
-            $("#nav_header").css('border-bottom', '2px solid #DAA520');
-            $(".nav_header_links").css('color', '#132541');
-          } else {
-            $('#nav_header').css('background-color', 'transparent');
-            $("#nav_header").css('border-bottom', 'none');
-            $(".nav_header_links").css('color', '#DAA520');
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+            window.location.hash = hash;
+            });
           }
         });
       });
     </script>
+    <title>
+      Triple C Website
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    </link>
   </head>
 
   <body>
-
-    <div id="nav_header">
-      <div id="nav_header_links_box">
-        <li id="nav_header_link_first" class="nav_header_links">
-          Home
-        </li>
-        <li class="nav_header_links">
-          Announcements
-        </li>
-        <li class="nav_header_links">
-          Projects
-        </li>
-        <li class="nav_header_links">
-          Teams
-        </li>
-        <li class="nav_header_links">
-          Mission
-        </li>
-      </div>
-    </div>
-
-    <div class="clearfix">
-    </div>
-
-    <!-- This is our QR Code -->
-    <div id="QRModal">
-      <!-- <div id="QRModal_close">
-      </div> -->
-      <div id="QRModal_title">
-        Join TripleC WeChat
-      </div>
-      <div class="clearfix">
-      </div>
-      <div id="QRModal_image">
-      </div>
-    </div>
-
-    <div class="clearfix">
-    </div>
-
-<div id="main_body">
-    <div id="main_background" class="container demo">
-     <div class="content">
-        <div id="large-header" class="large-header">
-          <canvas id="demo-canvas"></canvas>
-        </div>
-      </div>
-
-      <div id="main_background_titles">
-        <p id="main_background_titles_text_big" class="main_background_titles_text">
-          UC San Diego
-        </p>
-        <p id="main_background_titles_text_small" class="main_background_titles_text">
+    <div id="homepage_background">
+      <div id="homepage_title">
+        <p id="homepage_title_text">
           Chinese Computer Community
         </p>
       </div>
-
       <div class="clearfix">
       </div>
-
-      <div id="main_background_links_box">
-        <button class="main_background_button">
+      <div id="homepage_subtitle">
+        <p id="homepage_subtitle_text">
+          UC San Diego
+        </p>
+      </div>
+      <div id="homepage_button">
+        <a href="#homepage_projects" id="homepage_button_widget">
           Learn More
-        </button>
-        <button class="main_background_button">
-          Sign Up
-        </button>
+        </a>
       </div>
-
-
-      <!-- <div class="container demo">
-     <div class="content">
-        <div id="large-header" class="large-header">
-          <canvas id="demo-canvas"></canvas>
-
-        </div>
-     </div>
-  </div> -->
-
-    </div>
-
-
-
-    <div class="clearfix">
-    </div>
-
-    <div id="announcements_background">
-      <div id="announcements_laptop_image">
-      </div>
-      <div id="current_announcement">
-        <p class="current_announcement_text">
-          $ Event: Winter Quarter GBM
-        </p>
-        <p class="current_announcement_text">
-          $ Date: 01.01.2019
-        </p>
-        <p class="current_announcement_text">
-          $ Time: 8:00 PM - 10:00 PM
-        </p>
-        <p class="current_announcement_text">
-          $ Location: Price Center East Ballroom
-        </p>
-        <p class="current_announcement_text">
-          $ _
-        </p>
-      </div>
-
-      <div id="upcoming_announcements">
-        <h2 id="upcoming_announcements_title">
-          Announcements
-        </h2>
-        <div class="clearfix">
-        </div>
-        <div class="upcoming_announcements_element_box">
-          <div class="upcoming_announcements_icon">
-          </div>
-          <p class="upcoming_announcements_text">
-            Winter General Body Meeting
-          </p>
-        </div>
-        <div class="upcoming_announcements_element_box">
-          <div class="upcoming_announcements_icon" src="../Images/Thumbtack.png">
-          </div>
-          <p class="upcoming_announcements_text">
-            Sign Up to be matched with an existing project
-          </p>
-        </div>
-        <div class="upcoming_announcements_element_box">
-          <div class="upcoming_announcements_icon" src="../Images/Thumbtack.png">
-          </div>
-          <p class="upcoming_announcements_text">
-            Learn Web Development with peers
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="clearfix">
-    </div>
-
-    <div id="projects">
-      <h2 id="project_title">
-        Projects
-      </h2>
-      <div class="clearfix">
-      </div>
-      <div class="underline navy">
-      </div>
-
       <div class="clearfix">
       </div>
 
-      <div id="projects_box">
-        <div id="project_one" class="projects_card">
-          <div class="projects_card_title gold">
-            FlyerFighter
+      <div id="homepage_icons">
+        <a href="#homepage_projects" class="homepage_icon_widget">
+          <div id="homepage_icon_project_widget" class="homepage_icon_widget_inner">
           </div>
-          <div class="underline gold">
+        </a>
+        <a href="#homepage_calendar" class="homepage_icon_widget">
+          <div id="homepage_icon_calendar_widget" class="homepage_icon_widget_inner">
           </div>
-          <div class="projects_card_description">
-            "A modern take on a traditional form of advertising. Tired of having to handle dozens of flyers? Join us in building a smarter way to advertise and be advertised to as students. "
+        </a>
+        <a href="#homepage_photos" class="homepage_icon_widget">
+          <div id="homepage_icon_photos_widget" class="homepage_icon_widget_inner">
           </div>
-
-          <div class="projects_banner_navy">
-          </div>
-        </div>
-
-        <div id="project_two" class="projects_card">
-          <div class="projects_card_title navy">
-            Recommendation System
-          </div>
-          <div class="underline navy">
-          </div>
-          <div class="projects_card_description">
-            "Interested in learning how Netflix recommends movies to you based on your preferences. Join us in learning how to build a recommendation system, geared towards smartly determining which flyers students might be interested in."
-          </div>
-          <div class="projects_banner_gold">
-          </div>
-        </div>
-
-
-        <div id="project_three" class="projects_card">
-          <div class="projects_card_title gold">
-            iOS App
-          </div>
-          <div class="underline gold">
-          </div>
-          <div class="projects_card_description">
-            "Ever been interested in mobile application development? Work with us to pioneer and build a smart mobile app while growing your tech stack."
-          </div>
-          <div class="projects_banner_navy">
-          </div>
-        </div>
-        <div id="project_four" class="projects_card">
-          <div class="projects_card_title navy">
-            Official Website
-          </div>
-          <div class="underline navy">
-          </div>
-          <div class="projects_card_description">
-            "Work on an interesting technical project (this website!) as you learn the basics of websites. We use HTML, CSS, & JavaScript to power our official organization website. "
-          </div>
-          <div class="projects_banner_gold">
-          </div>
-        </div>
-        <div class="clearfix">
-        </div>
-        <div class="view_more_projects navy">
-          View more Projects >>
-        </div>
-      </div>
-    </div>
-
-    <div class="clearfix">
-    </div>
-
-    <div id="team">
-      <h2 id="team_title">
-        Meet the Team
-      </h2>
-      <div class="underline white">
-      </div>
-      <div class="descriptions gold">
-        Meet our Leadership Board in charge of managing our diverse range of Teams.
-        <!-- Every team plays an important part in the success of Triple C!  -->
-      </div>
-
-      <div id="team_box">
-        <div class="team_card">
-          <div id="president_image" class="team_card_profile_picture">
-          </div>
-          <div class="team_card_text_box">
-            <p class="team_card_name_text">
-              Xinrui Zhou
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              Founder & President
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              4th Year
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              Computer Science
-            </p>
-          </div>
-        </div>
-
-        <div class="team_card">
-          <img id="VicePresident_image" class="team_card_profile_picture">
-          </img>
-          <div class="team_card_text_box">
-            <p class="team_card_name_text">
-              Yidong Luo
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              Founder & Vice President
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              3rd Year
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              Math - Computer Science
-            </p>
-          </div>
-        </div>
-
-        <div class="team_card">
-          <img id="StrategyOfficer_image" class="team_card_profile_picture">
-          </img>
-          <div class="team_card_text_box">
-            <p class="team_card_name_text">
-              Yuanyi Zhou
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              Founder & Strategy Officer
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              4th Year
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              ICAM
-            </p>
-          </div>
-        </div>
-
-        <div class="clearfix">
-        </div>
-
-        <div class="team_card">
-          <img id="HumanResources_image" class="team_card_profile_picture">
-          </img>
-          <div class="team_card_text_box">
-            <p class="team_card_name_text">
-              Xinlu Zhou
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              Human Resources
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              4th Year
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              Human Biology
-            </p>
-          </div>
-        </div>
-
-        <div class="team_card">
-          <img id="TechnicalChair_image" class="team_card_profile_picture">
-          </img>
-          <div class="team_card_text_box">
-            <p class="team_card_name_text">
-              Ryan Keng
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              Technical Chair
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              4th Year
-            </p>
-            <div class="clearfix">
-            </div>
-            <p class="team_card_text">
-              Computer Science
-            </p>
-          </div>
-        </div>
-        <div class="clearfix">
-        </div>
-
-        <div class="learn_more_text gold">
-          Learn More about our Team >>
-        </div>
-      </div>
-    </div>
-
-    <div class="clearfix">
-    </div>
-
-    <div id="mission">
-      <h2 id="mission_title">
-        Mission
-      </h2>
-      <div class="clearfix">
-      </div>
-      <div class="underline navy">
-      </div>
-
-      <div class="clearfix">
-      </div>
-
-      <div id="mission_ribbon_gold" class="mission_ribbons">
-      </div>
-      <div id="mission_english_bubble">
-        <div class="mission_icon mission_english_icon">
-        </div>
-        <p class="mission_english_text navy">
-          "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical skill growth"
-        </p>
-      </div>
-
-
-      <div class="clearfix">
-      </div>
-
-      <div id="mission_ribbon_navy" class="mission_ribbons">
-      </div>
-      <div id="mission_chinese_bubble">
-        <pre class="mission_chinese_text white">
-          "TripleC 是一个社团，也是一个创业孵化器。TripleC 旨
-          在 Project Based，自上而下学习和实践，经验丰富的
-          大佬带领勤奋的小白一起合伙创业。这是 UCSD 前所未
-          有的创业孵化器社团！"
-       </pre>
-      </div>
-
-
-      <div class="clearfix">
-      </div>
-
-      <div class="full_mission_statement gold">
-        Full Mission Statement >>
-      </div>
-
-    </div>
-
-
-    <div class="clearfix">
-    </div>
-
-    <div id="footer">
-      <div id="footer_left" class="footer_subsection">
-        <div id="footer_logo">
-        </div>
-        <div class="clearfix">
-        </div>
-        <img id="footer_linkedin_icon" class="footer_icons" src="../Images/LinkedIn.png" onclick="window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
-        </img>
-        <img onmouseover="displayWechatModal()" onmouseout="hideWechatModal()" class="footer_icons" src="../Images/Wechat.png">
-        </img>
-        <a href="mailto:ucsdtriplec@gmail.com">
-          <img class="footer_icons" src="../Images/Mail.png">
-          </img>
         </a>
       </div>
 
-      <div id="footer_middle" class="footer_subsection">
-        <div class="footer_title">
-          RELATED
-        </div>
-        <div class="clearfix">
-        </div>
-        <div class="footer_links footer_middle_links">
-          Announcements
-        </div>
-        <div class="footer_links footer_middle_links">
-          Projects
-        </div>
-        <div class="footer_links footer_middle_links">
-          Teams
-        </div>
-      </div>
-
-      <div id="footer_right" class="footer_subsection">
-        <div id="footer_title_right" class="footer_title">
-          CONTACT
-        </div>
-        <div class="clearfix">
-        </div>
-        <div class="footer_linke footer_right_links">
-          Sign Up
-        </div>
-        <div class="footer_linke footer_right_links">
-          Submit Idea
-        </div>
-        <div class="footer_linke footer_right_links">
-          FAQ
-        </div>
-      </div>
     </div>
-
-</div>
     <div class="clearfix">
     </div>
 
+    <div id="homepage_projects">
+      <div id="homepage_sub_title">
+        <p class="homepage_sub_teal_title_text">
+          Projects
+        </p>
+        <div id="homepage_projects_tools_box">
+          <div class="homepage_projects_tools_icons" style="margin-right: 0px;">
+            <div id="homepage_projects_tools_icon_swift" class="homepage_projectS_tools_widgets">
+            </div>
+          </div>
+          <div class="homepage_projects_tools_icons">
+            <div id="homepage_projects_tools_icon_react" class="homepage_projectS_tools_widgets">
+            </div>
+          </div>
+          <div class="homepage_projects_tools_icons">
+            <div id="homepage_projects_tools_icon_python" class="homepage_projectS_tools_widgets">
+            </div>
+          </div>
+          <div class="homepage_projects_tools_icons">
+            <div id="homepage_projects_tools_icon_css" class="homepage_projectS_tools_widgets">
+            </div>
+          </div>
+          <div class="homepage_projects_tools_icons">
+            <div id="homepage_projects_tools_icon_html" class="homepage_projectS_tools_widgets">
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+        </div>
+        <div class="homepage_sub_teal_title_bar">
+        </div>
+      </div>
+      <div class="clearfix">
+      </div>
+      <div id="homepage_projects_box">
+        <div class="homepage_projects_card">
+          <div class="homepage_projects_card_top_border">
+            <button class="homepage_projects_card_join_button">
+              Join  
+            </button>
+            <div class="homepage_projects_card_icon">
+              <div alt="View on Github" title="View on Github" class="homepage_projects_github">
+              </div>
+            </div>
+          </div>
+          <div class="homepage_projects_background_image">
+            <div id="homepage_projects_computer_1" class="hvr-sweep-to-bottom">
+            </div>
+            <p class="homepage_projects_name">
+              FlyerFighter
+            </p>
+          </div>
+        </div>
+        <div class="homepage_projects_card">
+          <div class="homepage_projects_card_top_border">
+            <button class="homepage_projects_card_join_button">
+              Join  
+            </button>
+            <div class="homepage_projects_card_icon">
+              <div alt="View on Github" title="View on Github" class="homepage_projects_github">
+              </div>
+            </div>
+          </div>
+          <div class="homepage_projects_background_image">
+            <div id="homepage_projects_computer_2" class="hvr-sweep-to-bottom">
+            </div>
+            <p class="homepage_projects_name">
+              Recommendation System
+            </p>
+          </div>
+        </div>
+        <div class="homepage_projects_card">
+          <div class="homepage_projects_card_top_border">
+            <button class="homepage_projects_card_join_button">
+              Join  
+            </button>
+            <div class="homepage_projects_card_icon">
+              <div alt="View on Github" title="View on Github" class="homepage_projects_github">
+              </div>
+            </div>
+          </div>
+          <div class="homepage_projects_background_image">
+            <div id="homepage_projects_computer_3" class="hvr-sweep-to-bottom">
+            </div>
+            <p class="homepage_projects_name">
+              Android Application
+            </p>
+          </div>
+        </div>
+        <div class="homepage_projects_card">
+          <div class="homepage_projects_card_top_border">
+            <button class="homepage_projects_card_join_button">
+              Join  
+            </button>
+            <div class="homepage_projects_card_icon">
+              <div alt="View on Github" title="View on Github" class="homepage_projects_github">
+              </div>
+            </div>
+          </div>
+          <div class="homepage_projects_background_image">
+            <div id="homepage_projects_computer_4" class="hvr-sweep-to-bottom">
+            </div>
+            <p class="homepage_projects_name">
+              Official Website
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix">
+      </div>
+      <div id="homepage_board_button">
+        <a href="error.html" id="homepage_board_button_widget">
+          View More Projects
+        </a>
+      </div>
+    </div>
 
-    <script type="text/javascript" src="../JavaScript/index.js"></script>
-    <script src="../JavaScript/demo.js"></script>
+    <div id="homepage_calendar">
+      <div id="homepage_sub_title">
+        <p class="homepage_sub_white_title_text">
+          Calendar
+        </p>
+        <div class="homepage_sub_white_title_bar">
+        </div>
+      </div>
+      <iframe src="https://calendar.google.com/calendar/embed?src=ucsdtriplec%40gmail.com&ctz=America%2FLos_Angeles" id="homepage_google_calendar" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <div id="homepage_board">
+      <div id="homepage_sub_title">
+        <p class="homepage_sub_teal_title_text">
+          Team
+        </p>
+        <div class="homepage_sub_teal_title_bar">
+        </div>
+      </div>
+      <div class="clearfix">
+      </div>
+      <div id="homepage_board_box">
+        <div class="board_widget_box">
+          <div id="strategy_officer_widget" class="board_widget">
+          </div>
+          <p class="board_widget_text_title">
+            Strategy Officer
+          </p>
+          <p class="board_widget_text">
+            ICAM
+          </p>
+          <p class="board_widget_text">
+            5th Year
+          </p>
+          <div class="clearfix">
+          </div>
+          <div class="board_widget_icon">
+            <div class="email">
+            </div>
+          </div>
+          <div class="board_widget_icon">
+            <div class="linkedin">
+            </div>
+          </div>
+        </div>
+        <div class="board_widget_box">
+          <div id="vice_president_widget" class="board_widget">
+          </div>
+          <p class="board_widget_text_title">
+            Vice -President
+          </p>
+          <p class="board_widget_text">
+             Math - C.S.
+          </p>
+          <p class="board_widget_text">
+            3rd Year
+          </p>
+          <div class="clearfix">
+          </div>
+          <div class="board_widget_icon">
+            <div class="email">
+            </div>
+          </div>
+          <div class="board_widget_icon">
+            <div class="linkedin">
+            </div>
+          </div>
+        </div>
+
+        <div class="board_widget_box">
+          <div id="president_widget" class="board_widget">
+          </div>
+          <p class="board_widget_text_title">
+            Founder & President
+          </p>
+          <p class="board_widget_text">
+            Computer Science
+          </p>
+          <p class="board_widget_text">
+            4th Year
+          </p>
+          <div class="clearfix">
+          </div>
+          <div class="board_widget_icon">
+            <div class="email">
+            </div>
+          </div>
+          <div class="board_widget_icon">
+            <div class="linkedin">
+            </div>
+          </div>
+        </div>
+
+        <div class="board_widget_box">
+          <div id="human_resource_widget" class="board_widget">
+          </div>
+          <p class="board_widget_text_title">
+            Human Resources
+          </p>
+          <p class="board_widget_text">
+            Human Biology
+          </p>
+          <p class="board_widget_text">
+            4th Year
+          </p>
+          <div class="clearfix">
+          </div>
+          <div class="board_widget_icon">
+            <div class="email">
+            </div>
+          </div>
+          <div class="board_widget_icon">
+            <div class="linkedin">
+            </div>
+          </div>
+        </div>
+        <div class="board_widget_box">
+          <div id="technical_chair_widget" class="board_widget">
+          </div>
+          <p class="board_widget_text_title">
+            Technical Chair
+          </p>
+          <p class="board_widget_text">
+            Computer Science
+          </p>
+          <p class="board_widget_text">
+            4th Year
+          </p>
+          <div class="clearfix">
+          </div>
+          <div class="board_widget_icon">
+            <div class="email">
+            </div>
+          </div>
+          <div class="board_widget_icon">
+            <div class="linkedin">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix">
+      </div>
+      <div id="homepage_board_button">
+        <button id="homepage_board_button_widget">
+          View Entire Board
+        </button>
+      </div>
+    </div>
+
+    <div id="homepage_photos">
+      <div id="homepage_sub_title">
+        <p class="homepage_sub_white_title_text">
+          Photos
+        </p>
+        <div class="homepage_sub_white_title_bar">
+        </div>
+      </div>
+    </div>
+
+    <div id="homepage_footer">
+      <div id="homepage_footer_left_box">
+        <div id="homepage_footer_title">
+          TRIPLE C
+        </div>
+        <div id="homepage_footer_subtitle">
+          Chinese Computer Community
+        </div>
+        <div class="homepage_footer_icons">
+          <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
+          </div>
+        </div>
+        <div class="homepage_footer_icons">
+          <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
+          </div>
+        </div>
+        <div class="homepage_footer_icons">
+          <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
+          </div>
+        </div>
+      </div>
+      <div id="homepage_footer_middle_box">
+        <div id="homepage_footer_mission_title">
+          "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical skill growth"
+        </div>
+      </div>
+      <div id="homepage_footer_right_box">
+        <div id="homepage_footer_links_title">
+          Links
+        </div>
+        <div class="clearfix">
+        </div>
+        <div class="homepage_footer_links_box">
+          <div class="homepage_footer_links">
+            Contact Us
+          </div>
+        </div>
+        <div class="homepage_footer_links_box">
+          <div class="homepage_footer_links">
+            Sign Up
+          </div>
+        </div>
+        <div class="homepage_footer_links_box">
+          <div class="homepage_footer_links">
+            FAQ
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-
 </html>
