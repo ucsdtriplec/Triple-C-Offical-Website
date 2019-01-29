@@ -31,7 +31,6 @@ a {
 #navbar {
   background-color: rgba(255, 255, 255, 0.913);
   height: 45px;
-
   padding-bottom: 20px;
   position: aboslute;
 }
@@ -45,7 +44,7 @@ a {
 
 #navbar_logo {
   height: 60px;
-  margin-top: px;
+  margin-top: 0 px;
   margin-left: 50px;
 }
 
@@ -58,12 +57,10 @@ a {
 #navbar div {
   margin: 0;
   padding: 22.5px;
-
   list-style: none;
   float: right;
   display: flex;
   margin-right: 90px;
-
 }
 
 #navbar div li {
@@ -85,13 +82,11 @@ a {
   height: 2px;
   background: rgb(8, 170, 206);
   transition: width .35s;
-
 }
 
 #navbar div li a:hover::after {
   width: 100%;
   transition: width .35s;
-
 }
 
 #navbar div li a:hover {
@@ -99,14 +94,6 @@ a {
 }
 
 /* Navigation bar end */
-
-
-
-
-
-
-
-
 
 #homepage_title {
   float: left;
