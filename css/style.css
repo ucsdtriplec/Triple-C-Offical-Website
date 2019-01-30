@@ -30,9 +30,10 @@ a {
 /* Navigation bar start */
 #navbar {
   background-color: rgba(255, 255, 255, 0.913);
-  height: 45px;
-  padding-bottom: 20px;
+  height: 40px;
+  /* padding-bottom: 20px; */
   position: aboslute;
+  padding: 10px 0;
 }
 
 #navbar_logo_button {
@@ -43,20 +44,20 @@ a {
 }
 
 #navbar_logo {
-  height: 60px;
+  height: 40px;
   margin-top: 0 px;
   margin-left: 50px;
 }
 
 #navbar_text {
-  height: 62.5px;
+  height: 40px;
   margin-top: 0px;
   margin-left: 0px;
 }
 
 #navbar div {
-  margin: 0;
-  padding: 22.5px;
+  margin: 0 0;
+  height: 100%;
   list-style: none;
   float: right;
   display: flex;
@@ -65,14 +66,25 @@ a {
 
 #navbar div li {
   margin-left: 70px;
-  display: inline-block;
+  display: table;
+
+
+
+
+
 }
 
 #navbar div li a {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  padding: 10px 10px;
+
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: inline-block;
+
 }
 
 #navbar div li a::after {
