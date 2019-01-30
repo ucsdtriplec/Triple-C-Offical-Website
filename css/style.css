@@ -541,7 +541,7 @@ a {
 }
 
 #homepage_footer_left_box {
-  
+  margin-left: -500px;
   height: 300px;
   width: 800px;
 }
@@ -613,11 +613,11 @@ a {
 }
 
 #wechat{
-  width: 500px;
+  width:500px;
   height: 500px;
-  position: absolute;
-  top: 4350px;
-  left: 600px;
+  position: relative;
+  top: -350px;
+  left: 200px;
   opacity: 0;
   transition: 0.5s;
 
