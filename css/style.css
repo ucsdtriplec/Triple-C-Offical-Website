@@ -527,50 +527,45 @@ a {
   width: 100%;
 }
 
-#homepage_footer {
+#homepage_footer_container {
+  display: flex;
+  justify-content: center;
   background-color: #e9ebee;
-  height: 400px;
+  height: 270px;
   width: 100%;
 }
 
+#homepage_footer{
+  display:flex;
+  justify-content: space-around;
+}
+
 #homepage_footer_left_box {
-  float: left;
-  height: 400px;
-  margin: 0px 0px 0px calc((100% - 1100px)/2);
-  width: 365px;
+  
+  height: 300px;
+  width: 800px;
 }
 
-#homepage_footer_middle_box {
-  float: left;
-  height: 400px;
-  width: 365px;
-}
-
-#homepage_footer_right_box {
-  float: left;
-  height: 400px;
-  width: 365px;
-}
 
 #homepage_footer_title {
   color: grey;
   font-size: 72px;
   font-weight: bold;
-  margin: 50px 0px 0px 0px;
+  margin: 40px 0px 0px 0px;
 }
 
 #homepage_footer_subtitle {
   color: grey;
   font-size: 36px;
   font-weight: bold;
-  margin: 25px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 .homepage_footer_icons {
   background-color: grey;
   border-radius: 50%;
   float: left;
-  margin: 30px 20px 0px 0px;
+  margin: 20px 20px 0px 0px;
   padding: 10px;
   transition: 0.5s;
 }
@@ -590,6 +585,11 @@ a {
   background-size: cover;
 }
 
+#homepage_footer_widget_github {
+  background-image: url("../Images/github2.png");
+  background-size: cover;
+}
+
 #homepage_footer_widget_wechat {
   background-image: url("../Images/wechat.png");
   background-size: cover;
@@ -600,10 +600,41 @@ a {
   background-size: cover;
 }
 
+#logo_footer{
+  width: 200px;
+  height: 200px;
+  margin-top:40px;
+  margin-left:120px;
+}
+#footer_icon_container{
+  margin-top: 20px;
+  padding-left: 270px;
+  padding-right: 200px;
+}
+
+#wechat{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 4350px;
+  left: 600px;
+  opacity: 0;
+  transition: 0.5s;
+
+}
+
+#copyright{
+  text-align: center;
+  background-color: #e9ebee;
+  padding-top: 30px;
+  height:50px;
+}
+
+
 #homepage_footer_mission_title {
   color:grey;
   font-size: 26px;
-  margin: 75px 17.5% 0px 17.5%;
+  margin: 75px 20% 0px 15%;
   text-align: center;
   width: 75%;
 }
