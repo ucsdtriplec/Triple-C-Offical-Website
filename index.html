@@ -26,12 +26,15 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
   <link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href="dist/hamburgers.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" href="/css/imagehover.min.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -39,23 +42,31 @@
 </head>
 
 <body>
-  <!-- Navigation bar start -->
-  <nav id="navbar">
-    <button id=navbar_logo_button>
-      <img id="navbar_logo" src="./Images/logo.png" alt="">
-      <img id="navbar_text" src="./Images/temp_name.png" alt="">
-    </button>
+  <!-- navbar start -->
+  <div class="nav">
+    <a href=""><img id="navbar_logo" src="./Images/logo.png" alt="">
+      <img id="navbar_logo_name" src="./Images/temp_name.png" alt=""></a>
 
-    <div>
-      <li><a href="">About</a></li>
-      <li><a href="#homepage_projects">Projects</a></li>
-      <li><a href="#homepage_calendar">Calendar</a></li>
-      <li><a href="#homepage_board">Photos</a></li>
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle" />
+    <div class="menu">
 
+      <a class="nav_links" href="">About</a>
+      <a class="nav_links" href="#homepage_projects">Projects</a>
+      <a class="nav_links" href="#homepage_calendar">Calendar</a>
+      <a class="nav_links" href="#homepage_board">Photos</a>
     </div>
+  </div>
 
-  </nav>
-  <!-- Navigation bar end -->
+  <!-- navbar end -->
+
+
+
+
+
+
+
+
   <div id="homepage_background">
 
 
@@ -106,6 +117,96 @@
     </div>
 
   </div>
+
+  <section id="section_event_overview">
+    <div class="event_overview_header">
+      <p>Events Overview</p>
+    </div>
+    <div class="timeline">
+      <ol>
+        <li>
+          <div>
+            <span class="circle"><i class="fas fa-users"></i></span>
+
+            <h3>March 7th</h3>
+
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
+            officia
+            labore quas natus excepturi.
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="circle"><i class="fas fa-bug"></i></span>
+            <h3>March 7th</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
+            officia
+            labore quas natus excepturi.
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="circle"><i class="far fa-lightbulb"></i></span>
+            <h3>March 7th</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
+            officia
+            labore quas natus excepturi.
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="circle"><i class="fas fa-hourglass-end"></i></span>
+            <h3>March 7th</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
+            officia
+            labore quas natus excepturi.
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="circle"><i class="far fa-check-circle"></i></i></i></span>
+            <h3>March 7th</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
+            officia
+            labore quas natus excepturi.
+          </div>
+        </li>
+        <li></li>
+
+      </ol>
+      <button id="event_overview_button">VIEW MORE EVENTS</button>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="clearfix">
   </div>
 
@@ -409,7 +510,8 @@
     </div>
     <div id="homepage_footer_middle_box">
       <div id="homepage_footer_mission_title">
-        "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical
+        "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and
+        technical
         skill growth"
       </div>
     </div>
