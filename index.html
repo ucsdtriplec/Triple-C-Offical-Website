@@ -19,6 +19,20 @@
           }
         });
       });
+
+
+      function showImg(id)
+      {
+        document.getElementById(id).style.opacity = 1;
+        
+      }
+
+      function hideImg(id){
+        document.getElementById(id).style.opacity = 0;
+      }
+
+      
+
     </script>
   <title>
     Triple C Website
@@ -485,59 +499,101 @@
       <div class="homepage_sub_white_title_bar">
       </div>
     </div>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="../Images/bg1.jpeg" style="width:100%; height:100%; display: block">
+      </div>
+      
+      <div class="mySlides fade">
+
+        <img src="../Images/bg2.jpeg" style="width:100%; height:100%; display: block">
+      </div>
+      
+      <div class="mySlides fade">
+
+        <img src="../Images/bg3.jpeg" style="width:100%; height:100%; display: block">
+      </div>
+      <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>          
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
   </div>
 
-  <div id="homepage_footer">
-    <div id="homepage_footer_left_box">
-      <div id="homepage_footer_title">
-        TRIPLE C
-      </div>
-      <div id="homepage_footer_subtitle">
-        Chinese Computer Community
-      </div>
-      <div class="homepage_footer_icons">
-        <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
-        </div>
-      </div>
-      <div class="homepage_footer_icons">
-        <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
-        </div>
-      </div>
-      <div class="homepage_footer_icons">
-        <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
-        </div>
-      </div>
-    </div>
-    <div id="homepage_footer_middle_box">
+  <footer id="homepage_footer_container">
+    <img  id = 'wechat' src="../Images/wechatQR.JPG">
+  
+  <div id="homepage_footer_left_box">
       <div id="homepage_footer_mission_title">
-        "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and
-        technical
-        skill growth"
+          "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical skill growth"
+        </div>
+        <div id = "footer_icon_container">
+    <div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')" >
+      <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
       </div>
     </div>
-    <div id="homepage_footer_right_box">
-      <div id="homepage_footer_links_title">
-        Links
-      </div>
-      <div class="clearfix">
-      </div>
-      <div class="homepage_footer_links_box">
-        <div class="homepage_footer_links">
-          Contact Us
-        </div>
-      </div>
-      <div class="homepage_footer_links_box">
-        <div class="homepage_footer_links">
-          Sign Up
-        </div>
-      </div>
-      <div class="homepage_footer_links_box">
-        <div class="homepage_footer_links">
-          FAQ
-        </div>
+    <div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
+      <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
       </div>
     </div>
+    <div class="homepage_footer_icons" onmouseover = "showImg('wechat')" onmouseout = "hideImg('wechat')">
+        
+      <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">  
+      </div>
+    </div> 
+
+    <div class="homepage_footer_icons"  onclick = "window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
+      <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
+      </div>
+    </div>
+    
+  </div>   
   </div>
+  </footer>
+ 
+  <div id="copyright">
+      Copyright &copy 2019 UCSDTripleC. 
+  </div>
+  </div>
+  </div>
+</div>
+
+<script>
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+      </script>
 </body>
 
 </html>
