@@ -4,8 +4,27 @@
 	<title>Triple C Project Page</title>
 	<link rel="stylesheet" type="text/css" href="projectPage.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+	<!-- navbar start -->
+  <div class="nav">
+    <a href=""><img id="navbar_logo" src="./Images/logo.png" alt="">
+      <img id="navbar_logo_name" src="./Images/temp_name.png" alt=""></a>
+
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle" />
+    <div class="menu">
+
+      <a class="nav_links" href="">About</a>
+      <a class="nav_links" href="#homepage_projects">Projects</a>
+      <a class="nav_links" href="#homepage_calendar">Calendar</a>
+      <a class="nav_links" href="#homepage_board">Photos</a>
+    </div>
+  </div>
+
+  <!-- navbar end -->
 		<header id="projectpage_background">
 			<div id="projectpage_title">
 				<p id="projectpage_title_text">
@@ -49,59 +68,102 @@
 			<div class="timeline">
   				<div class="container left">
    					<div class="content">
-     					 <h2>Jan 2019</h2>
-     					 <p>Project start</p>
+     					 <h3>Jan 2019</h3>
+     					 <p>Project planning</p>
     				</div>
   				</div>
-  			<div class="container right">
-    			<div class="content">
-      				<h2>Mar 2019</h2>
-     				 <p>Project Debut</p>
-    			</div>
-  			</div>
+  				<div class="container right">
+    				<div class="content">
+      					<h3>Feb 2019</h3>
+     				 	<p>Project start</p>
+    				</div>
+  				</div>
+
+  				<div class="container left">
+   					<div class="content">
+     					 <h3>Mar 2019</h3>
+     					 <p>Project ongoing</p>
+    				</div>
+  				</div>
+  				<div class="container right">
+    				<div class="content">
+      					<h3>Apr 2019</h3>
+     				 	<p>Project Debut</p>
+    				</div>
+  				</div>
 			</div>
 		</div>
 
 		<div id="projectpage_team">
 			<div id="projectpage_team_subtitle">
-				<h2 class="projectpage_sub_title">Our Team</h2>
+				<h2 class="projectpage_sub_title"><span id="changeColor">Our</span> Team</h2>
 			</div>
 			<div class="row">
 				<div class="column">
 				<div class="card">
-			    <img src="Images/error.png" alt="Arow" style="width:100%">
+			    <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Arow" style="width:100%">
 						<div class="memberBox">
 			        	<h2>Arow Zhou</h2>
 			      	 	 <p class="title">Project Lead</p>
 							 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-							 <p>example@example.com</p>
-							 <p><button class="button">Contact</button></p>
+							  <div class="social">
+							 	<a href="" target="_black">
+									<i class="fab fa-linkedin"></i>
+							 	</a>
+							 	<a href="" target="_black">
+									<i class="fab fa-github"></i>
+							 	</a>
+							 	</a>
+							 	<a href="" target="_black">
+									<i class="fas fa-envelope-square"></i>
+							 	</a>
+							 </div>
 						</div>
 				</div>
 				</div>
 
 				<div class="column">
 				<div class="card">
-			    <img src="Images/error.png" alt="Ryan" style="width:100%">
+			    <img src="https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Ryan" style="width:100%">
 						<div class="memberBox">
 			        	<h2>Ryan Keng</h2>
 			      	 	 <p class="title">Tech Lead</p>
 							 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-							 <p>example@example.com</p>
-							 <p><button class="button">Contact</button></p>
+							 <div class="social">
+							 	<a href="" target="_black">
+									<i class="fab fa-linkedin"></i>
+							 	</a>
+							 	<a href="" target="_black">
+									<i class="fab fa-github"></i>
+							 	</a>
+							 	</a>
+							 	<a href="" target="_black">
+									<i class="fas fa-envelope-square"></i>
+							 	</a>
+							 </div>
 						</div>
 				</div>
 				</div>
 
 				<div class="column">
 				<div class="card">
-			    <img src="Images/error.png" alt="Tony" style="width:100%">
+			    <img src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Tony" style="width:100%">
 						<div class="memberBox">
 			        	<h2>Tony Tan</h2>
 			      	 	 <p class="title">Project Manager</p>
 							 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-							 <p>example@example.com</p>
-							 <p><button class="button">Contact</button></p>
+							 <div class="social">
+							 	<a href="" target="_black">
+									<i class="fab fa-linkedin"></i>
+							 	</a>
+							 	<a href="" target="_black">
+									<i class="fab fa-github"></i>
+							 	</a>
+							 	</a>
+							 	<a href="" target="_black">
+									<i class="fas fa-envelope-square"></i>
+							 	</a>
+							 </div>
 						</div>
 				</div>
 				</div>
@@ -111,39 +173,69 @@
 			<div class="row">
 				<div class="column">
 				<div class="card">
-			    <img src="Images/error.png" alt="Quinton" style="width:100%">
+			    <img src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500	" alt="Quinton" style="width:100%">
 						<div class="memberBox">
 			        	<h2>Quinton Zeng</h2>
 			      	 	 <p class="title">Web developer</p>
 							 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-							 <p>example@example.com</p>
-							 <p><button class="button">Contact</button></p>
+							 <div class="social">
+							 	<a href="https://www.linkedin.com/in/kuiduan-zeng-82aaaa175/" target="_black">
+									<i class="fab fa-linkedin"></i>
+							 	</a>
+							 	<a href="https://github.com/kuzeng" target="_black">
+									<i class="fab fa-github"></i>
+							 	</a>
+							 	</a>
+							 	<a href="mailto: kuzeng@ucsd.edu" target="_black">
+									<i class="fas fa-envelope-square"></i>
+							 	</a>
+							 </div>
 						</div>
 				</div>
 				</div>
 
 				<div class="column">
 				<div class="card">
-			    <img src="Images/error.png" alt="Gary" style="width:100%">
+			    <img src="https://images.pexels.com/photos/1276553/pexels-photo-1276553.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Gary" style="width:100%">
 						<div class="memberBox">
 			        	<h2>Gary Han</h2>
 			      	 	 <p class="title">Web developer</p>
 							 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-							 <p>example@example.com</p>
-							 <p><button class="button">Contact</button></p>
+							 <div class="social">
+							 	<a href="" target="_black">
+									<i class="fab fa-linkedin"></i>
+							 	</a>
+							 	<a href="" target="_black">
+									<i class="fab fa-github"></i>
+							 	</a>
+							 	</a>
+							 	<a href="" target="_black">
+									<i class="fas fa-envelope-square"></i>
+							 	</a>
+							 </div>
 						</div>
 				</div>
 				</div>
 
 				<div class="column">
 				<div class="card">
-			    <img src="Images/error.png" alt="Ethan" style="width:100%">
+			    <img src="https://images.pexels.com/photos/225406/pexels-photo-225406.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Ethan" style="width:100%">
 						<div class="memberBox">
 			        	<h2>Ethan Yuan</h2>
 			      	 	 <p class="title">Web developer</p>
 							 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-							 <p>example@example.com</p>
-							 <p><button class="button">Contact</button></p>
+							 <div class="social">
+							 	<a href="" target="_black">
+									<i class="fab fa-linkedin"></i>
+							 	</a>
+							 	<a href="" target="_black">
+									<i class="fab fa-github"></i>
+							 	</a>
+							 	</a>
+							 	<a href="" target="_black">
+									<i class="fas fa-envelope-square"></i>
+							 	</a>
+							 </div>
 						</div>
 				</div>
 				</div>
@@ -152,13 +244,23 @@
 			<div class="row">
 				<div class="column">
 				<div class="card">
-			    <img src="Images/error.png" alt="Daisy" style="width:100%">
+			    <img src="https://images.pexels.com/photos/141496/pexels-photo-141496.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Daisy" style="width:100%">
 						<div class="memberBox">
 			        	<h2>Daisy Zhou</h2>
 			      	 	 <p class="title">Web developer</p>
 							 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-							 <p>example@example.com</p>
-							 <p><button class="button">Contact</button></p>
+							 <div class="social">
+							 	<a href="" target="_black">
+									<i class="fab fa-linkedin"></i>
+							 	</a>
+							 	<a href="" target="_black">
+									<i class="fab fa-github"></i>
+							 	</a>
+							 	</a>
+							 	<a href="" target="_black">
+									<i class="fas fa-envelope-square"></i>
+							 	</a>
+							 </div>
 						</div>
 				</div>
 				</div>
@@ -168,64 +270,40 @@
 	</div>
 	
 	<!-- footer section -->
-	<footer id="homepage_footer"> 
-		<div id="homepage_footer_left_box">
-      		<div id="homepage_footer_title">
-        		TRIPLE C
-      		</div>
-
-      		<div id="homepage_footer_subtitle">
-       			 Chinese Computer Community
-      		</div>
-
-      		<div class="homepage_footer_icons">
-       		 	<div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
-        		</div>
-      		</div>
-
-     		<div class="homepage_footer_icons">
-       		 	<div id="homepage_footer_widget_wechat" class="	homepage_footer_widgets">
-      		 	</div>
-      		</div>
-
-      		<div class="homepage_footer_icons">
-        		<div id="homepage_footer_widget_linkedin" class="		homepage_footer_widgets">
-        		</div>
-      		</div>
-	   	</div>
-
-    	<div id="homepage_footer_middle_box">
-      		<div id="homepage_footer_mission_title">
-        		"Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical
-        		skill growth"
-      		</div>
-    	</div>
-
-    	<div id="homepage_footer_right_box">
-      		<div id="homepage_footer_links_title">
-       		 Links
-      		</div>
-      		<div class="clearfix">
-      		</div>
-
-     		<div class="homepage_footer_links_box">
-       			<div class="homepage_footer_links">
-          		Contact Us
-        		</div>
-      		</div>
-      		<div class="homepage_footer_links_box">
-      		 	 <div class="homepage_footer_links">
-          			Sign Up
-        		  </div>
-        	</div>
-
-      		<div class="homepage_footer_links_box">
-       			<div class="homepage_footer_links">
-      		    FAQ
-        		</div>
-        	</div>
+	<footer id="homepage_footer_container">
+    <img  id = 'wechat' src="../Images/wechatQR.JPG">
+  
+  <div id="homepage_footer_left_box">
+      <div id="homepage_footer_mission_title">
+          "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical skill growth"
         </div>
-	</footer>
+        <div id = "footer_icon_container">
+    <div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')" >
+      <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
+      </div>
+    </div>
+    <div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
+      <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
+      </div>
+    </div>
+    <div class="homepage_footer_icons" onmouseover = "showImg('wechat')" onmouseout = "hideImg('wechat')">
+        
+      <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">  
+      </div>
+    </div> 
+
+    <div class="homepage_footer_icons"  onclick = "window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
+      <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
+      </div>
+    </div>
+    
+  </div>   
+  </div>
+  </footer>
+ 
+  <div id="copyright">
+      Copyright &copy 2019 UCSDTripleC. 
+  </div>
 	
 </body>
 </html>
