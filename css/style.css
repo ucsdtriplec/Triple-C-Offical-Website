@@ -902,50 +902,138 @@ a {
   width: 100%;
 }
 
-#homepage_footer {
+
+
+.mySlides{
+  display: none;
+  height: 500px;
+  width: 1200px;
+  margin:auto}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  height: 500px;
+  padding-top: 100px;
+  position: relative;
+  clear:both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 30px;
+  margin-top: -300px;
+  margin-left: 80px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  opacity: 0.3;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  margin-right: 80px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  opacity: 1;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  position:relative;
+  top: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+
+#homepage_footer_container {
+  display: flex;
+  justify-content: center;
   background-color: #e9ebee;
-  height: 400px;
+  height: 270px;
   width: 100%;
 }
 
 #homepage_footer_left_box {
-  float: left;
-  height: 400px;
-  margin: 0px 0px 0px calc((100% - 1100px)/2);
-  width: 365px;
-}
-
-#homepage_footer_middle_box {
-  float: left;
-  height: 400px;
-  width: 365px;
-}
-
-#homepage_footer_right_box {
-  float: left;
-  height: 400px;
-  width: 365px;
+  margin-left: -500px;
+  height: 300px;
+  width: 800px;
 }
 
 #homepage_footer_title {
   color: grey;
   font-size: 72px;
   font-weight: bold;
-  margin: 50px 0px 0px 0px;
+  margin: 40px 0px 0px 0px;
 }
 
 #homepage_footer_subtitle {
   color: grey;
   font-size: 36px;
   font-weight: bold;
-  margin: 25px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 .homepage_footer_icons {
   background-color: grey;
   border-radius: 50%;
   float: left;
-  margin: 30px 20px 0px 0px;
+  margin: 20px 20px 0px 0px;
   padding: 10px;
   transition: 0.5s;
 }
@@ -965,6 +1053,11 @@ a {
   background-size: cover;
 }
 
+#homepage_footer_widget_github {
+  background-image: url("../Images/github2.png");
+  background-size: cover;
+}
+
 #homepage_footer_widget_wechat {
   background-image: url("../Images/wechat.png");
   background-size: cover;
@@ -974,6 +1067,38 @@ a {
   background-image: url("../Images/linkedin_white.png");
   background-size: cover;
 }
+
+
+#logo_footer{
+  width: 200px;
+  height: 200px;
+  margin-top:40px;
+  margin-left:120px;
+}
+#footer_icon_container{
+  margin-top: 20px;
+  padding-left: 270px;
+  padding-right: 200px;
+}
+
+#wechat{
+  width:500px;
+  height: 500px;
+  position: relative;
+  top: -350px;
+  left: 200px;
+  opacity: 0;
+  transition: 0.5s;
+
+}
+
+#copyright{
+  text-align: center;
+  background-color: #e9ebee;
+  padding-top: 30px;
+  height:50px;
+}
+
 
 #homepage_footer_mission_title {
   color: grey;
