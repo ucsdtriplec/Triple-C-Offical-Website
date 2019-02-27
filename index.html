@@ -132,73 +132,99 @@
 
   </div>
 
-  <section id="section_event_overview">
-    <div class="event_overview_header">
-      <p>Events Overview</p>
+
+
+
+  <!-- event overview timeline start -->
+  <section class="event_overview_section">
+    <div class="click_events">
+      <h2>Events Timeline</h2>
+      <span class="title_bar_upper"></span>
+      <div class="events_title_bar"></div>
+      <div class="click_events_div">
+        <h5>Week 1</h5>
+        <button class="event_button" onclick="event1Funct() ">
+          <i class="far fa-handshake"></i>
+        </button>
+        <span></span>
+      </div>
+      <div class="click_events_div">
+        <h5>Week 3</h5>
+        <button class="event_button" onclick="event2Funct() ">
+          <i class="far fa-object-group"></i>
+        </button>
+        <span></span>
+
+      </div>
+      <div class="click_events_div">
+        <h5>Week 4</h5>
+        <button class="event_button" onclick="event3Funct() ">
+          <i class="fas fa-users"></i>
+        </button>
+        <span></span>
+      </div>
+      <div class="click_events_div">
+        <h5>Week 6</h5>
+        <button class="event_button" onclick="event4Funct() ">
+          <i class="far fa-calendar-alt"></i>
+        </button>
+        <span></span>
+      </div>
+      <div class="click_events_div">
+        <h5>Week 9</h5>
+        <button class="event_button" onclick="event5Funct() ">
+          <i class="far fa-check-circle"></i>
+        </button>
+        <span></span>
+      </div>
     </div>
-    <div class="timeline">
-      <ol>
-        <li>
-          <div>
-            <span class="circle"><i class="fas fa-users"></i></span>
-
-            <h3>March 7th</h3>
-
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
-            officia
-            labore quas natus excepturi.
-          </div>
-        </li>
-        <li>
-          <div>
-            <span class="circle"><i class="fas fa-bug"></i></span>
-            <h3>March 7th</h3>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
-            officia
-            labore quas natus excepturi.
-          </div>
-        </li>
-        <li>
-          <div>
-            <span class="circle"><i class="far fa-lightbulb"></i></span>
-            <h3>March 7th</h3>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
-            officia
-            labore quas natus excepturi.
-          </div>
-        </li>
-        <li>
-          <div>
-            <span class="circle"><i class="fas fa-hourglass-end"></i></span>
-            <h3>March 7th</h3>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
-            officia
-            labore quas natus excepturi.
-          </div>
-        </li>
-        <li>
-          <div>
-            <span class="circle"><i class="far fa-check-circle"></i></i></i></span>
-            <h3>March 7th</h3>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
-            officia
-            labore quas natus excepturi.
-          </div>
-        </li>
-        <li></li>
-
-      </ol>
-      <button id="event_overview_button">VIEW MORE EVENTS</button>
-
-
+    <div class="announcement_page">
+      <div class="mac_display">
+        <img src="./Images/mac_display.png" alt="">
+        <div id="mac_internal">Last login: Thu Feb 14 17:37:05 on ucsd<br>Chinese_Computer_Community:~TripleC$
+          ..Click Below</div>
+      </div>
+      <div class="phone_display">
+        <img src="./Images/phone_display.png" alt="">
+      </div>
     </div>
-
-
+    <script>
+      function event1Funct() {
+        var x = document.getElementById("mac_internal");
+        x.innerHTML =
+          "<font color='red'>Event Name:$</font> GBM<br><font color='red'>Location:$</font> Price Center<br><font color='red'>Date:$</font> 03/17/2019<br><font color='red'>Description:$</font> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+      }
+    </script>
+    <script>
+      function event2Funct() {
+        var x = document.getElementById("mac_internal");
+        x.innerHTML =
+          "Event Name: Team Application<br>Location: Price Center<br>Date: 03/17/2019<br>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+      }
+    </script>
+    <script>
+      function event3Funct() {
+        var x = document.getElementById("mac_internal");
+        x.innerHTML =
+          "Event Name: GBM<br>Location: Price Center<br>Date: 03/17/2019<br>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+      }
+    </script>
+    <script>
+      function event4Funct() {
+        var x = document.getElementById("mac_internal");
+        x.innerHTML =
+          "Event Name: GBM<br>Location: Price Center<br>Date: 03/17/2019<br>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+      }
+    </script>
+    <script>
+      function event5Funct() {
+        var x = document.getElementById("mac_internal");
+        x.innerHTML =
+          "Event Name: GBM<br>Location: Price Center<br>Date: 03/17/2019<br>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+      }
+    </script>
   </section>
-
-
-
-
+  <!-- event overview timeline end -->
 
 
 
@@ -505,95 +531,99 @@
       <div class="mySlides fade">
         <img src="../Images/bg1.jpeg" style="width:100%; height:100%; display: block">
       </div>
-      
+
       <div class="mySlides fade">
 
         <img src="../Images/bg2.jpeg" style="width:100%; height:100%; display: block">
       </div>
-      
+
       <div class="mySlides fade">
 
         <img src="../Images/bg3.jpeg" style="width:100%; height:100%; display: block">
       </div>
       <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>          
-      
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-      </div>
+
+    </div>
   </div>
 
   <footer id="homepage_footer_container">
-    <img  id = 'wechat' src="../Images/wechatQR.JPG">
-  
-  <div id="homepage_footer_left_box">
+    <img id='wechat' src="../Images/wechatQR.JPG">
+
+    <div id="homepage_footer_left_box">
       <div id="homepage_footer_mission_title">
-          "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical skill growth"
+        "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical
+        skill growth"
+      </div>
+      <div id="footer_icon_container">
+        <div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')">
+          <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
+          </div>
         </div>
-        <div id = "footer_icon_container">
-    <div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')" >
-      <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
-      </div>
-    </div>
-    <div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
-      <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
-      </div>
-    </div>
-    <div class="homepage_footer_icons" onmouseover = "showImg('wechat')" onmouseout = "hideImg('wechat')">
-        
-      <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">  
-      </div>
-    </div> 
+        <div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
+          <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
+          </div>
+        </div>
+        <div class="homepage_footer_icons" onmouseover="showImg('wechat')" onmouseout="hideImg('wechat')">
 
-    <div class="homepage_footer_icons"  onclick = "window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
-      <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
+          <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
+          </div>
+        </div>
+
+        <div class="homepage_footer_icons" onclick="window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
+          <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
+          </div>
+        </div>
+
       </div>
     </div>
-    
-  </div>   
-  </div>
   </footer>
- 
+
   <div id="copyright">
-      Copyright &copy 2019 UCSDTripleC. 
+    Copyright &copy 2019 UCSDTripleC.
   </div>
   </div>
   </div>
-</div>
+  </div>
 
-<script>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
     }
-    for (i = 0; i < dots.length; i++) {
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
     }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-  }
-      </script>
+  </script>
 </body>
 
 </html>

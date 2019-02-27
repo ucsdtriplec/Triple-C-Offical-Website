@@ -264,144 +264,200 @@ a {
 
 
 
-
-
-/* events overview section start */
-
-.event_overview_header p {
-
-  letter-spacing: 6px;
-  font-family: "Roboto", sans-serif;
-
-
-  text-align: left;
-  color: black;
-
-  font-size: 60px;
-
-  margin: 0px 0px 0px calc((100% - 1100px)/2 + 25.5px);
-}
-
-.timeline {
-  white-space: nowrap;
-  overflow-x: hidden;
-  background-color: rgb(255, 255, 255);
-}
-
-.timeline ol {
-  font-size: 0;
-  width: 100vw;
-  padding: 250px 0;
-  transition: all 0.5s;
-}
-
-.timeline ol li {
-  position: relative;
-  display: inline-block;
-  list-style-type: none;
-  width: 12.5%;
-  height: 3px;
-  background: rgb(101, 100, 100);
-}
-
-.timeline ol li:last-child {
-  width: 100%;
-}
-
-.timeline ol li:not(:first-child) {
-  margin-left: 17px;
-}
-
-.timeline ol li:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: calc(100% + 1px);
-  bottom: 0;
-  width: 15px;
-  height: 15px;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  background: rgb(60, 163, 179);
+/* event overview timeline start */
+/* event_overview_section start */
+.event_overview_section {
+  background-color: rgb(48, 53, 67);
 }
 
 
-.circle {
-  border: 4px solid rgba(73, 221, 232, 0.767);
-  background-color: #FFFFFF;
-  height: 90px;
-  border-radius: 50%;
-  width: 90px;
-  display: block;
+.click_events {
   text-align: center;
+  position: relative;
 }
 
-.timeline ol li div i {
-  font-size: 60px;
-  margin-top: 14px;
-  color: rgb(13, 70, 78);
+.title_bar_upper {
+  height: 3.5px;
+  width: 300px;
+  background-color: white;
+  display: inline-block;
+  margin: 0 auto;
+
 }
 
-
-.timeline ol li div {
-
-  position: absolute;
-  left: calc(100% + 7px);
-  width: 250px;
-  padding: 15px;
-  font-size: 13px;
-  white-space: normal;
-  color: black;
-  background: white;
+.click_events h2 {
   font-family: "Roboto", sans-serif;
-  letter-spacing: 1.5px;
-}
-
-
-
-
-
-.timeline ol li:nth-child(odd) div {
-  top: -16px;
-  transform: translateY(-100%);
-}
-
-
-
-.timeline ol li:nth-child(even) div {
-  top: calc(100% + 16px);
-}
-
-
-
-.timeline ol li div h3 {
-  margin: 5px 5px;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 3px;
-  color: rgb(57, 153, 160);
-
-}
-
-#event_overview_button {
-  margin: 30px auto;
-  display: block;
-  width: 200px;
-  height: 50px;
-  border-radius: 6px;
-  background: none;
-  border: 2px solid rgba(29, 85, 89, 0.767);
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
-  font-weight: 40;
-
-}
-
-#event_overview_button:hover {
-  background-color: rgba(73, 221, 232, 0.767);
   color: white;
+  letter-spacing: 6px;
+  font-weight: 30;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  font-size: 40px;
+  margin-top: 20px;
+
 }
 
-/* events overview section end */
+.events_title_bar {
+  background-color: white;
+  width: 650px;
+  height: 2px;
+  margin: 0 auto;
+}
+
+/* Div containing events button Start */
+.click_events_div {
+  display: inline-block;
+  justify-content: center;
+}
+
+.click_events_div h5 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: 50;
+
+}
+
+.event_button {
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  overflow: hidden;
+  outline: none;
+
+  position: relative;
+  margin: 5px 20px 6px 20px;
+  border: 3px double white;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.event_button:hover i {
+
+  transform: scale(1.3);
+  color: white;
+  transition: .5s;
+}
+
+.event_button:hover {
+  background: #4fb4f7;
+  transition: .5s;
+  border: 4px double#005f9f;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.event_button:focus {
+  background-color: #3bacf7 !important;
+  transition: .5s;
+
+
+}
+
+.event_button:focus+span {
+  background-color: #3bacf7 !important;
+}
+
+.event_button i {
+
+  font-size: 35px;
+  transition: 0.3s linear;
+  color: white;
+
+}
+
+.click_events div span {
+  background-color: white;
+  height: 4.5px;
+  width: 20px;
+  display: table;
+  margin: 0 auto;
+  border-radius: 400px;
+}
+
+/* Div containing events button End */
+
+
+
+/* Annoucement display start */
+.announcement_page {
+  height: 800px;
+  width: 100%;
+
+  position: relative;
+}
+
+.mac_display {
+  height: 510px;
+  width: 660px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mac_display img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.phone_display {
+  height: 250px;
+  position: absolute;
+  top: 250px;
+  left: 75%;
+}
+
+.phone_display img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#mac_internal {
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 32px;
+  left: 30px;
+  color: rgb(79, 255, 3);
+  width: 86%;
+  height: 300px;
+  font-family: monospace;
+  font-size: 20px;
+  padding: 10px 15px 0 15px;
+  overflow: auto;
+  position: absolute;
+}
+
+@media (max-width: 700px) {
+  .mac_display img {
+    display: none;
+  }
+
+  .phone_display {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    z-index: 3;
+  }
+
+  #mac_internal {
+    width: 160px;
+    position: absolute;
+    top: 49%;
+    left: 43.5%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+
+/* Annoucement display end */
+
+/* event overview timeline end */
+
+
 
 
 
@@ -904,13 +960,16 @@ a {
 
 
 
-.mySlides{
+.mySlides {
   display: none;
   height: 500px;
   width: 1200px;
-  margin:auto}
+  margin: auto
+}
 
-img {vertical-align: middle;}
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -918,13 +977,14 @@ img {vertical-align: middle;}
   height: 500px;
   padding-top: 100px;
   position: relative;
-  clear:both;
+  clear: both;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   width: auto;
@@ -948,8 +1008,9 @@ img {vertical-align: middle;}
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
   opacity: 1;
 }
 
@@ -969,7 +1030,7 @@ img {vertical-align: middle;}
   cursor: pointer;
   height: 15px;
   width: 15px;
-  position:relative;
+  position: relative;
   top: 20px;
   margin: 0 2px;
   background-color: #bbb;
@@ -978,7 +1039,8 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -991,13 +1053,23 @@ img {vertical-align: middle;}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .2} 
-  to {opacity: 1}
+  from {
+    opacity: .2
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .2} 
-  to {opacity: 1}
+  from {
+    opacity: .2
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 
@@ -1069,20 +1141,21 @@ img {vertical-align: middle;}
 }
 
 
-#logo_footer{
+#logo_footer {
   width: 200px;
   height: 200px;
-  margin-top:40px;
-  margin-left:120px;
+  margin-top: 40px;
+  margin-left: 120px;
 }
-#footer_icon_container{
+
+#footer_icon_container {
   margin-top: 20px;
   padding-left: 270px;
   padding-right: 200px;
 }
 
-#wechat{
-  width:500px;
+#wechat {
+  width: 500px;
   height: 500px;
   position: relative;
   top: -350px;
@@ -1092,11 +1165,11 @@ img {vertical-align: middle;}
 
 }
 
-#copyright{
+#copyright {
   text-align: center;
   background-color: #e9ebee;
   padding-top: 30px;
-  height:50px;
+  height: 50px;
 }
 
 
