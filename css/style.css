@@ -127,212 +127,61 @@ a {
 
 
 
-/* Navigation bar start */
-/* #navbar {
-  background-color: rgba(255, 255, 255, 0.913);
-  height: 40px;
-  
-  position: aboslute;
-  padding: 10px 0;
-  line-height: 40px;
-}
+/* event over view start */
 
-
-
-#mobile_navbar {
-  text-align: right;
-  line-height: 40px;
-}
-
-#mobile_navbar label {
-  margin: 0 20px 0 0;
-  font-size: 20px;
-}
-
-#mobile_navbar * {
-  display: none;
-}
-
-@media only screen and (max-width:500px) {
-  #mobile_navbar label {
-    display: block;
-    cursor: pointer;
-    width: 26px;
-    float: right;
-
-  }
-
-  #menu {
-    text-align: center;
-    width: 100%;
-
-  }
-
-  #menu a {
-    clear: right;
-    padding-top: 0px;
-    height: 100%;
-    display: block;
-    margin: 0;
-    border-bottom: 1px solid black;
-
-
-  }
-
-  #toggle:checked+#menu {
-    display: block;
-  }
-}
-
-#navbar_logo_button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
-#navbar_logo {
-  height: 40px;
-  margin-top: 0 px;
-  margin-left: 50px;
-}
-
-
-
-
-#navbar_text {
-  height: 40px;
-  margin-top: 0px;
-  margin-left: 0px;
-}
-
-#navbar div {
-  margin: 0 0;
-  height: 100%;
-  list-style: none;
-  float: right;
-  display: flex;
-  margin-right: 90px;
-}
-
-#navbar div li {
-  margin-left: 70px;
-  display: table;
-
-
-
-
-
-}
-
-#navbar div li a {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  padding: 10px 10px;
-
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: inline-block;
-
-}
-
-#navbar div li a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: rgb(8, 170, 206);
-  transition: width .35s;
-}
-
-#navbar div li a:hover::after {
-  width: 100%;
-  transition: width .35s;
-}
-
-#navbar div li a:hover {
-  color: rgba(0, 0, 0, 0.448);
-} */
-
-/* Navigation bar end */
-
-
-
-
-
-
-
-/* event overview timeline start */
-/* event_overview_section start */
 .event_overview_section {
-  background-color: rgb(48, 53, 67);
-}
-
-
-.click_events {
-  text-align: center;
+  height: 1000px;
+  background-color: rgb(39, 46, 54);
   position: relative;
+  width: 100%;
 }
 
-.title_bar_upper {
-  height: 3.5px;
-  width: 300px;
-  background-color: white;
-  display: inline-block;
-  margin: 0 auto;
-
-}
-
-.click_events h2 {
+.event_overview_section h1 {
   font-family: "Roboto", sans-serif;
   color: white;
-  letter-spacing: 6px;
-  font-weight: 30;
-  margin-bottom: 0px;
-  margin-top: 50px;
-  font-size: 40px;
-  margin-top: 20px;
+}
+
+
+
+.flex_container {
+  display: flex;
+  height: 800px;
+
+  background-image: url(/Images/bgimage.jpg);
+  background-repeat: no-repeat;
+  background-color: rgb(39, 46, 54);
+
+
 
 }
 
-.events_title_bar {
-  background-color: white;
-  width: 650px;
-  height: 2px;
-  margin: 0 auto;
-}
+
 
 /* Div containing events button Start */
-.click_events_div {
-  display: inline-block;
-  justify-content: center;
-}
 
-.click_events_div h5 {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 5px;
-  font-size: 12px;
-  margin-top: 20px;
-  margin-bottom: 0;
-  font-weight: 50;
 
-}
+
 
 .event_button {
-  height: 95px;
-  width: 95px;
+  height: 110px;
+  width: 110px;
   border-radius: 50%;
   overflow: hidden;
   outline: none;
 
   position: relative;
   margin: 5px 20px 6px 20px;
-  border: 3px double white;
+  border: 5px double #628ece;
   background-color: transparent;
   z-index: 2;
+}
+
+.event_button:hover {
+  background-color: rgba(103, 103, 103, 0.064) !important;
+  transition: .5s;
+
+  cursor: pointer;
+  transition: .5s;
 }
 
 .event_button:hover i {
@@ -342,121 +191,233 @@ a {
   transition: .5s;
 }
 
-.event_button:hover {
-  background: #4fb4f7;
-  transition: .5s;
-  border: 4px double#005f9f;
-  cursor: pointer;
-  transition: .5s;
-}
-
 .event_button:focus {
-  background-color: #3bacf7 !important;
+  background-color: rgb(221, 235, 247) !important;
   transition: .5s;
+}
+
+.event_button:focus i {
+
+  color: rgb(2, 2, 2) !important;
+
 
 
 }
 
-.event_button:focus+span {
-  background-color: #3bacf7 !important;
+#event_button_1 button {
+  border: 5px double #628ece;
+  background-color: #354d70;
+
 }
+
+#event_button_2 button {
+  border: 5px double #d3ac58;
+  background-color: #856c36;
+
+}
+
+#event_button_3 button {
+  border: 5px double #985b9a;
+  background-color: #683c69;
+
+}
+
+#event_button_4 button {
+  border: 5px double #7bccea;
+  background-color: #5d9cb3;
+
+}
+
+#event_button_5 button {
+  border: 5px double #85dc9d;
+  background-color: #559165;
+
+}
+
+#event_button_1::after {
+  border-top-color: #628ece;
+
+
+}
+
+#event_button_2::after {
+  border-top-color: #d3ac58;
+
+}
+
+#event_button_3::after {
+  border-top-color: #985b9a;
+
+}
+
+#event_button_4::after {
+  border-top-color: #7bccea;
+
+}
+
+#event_button_5::after {
+  border-top-color: #85dc9d;
+
+}
+
+
+
+
+
+
+
+
+.Timeline {
+  display: flex;
+  align-items: center;
+  height: 550px;
+  width: 50%;
+}
+
+.event1,
+.event2,
+.event3 {
+  position: relative;
+}
+
+.event1Bubble {
+  position: absolute;
+
+  width: 139px;
+  height: 100px;
+  top: -125px;
+  left: -65px;
+  border-radius: 5px;
+
+}
+
+.event2Bubble {
+  position: absolute;
+
+  width: 139px;
+  height: 100px;
+  left: -65px;
+  top: 33px;
+  border-radius: 5px;
+
+}
+
+.event1Bubble:after,
+.event1Bubble:before,
+.event2Bubble:after,
+.event2Bubble:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom: 0;
+}
+
+.event1Bubble:after {
+  bottom: -30px;
+  left: 63px;
+  border-top-color: #628ece;
+  border-width: 12px;
+}
+
+.event2Bubble:after {
+  bottom: 97.5px;
+  left: 62.5px;
+  border-top-color: #d3ac58;
+  border-width: 12px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.eventTime {
+  display: flex;
+}
+
+.time {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  width: 50px;
+  font-size: 8.5px;
+  margin-top: -3px;
+  margin-left: -5px;
+  color: white;
+  letter-spacing: 20;
+}
+
+.time2 {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  width: 50px;
+  font-size: 8.5px;
+  margin-top: -31px;
+  margin-left: -5px;
+  color: white;
+  letter-spacing: 20;
+}
+
+
+
 
 .event_button i {
 
-  font-size: 35px;
+  font-size: 45px;
   transition: 0.3s linear;
-  color: white;
+  color: rgb(220, 218, 218);
 
-}
-
-.click_events div span {
-  background-color: white;
-  height: 4.5px;
-  width: 20px;
-  display: table;
-  margin: 0 auto;
-  border-radius: 400px;
-}
-
-/* Div containing events button End */
-
-
-
-/* Annoucement display start */
-.announcement_page {
-  height: 800px;
-  width: 100%;
-
-  position: relative;
 }
 
 .mac_display {
-  height: 510px;
-  width: 660px;
-  margin: 0 auto;
-  position: relative;
+  width: 650px;
+  position: absolute;
+  top: 0;
+  left: 55%;
 }
 
 .mac_display img {
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0 auto;
+  height: 100%;
+  width: 100%;
 }
 
-.phone_display {
-  height: 250px;
-  position: absolute;
-  top: 250px;
-  left: 75%;
+
+
+.terminal_display {
+  height: 550px;
+  width: 55%;
+
+  text-align: right;
+  padding-right: 10px;
+  position: relative;
+
 }
 
-.phone_display img {
-  max-width: 100%;
-  max-height: 100%;
+.terminal_display img {
+  height: 550px;
+
 }
 
 #mac_internal {
-  background-color: rgba(0, 0, 0, 0.9);
-  top: 32px;
-  left: 30px;
-  color: rgb(79, 255, 3);
-  width: 86%;
+  background-color: rgba(107, 104, 104, 0.521);
+  top: 10%;
+  left: 14.35%;
+  color: rgb(230, 227, 227);
+  width: 550px;
   height: 300px;
   font-family: monospace;
   font-size: 20px;
-  padding: 10px 15px 0 15px;
+
   overflow: auto;
   position: absolute;
+  text-align: left;
+  padding: 10px 0 0 10px;
+
 }
 
-@media (max-width: 700px) {
-  .mac_display img {
-    display: none;
-  }
-
-  .phone_display {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 60%;
-    z-index: 3;
-  }
-
-  #mac_internal {
-    width: 160px;
-    position: absolute;
-    top: 49%;
-    left: 43.5%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-  }
-}
-
-/* Annoucement display end */
-
-/* event overview timeline end */
-
+/* event over view end */
 
 
 
