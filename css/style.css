@@ -280,9 +280,10 @@ a {
 /* sdsad */
 #logo-title {
   display: flex;
-  width: 100%;
-  padding-left: 12%;
-  padding-right: 12%;
+  width: 80%;
+  padding-left: 14%;
+  padding-right: 6%;
+  height: 300px;
 }
 
 #homepage_title {
@@ -296,16 +297,16 @@ a {
   font-weight: bold;
   margin: 0px;
   padding: 0;
-  text-align: center;
-  position: absolute;
-  top: 48%;
+  /* position: relative;
+  top: 48%; */
+  margin-top: 126px;
 }
 
 #homepage_title_subtext {
   color: white;
   font-size: 20px;
-  position: absolute;
-  top: 55%;
+  /* position: absolute;
+  top: 55%; */
   margin-left: 20%;
   margin-right: 22%;
 }
@@ -313,7 +314,7 @@ a {
 #homepage_icons {
   position: absolute;
   bottom: 10px;
-  left: 50%;
+  left: 48%;
   width: 100%;
 }
 
