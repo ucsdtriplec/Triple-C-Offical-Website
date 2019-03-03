@@ -1144,7 +1144,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 1450px) {
   #logo-title {
     width: 80%;
     padding-left: 10%;
