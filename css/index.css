@@ -632,3 +632,13 @@ body {
       font-size: 3em;
    }
 }
+
+@font-face {
+  font-family: "Sansation";
+  src: url('./fonts/sansation_regular-webfont.woff') format('woff'), url('./fonts/sansation_regular-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Sansation";
+  src: url('./fonts/sansation_light-webfont.woff') format('woff'), url('./fonts/sansation_light-webfont.ttf') format('truetype');
+  font-weight: light;
+}
