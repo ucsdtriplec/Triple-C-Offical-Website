@@ -10,7 +10,7 @@ body {
 #container{
     width : 100%;
     height : 200vh;
-    background-image: url(Images/register7.jpeg);
+    background-image: url(../Images/register7.jpeg);
     display: flex;
     flex-direction: column;
 }
