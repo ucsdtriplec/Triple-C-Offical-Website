@@ -37,92 +37,154 @@
   </script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png"/>
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png"/>
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest"/>
-  <link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5"/>
-  <meta name="msapplication-TileColor" content="#da532c"/>
-  <meta name="theme-color" content="#ffffff"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest" />
+  <link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous"/>
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"/>
-  <link rel="stylesheet" href="/css/imagehover.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'/>
-  <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="css/imagehover.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css' />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  </link>
 </head>
 
 <body>
   <!-- navbar start -->
-  <div class="nav">
-    <a href=""><img id="navbar_logo" src="./Images/logo.png" alt="">
-      <img id="navbar_logo_name" src="./Images/temp_name.png" alt=""></a>
 
-    <label for="toggle">&#9776;</label>
-    <input type="checkbox" id="toggle" />
-    <div class="menu">
-
-      <a class="nav_links" href="">About</a>
-      <a class="nav_links" href="#homepage_projects">Projects</a>
-      <a class="nav_links" href="#homepage_calendar">Calendar</a>
-      <a class="nav_links" href="#homepage_board">Photos</a>
-    </div>
-  </div>
 
   <!-- navbar end -->
-
   <div id="homepage_cover">
+    <div class="navbar_line">
+      <nav class="navbar">
+        <div>
+          <div class="navbar_title">
+            TRIPLE C
+          </div>
+        </div>
+        <div></div>
+        <div></div>
+
+        <ul class="menu_list">
+          <li>
+            <a href="">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <button>
+                Contact Us
+              </button>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="nav_bar_menu">
+          <a href="#">
+            <li>
+              <i class="fas fa-home"></i>
+              Home</li>
+          </a>
+          <a href="#event_overview_section">
+            <li>
+              <i class="far fa-calendar-alt"></i>
+              Event Timeline</li>
+          </a>
+          <a href="#homepage_photos">
+            <li>
+              <i class="far fa-images"></i>
+              Photo Gallery</li>
+          </a>
+          <a href="">
+            <li class="projects_list">
+              <i class="fas fa-briefcase"></i>
+              Projects
+              <i class="fas fa-angle-down"></i>
+              <ul>
+                <li><a href="projectPage_flyerfighter.html">Flyer Fighters</a></li>
+                <li><a href="projectPage_officialwebsite.html">Official Web</a></li>
+                <li><a href="projectPage_androidtryway.html">Android App</a></li>
+                <li><a href="projectPage_datascience.html">Data Sceince</a></li>
+              </ul>
+            </li>
+
+          </a>
+          <a href="">
+            <li>
+              <i class="fas fa-users"></i>
+              <a href="Team.html">Team Members</a>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+
     <div id="logo-title">
       <div id="logo-animation">
-          <svg width="300" height="300" id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 426.2 464.21">
-              <defs>
-                  <style>
-                      .cls-1 {
-                          fill:None;
-                      }
+        <svg width="300" height="300" id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 426.2 464.21">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: None;
+              }
 
-                      .cls-2 {
-                          fill: #26c7ee;
-                      }
+              .cls-2 {
+                fill: #26c7ee;
+              }
 
-                      .cls-3 {
-                          fill: #1cc5ee;
-                      }
-                  </style>
-              </defs>
-              <title>Logo</title>
-              <path class="cls-1"
-                  d="M854,471q0,134.85.09,269.71c0,3.48-.56,4.41-4.29,4.4q-92.89-.24-185.8-.11c-.56-2.19,1.41-2.76,2.51-3.85C674,733.79,682,727,689.36,719.51c31.21-31.69,63.25-62.54,95-93.69,21.39-21,42.41-42.37,63.95-63.22.76-.74,2.13-1.2,1.63-2.72-8.62-1.1-17.23-.35-25.83-.45-5.46-.06-10.94-.52-16.38.38a13.24,13.24,0,0,0-5.54,3.27c-6.64,7-14.18,13.12-21,20-20.6,20.88-41.93,41-63,61.41-8.73,8.46-17.49,16.9-26,25.59-6.19,6.32-13.06,11.87-19.29,18.14-5.55,5.59-13,5.79-18.6.23-8.88-8.79-18.16-17.16-27-25.94-3.92-3.87-7.75-7.81-11.68-11.66-32.27-31.58-64.25-63.45-96.41-95.14-11.62-11.45-23.32-22.84-35-34.28-6.84-6.72-7.1-10.46-.18-17.27,17.09-16.83,34-33.82,51.22-50.53,27.48-26.71,54.36-54,81.85-80.72,11.84-11.48,23.5-23.13,35.35-34.6,8-7.69,14.27-7.71,22,0,15.33,15.3,31,30.24,46.54,45.31,23.31,22.63,46.8,45.06,69.79,68,2.8,2.79,6.47,4.84,7.79,8.93.67,1.54.8,3.29,1.83,4.64,1.78,2.35,4.14,4.55,7.1,3.05,3.2-1.63,6.4-1.58,9.7-1.59,9.33,0,18.67.08,28-.06C849.07,466.53,852.1,467.49,854,471Z"
-                  transform="translate(-427.9 -280.9)" />
-              <g id="outer"><path class="cls-2"
-                  d="M852.13,560c-5.74,7.34-12.83,13.39-19.44,19.9q-81.15,79.9-162.39,159.73c-2,2-4.94,2.7-6.3,5.33h-2c-8.38-4.22-13.91-11.8-20.61-17.93-14-12.8-27-26.67-40.5-40-28.15-27.64-56-55.6-84.3-83.07-25-24.23-49.2-49.21-74.3-73.3-5.15-5-11-9.17-14.29-15.75v-4a24,24,0,0,1,5.41-7.65c38.31-38.74,77.53-76.56,116.27-114.87,20.24-20,40.15-40.44,60.83-60,14.64-13.87,28.86-28.14,43.16-42.35A30.84,30.84,0,0,1,661,281h3a19.76,19.76,0,0,1,8.72,5.38C698.28,311,723,336.45,748.55,361c20.89,20.08,40.81,41.14,61.93,61,13,12.2,25.35,25,38.16,37.4,1,.93,1.92,1.85,2.79,2.86,1.09,1.25,2.47,2.58,1.74,4.37s-2.65.82-4,.85c-13.65.26-27.3-.45-40.94.39a8,8,0,0,1-5.46-2c-2.28-1.72-3.86-4.08-5.65-6.24-11.13-11-22.19-22.05-33.4-33q-45.27-44.1-90.64-88.11c-6.67-6.48-12.32-6.55-19,0Q576.42,414.93,498.8,491.37q-7.29,7.19-14.57,14.4c-5.17,5.13-5.2,9-.1,14l66.67,65.48,102.63,100.8c7.31,7.18,12.8,7.22,20,.2Q736.87,624.61,800.3,563a15.54,15.54,0,0,1,5.75-3.85c13.77-.3,27.54-.07,41.31-.13C849,559,850.69,559,852.13,560Z"
-                  transform="translate(-427.9 -280.9)" />
-              </g>
-              <path class="cls-1"
-                  d="M428,515c8.41,8.36,16.8,16.76,25.25,25.08Q512.8,598.76,572.39,657.4q40.88,40.26,81.68,80.59c2.53,2.52,6.36,3.49,7.93,7q-114.87,0-229.75.1c-3.6,0-4.36-.74-4.35-4.34Q428.1,627.87,428,515Z"
-                  transform="translate(-427.9 -280.9)" />
-              <path class="cls-1"
-                  d="M661,281c-12.59,12.28-25.22,24.52-37.75,36.86Q569.84,370.45,516.5,423.09q-41.29,40.7-82.58,81.37c-2.09,2.06-3.95,4.35-5.92,6.54q0-112.87-.1-225.76c0-3.61.75-4.35,4.35-4.34Q546.63,281.09,661,281Z"
-                  transform="translate(-427.9 -280.9)" />
-              <path class="cls-1"
-                  d="M797.1,459.57c5.95,7.2,13.89,7.91,22.53,7.5,9.64-.46,19.32-.07,29-.16,1.36,0,3.4.93,4-.85.5-1.53-1.34-2.5-2.37-3.52q-29.21-28.73-58.44-57.4Q731,345.44,670.22,285.77A63.57,63.57,0,0,0,664,281q93,0,186-.1c3.42,0,4.1.67,4.1,4.1q-.21,93-.1,186c-4.16-4-9.39-2.95-14.36-3q-12.21-.08-24.42,0c-2.55,0-5-.4-7.23,2.05-2.06,2.24-9-1.87-9.92-5.66C797.67,462.82,797.42,461.18,797.1,459.57Z"
-                  transform="translate(-427.9 -280.9)" />
-              <g id="middle"><path class="cls-2"
-                  d="M573.67,557.93c14.07-4.57,25.41,4,36.51,16.06,15.66,17,32.74,32.73,49.25,49,4.3,4.23,5.54,4.29,9.9,0q54-53.13,107.86-106.3c3.23-3.18,2.6-5.57-.26-8.38q-37.47-36.75-74.86-73.57c-10.46-10.28-21-20.51-31.38-30.82-6.05-6-6.56-6.06-12.77,0q-30.84,30.3-61.61,60.65a9.88,9.88,0,0,1-7.5,3.16c-12.5-.06-25,0-37.5,0-1.58,0-3.64.59-4.36-1.42s1.25-2.94,2.37-4Q602.59,410,655.92,357.78c1-.93,2-1.74,3-2.67,3.37-3.33,6.24-2.55,9.4.6,9.67,9.65,19.53,19.1,29.3,28.65Q760,445.31,822.3,506.25c7.31,7.14,7.32,7.07,0,14.18Q756.85,584.29,691.4,648.16q-10,9.76-20.12,19.43c-6.61,6.33-8.86,6.31-15.33,0Q620.49,632.69,585,597.82q-18-17.69-36-35.33c-1-1-3-1.92-2.44-3.47.69-2,2.91-1,4.43-1C557.47,557.87,564,557.93,573.67,557.93Z"
-                  transform="translate(-427.9 -280.9)" />
-              </g>
-              <g id="inner"><path class="cls-2"
-                  d="M698.74,467.15c-8.23,2.1-16.35-.89-22.54-9.29-1.46-2-3.56-3.48-5.34-5.23-3.89-3.83-5.71-3.84-9.56,0l-51.67,51.46c-1.54,1.53-3,3.09-4.6,4.59-2.67,2.58-2.73,5.12-.08,7.76q28.47,28.41,56.95,56.82c2.83,2.83,5.68,3.32,8.49-.07a2.94,2.94,0,0,1,.36-.34c5.24-4.85,9.3-12.5,15.71-14.18,8.43-2.21,17.85-.64,26.84-.66.93,0,2.25-.3,2.44,1,.1.6-.65,1.46-1.2,2q-23,22.92-46,45.79c-2.59,2.57-4.92,2.62-7.67-.09-14.48-14.25-29.08-28.38-43.62-42.56S588.4,536,574,521.94c-1-.93-2-1.81-2.86-2.78-4.9-5.2-4.89-8.11.21-13.1,10.22-10,20.5-20,30.74-30q28.78-28.08,57.54-56.19c4.85-4.73,5.34-4.73,10-.09q22,21.76,43.91,43.6c.87.86,2.64,1.5,1.8,3.1-.6,1.13-2.12.59-3.23.61C708.29,467.18,704.46,467.15,698.74,467.15Z"
-                  transform="translate(-427.9 -280.9)" />
-              </g>
-              <path class="cls-3"
-                  d="M852.13,560c-13.61,0-27.23,0-40.84-.07-1.76,0-3.69.63-5.24-.83,1.43-1.15,3.14-.86,4.77-.87,12.26,0,24.51,0,36.76.1C849.09,558.39,851.58,557,852.13,560Z"
-                  transform="translate(-427.9 -280.9)" />
-          </svg>
+              .cls-3 {
+                fill: #1cc5ee;
+              }
+            </style>
+          </defs>
+          <title>Logo</title>
+          <path class="cls-1" d="M854,471q0,134.85.09,269.71c0,3.48-.56,4.41-4.29,4.4q-92.89-.24-185.8-.11c-.56-2.19,1.41-2.76,2.51-3.85C674,733.79,682,727,689.36,719.51c31.21-31.69,63.25-62.54,95-93.69,21.39-21,42.41-42.37,63.95-63.22.76-.74,2.13-1.2,1.63-2.72-8.62-1.1-17.23-.35-25.83-.45-5.46-.06-10.94-.52-16.38.38a13.24,13.24,0,0,0-5.54,3.27c-6.64,7-14.18,13.12-21,20-20.6,20.88-41.93,41-63,61.41-8.73,8.46-17.49,16.9-26,25.59-6.19,6.32-13.06,11.87-19.29,18.14-5.55,5.59-13,5.79-18.6.23-8.88-8.79-18.16-17.16-27-25.94-3.92-3.87-7.75-7.81-11.68-11.66-32.27-31.58-64.25-63.45-96.41-95.14-11.62-11.45-23.32-22.84-35-34.28-6.84-6.72-7.1-10.46-.18-17.27,17.09-16.83,34-33.82,51.22-50.53,27.48-26.71,54.36-54,81.85-80.72,11.84-11.48,23.5-23.13,35.35-34.6,8-7.69,14.27-7.71,22,0,15.33,15.3,31,30.24,46.54,45.31,23.31,22.63,46.8,45.06,69.79,68,2.8,2.79,6.47,4.84,7.79,8.93.67,1.54.8,3.29,1.83,4.64,1.78,2.35,4.14,4.55,7.1,3.05,3.2-1.63,6.4-1.58,9.7-1.59,9.33,0,18.67.08,28-.06C849.07,466.53,852.1,467.49,854,471Z"
+            transform="translate(-427.9 -280.9)" />
+          <g id="outer">
+            <path class="cls-2" d="M852.13,560c-5.74,7.34-12.83,13.39-19.44,19.9q-81.15,79.9-162.39,159.73c-2,2-4.94,2.7-6.3,5.33h-2c-8.38-4.22-13.91-11.8-20.61-17.93-14-12.8-27-26.67-40.5-40-28.15-27.64-56-55.6-84.3-83.07-25-24.23-49.2-49.21-74.3-73.3-5.15-5-11-9.17-14.29-15.75v-4a24,24,0,0,1,5.41-7.65c38.31-38.74,77.53-76.56,116.27-114.87,20.24-20,40.15-40.44,60.83-60,14.64-13.87,28.86-28.14,43.16-42.35A30.84,30.84,0,0,1,661,281h3a19.76,19.76,0,0,1,8.72,5.38C698.28,311,723,336.45,748.55,361c20.89,20.08,40.81,41.14,61.93,61,13,12.2,25.35,25,38.16,37.4,1,.93,1.92,1.85,2.79,2.86,1.09,1.25,2.47,2.58,1.74,4.37s-2.65.82-4,.85c-13.65.26-27.3-.45-40.94.39a8,8,0,0,1-5.46-2c-2.28-1.72-3.86-4.08-5.65-6.24-11.13-11-22.19-22.05-33.4-33q-45.27-44.1-90.64-88.11c-6.67-6.48-12.32-6.55-19,0Q576.42,414.93,498.8,491.37q-7.29,7.19-14.57,14.4c-5.17,5.13-5.2,9-.1,14l66.67,65.48,102.63,100.8c7.31,7.18,12.8,7.22,20,.2Q736.87,624.61,800.3,563a15.54,15.54,0,0,1,5.75-3.85c13.77-.3,27.54-.07,41.31-.13C849,559,850.69,559,852.13,560Z"
+              transform="translate(-427.9 -280.9)" />
+          </g>
+          <path class="cls-1" d="M428,515c8.41,8.36,16.8,16.76,25.25,25.08Q512.8,598.76,572.39,657.4q40.88,40.26,81.68,80.59c2.53,2.52,6.36,3.49,7.93,7q-114.87,0-229.75.1c-3.6,0-4.36-.74-4.35-4.34Q428.1,627.87,428,515Z"
+            transform="translate(-427.9 -280.9)" />
+          <path class="cls-1" d="M661,281c-12.59,12.28-25.22,24.52-37.75,36.86Q569.84,370.45,516.5,423.09q-41.29,40.7-82.58,81.37c-2.09,2.06-3.95,4.35-5.92,6.54q0-112.87-.1-225.76c0-3.61.75-4.35,4.35-4.34Q546.63,281.09,661,281Z"
+            transform="translate(-427.9 -280.9)" />
+          <path class="cls-1" d="M797.1,459.57c5.95,7.2,13.89,7.91,22.53,7.5,9.64-.46,19.32-.07,29-.16,1.36,0,3.4.93,4-.85.5-1.53-1.34-2.5-2.37-3.52q-29.21-28.73-58.44-57.4Q731,345.44,670.22,285.77A63.57,63.57,0,0,0,664,281q93,0,186-.1c3.42,0,4.1.67,4.1,4.1q-.21,93-.1,186c-4.16-4-9.39-2.95-14.36-3q-12.21-.08-24.42,0c-2.55,0-5-.4-7.23,2.05-2.06,2.24-9-1.87-9.92-5.66C797.67,462.82,797.42,461.18,797.1,459.57Z"
+            transform="translate(-427.9 -280.9)" />
+          <g id="middle">
+            <path class="cls-2" d="M573.67,557.93c14.07-4.57,25.41,4,36.51,16.06,15.66,17,32.74,32.73,49.25,49,4.3,4.23,5.54,4.29,9.9,0q54-53.13,107.86-106.3c3.23-3.18,2.6-5.57-.26-8.38q-37.47-36.75-74.86-73.57c-10.46-10.28-21-20.51-31.38-30.82-6.05-6-6.56-6.06-12.77,0q-30.84,30.3-61.61,60.65a9.88,9.88,0,0,1-7.5,3.16c-12.5-.06-25,0-37.5,0-1.58,0-3.64.59-4.36-1.42s1.25-2.94,2.37-4Q602.59,410,655.92,357.78c1-.93,2-1.74,3-2.67,3.37-3.33,6.24-2.55,9.4.6,9.67,9.65,19.53,19.1,29.3,28.65Q760,445.31,822.3,506.25c7.31,7.14,7.32,7.07,0,14.18Q756.85,584.29,691.4,648.16q-10,9.76-20.12,19.43c-6.61,6.33-8.86,6.31-15.33,0Q620.49,632.69,585,597.82q-18-17.69-36-35.33c-1-1-3-1.92-2.44-3.47.69-2,2.91-1,4.43-1C557.47,557.87,564,557.93,573.67,557.93Z"
+              transform="translate(-427.9 -280.9)" />
+          </g>
+          <g id="inner">
+            <path class="cls-2" d="M698.74,467.15c-8.23,2.1-16.35-.89-22.54-9.29-1.46-2-3.56-3.48-5.34-5.23-3.89-3.83-5.71-3.84-9.56,0l-51.67,51.46c-1.54,1.53-3,3.09-4.6,4.59-2.67,2.58-2.73,5.12-.08,7.76q28.47,28.41,56.95,56.82c2.83,2.83,5.68,3.32,8.49-.07a2.94,2.94,0,0,1,.36-.34c5.24-4.85,9.3-12.5,15.71-14.18,8.43-2.21,17.85-.64,26.84-.66.93,0,2.25-.3,2.44,1,.1.6-.65,1.46-1.2,2q-23,22.92-46,45.79c-2.59,2.57-4.92,2.62-7.67-.09-14.48-14.25-29.08-28.38-43.62-42.56S588.4,536,574,521.94c-1-.93-2-1.81-2.86-2.78-4.9-5.2-4.89-8.11.21-13.1,10.22-10,20.5-20,30.74-30q28.78-28.08,57.54-56.19c4.85-4.73,5.34-4.73,10-.09q22,21.76,43.91,43.6c.87.86,2.64,1.5,1.8,3.1-.6,1.13-2.12.59-3.23.61C708.29,467.18,704.46,467.15,698.74,467.15Z"
+              transform="translate(-427.9 -280.9)" />
+          </g>
+          <path class="cls-3" d="M852.13,560c-13.61,0-27.23,0-40.84-.07-1.76,0-3.69.63-5.24-.83,1.43-1.15,3.14-.86,4.77-.87,12.26,0,24.51,0,36.76.1C849.09,558.39,851.58,557,852.13,560Z"
+            transform="translate(-427.9 -280.9)" />
+        </svg>
       </div>
       <div id="homepage_title">
         <div id="homepage_title_text">
@@ -145,64 +207,163 @@
 
   </div>
 
-  <div id="homepage_event_overview">
-    <div class="event_overview_header">
-      <p>Events Overview</p>
+
+
+
+  <section class="event_overview_section">
+    <div class="flex_container">
+      <div class="timeline">
+        <h1 class="event_timeline_tittle">
+          Event Timeline
+        </h1>
+        <svg height="20" width="0">
+          <line x1="1" y1=" 0" x2="1" y2="20" style="stroke:#e89096;stroke-width:2" />
+        </svg>
+        <svg height="5" width="150">
+          <line x1="75" y1="0" x2="150" y2="0" style="stroke:#628ece;stroke-width:20" />
+        </svg>
+        <div class="event_1">
+          <div id="event_button_1" class="event_1_div">
+            <button class="event_button" onclick="event1Funct() ">
+              <i class="far fa-handshake"></i>
+            </button>
+          </div>
+          <svg height="20" width="20">
+            <circle cx="10" cy="11" r="5" fill="#628ece" />
+          </svg>
+          <div class="event_time_1">WEEK 1</div>
+        </div>
+        <svg height="5" width="95">
+          <line x1="0" y1="0" x2="95" y2="0" style="stroke:#d3ac58;stroke-width:20" />
+        </svg>
+        <div class="event_2">
+          <div id="event_button_2" class="event_2_div">
+            <button class="event_button" onclick="event2Funct() ">
+              <i class="far fa-object-group"></i>
+            </button>
+          </div>
+          <svg height="20" width="20">
+            <circle cx="10" cy="11" r="5" fill="#d3ac58" />
+          </svg>
+          <div class="event_time_2">WEEK 3</div>
+        </div>
+        <svg height="5" width="95">
+          <line x1="0" y1="0" x2="95" y2="0" style="stroke:#985b9a;stroke-width:20" />
+        </svg>
+        <div class="event_1">
+          <div id="event_button_3" class="event_1_div">
+            <button class="event_button" onclick="event3Funct() ">
+              <i class="fas fa-users"></i>
+            </button>
+          </div>
+          <svg height="20" width="20">
+            <circle cx="10" cy="11" r="5" fill="#985b9a" />
+          </svg>
+          <div class="event_time_1">WEEK 5</div>
+        </div>
+        <svg height="5" width="95">
+          <line x1="0" y1="0" x2="95" y2="0" style="stroke: #7bccea;stroke-width:20" />
+        </svg>
+        <div class="event_2">
+          <div id="event_button_4" class="event_2_div">
+            <button class="event_button" onclick="event4Funct() ">
+              <i class="far fa-calendar-alt"></i>
+            </button>
+          </div>
+          <svg height="20" width="20">
+            <circle cx="10" cy="11" r="5" fill="#7bccea" />
+          </svg>
+          <div class="event_time_2">WEEK 7</div>
+        </div>
+        <svg height="5" width="95">
+          <line x1="0" y1="0" x2="95" y2="0" style="stroke: #85dc9d;stroke-width:20" />
+        </svg>
+        <div class="event_1">
+          <div id="event_button_5" class="event_1_div">
+            <button class="event_button" onclick="event5Funct() ">
+              <i class="far fa-check-circle"></i>
+            </button>
+          </div>
+          <svg height="20" width="20">
+            <circle cx="10" cy="11" r="5" fill="#85dc9d" />
+          </svg>
+          <div class="event_time_1">WEEK 9</div>
+        </div>
+        <svg height="5" width="50">
+          <line x1="0" y1="0" x2="50" y2="0" style="stroke:#e89096;stroke-width:20" />
+        </svg>
+        <svg height="20" width="42">
+          <line x1="1" y1="0" x2="1" y2="20" style="stroke:#e89096;stroke-width:2" />
+        </svg>
+      </div>
+      <div class="terminal_display">
+
+        <img src="Images/macimage.png" alt="">
+        <div id="mac_internal">
+          Last login: Winter Quarter 2019 on ucsd<br>Chinese_Computer_Community:~TripleC$
+          ..<font color="lightgreen">Click left buttons </font>
+        </div>
+      </div>
     </div>
-    <div class="timeline">
-      <ol>
-        <li>
-          <div>
-            <span class="circle"><i class="fas fa-users"></i></span>
+    <script>
+      function event1Funct() {
+        var x = document.getElementById("mac_internal");
+        x.innerHTML =
+          "<font color='lightgreen'>Event Name$:</font> GBM<br><font color='lightgreen'>Location$:</font> Price Center<br><font color='lightgreen'>Date$:</font> 03/17/2019<br><font color='lightgreen'>Description:$</font> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+      }
+    </script>
+    <script>
+      function event2Funct() {
+        var x = document.getElementById("mac_internal");
+        x.innerHTML =
+          "<font color='lightgreen'>Event Name$:</font> GBM<br><font color='lightgreen'>Location$:</font> Price Center<br><font color='lightgreen'>Date$:</font> 03/17/2019<br><font color='lightgreen'>Description:$</font> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+      }
+    </script>
+    <script>
+      function event3Funct() {
+        var x = document.getElementById("mac_internal");
+        x.innerHTML =
+          "<font color='lightgreen'>Event Name$:</font> GBM<br><font color='lightgreen'>Location$:</font> Price Center<br><font color='lightgreen'>Date$:</font> 03/17/2019<br><font color='lightgreen'>Description:$</font> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+      }
+    </script>
+    <script>
+      function event4Funct() {
+        var x = document.getElementById("mac_internal");
+        x.innerHTML =
+          "<font color='lightgreen'>Event Name$:</font> GBM<br><font color='lightgreen'>Location$:</font> Price Center<br><font color='lightgreen'>Date$:</font> 03/17/2019<br><font color='lightgreen'>Description:$</font> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+      }
+    </script>
+    <script>
+      function event5Funct() {
+        var x = document.getElementById("mac_internal");
+        x.innerHTML =
+          "<font color='lightgreen'>Event Name$:</font> GBM<br><font color='lightgreen'>Location$:</font> Price Center<br><font color='lightgreen'>Date$:</font> 03/17/2019<br><font color='lightgreen'>Description:$</font> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+      }
+    </script>
+  </section>
 
-            <h3>March 7th</h3>
 
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
-            officia
-            labore quas natus excepturi.
-          </div>
-        </li>
-        <li>
-          <div>
-            <span class="circle"><i class="fas fa-bug"></i></span>
-            <h3>March 7th</h3>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
-            officia
-            labore quas natus excepturi.
-          </div>
-        </li>
-        <li>
-          <div>
-            <span class="circle"><i class="far fa-lightbulb"></i></span>
-            <h3>March 7th</h3>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
-            officia
-            labore quas natus excepturi.
-          </div>
-        </li>
-        <li>
-          <div>
-            <span class="circle"><i class="fas fa-hourglass-end"></i></span>
-            <h3>March 7th</h3>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
-            officia
-            labore quas natus excepturi.
-          </div>
-        </li>
-        <li>
-          <div>
-            <span class="circle"><i class="far fa-check-circle"></i></i></i></span>
-            <h3>March 7th</h3>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, minus architecto! Maxime
-            officia
-            labore quas natus excepturi.
-          </div>
-        </li>
-        <li></li>
 
-      </ol>
-      <button id="event_overview_button">VIEW MORE EVENTS</button>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="clearfix">
   </div>
 
   <div class="clearfix">
@@ -218,364 +379,358 @@
     </div>
 
     <div id="mySlider"></div>
-		<div id="sliderNav">
-        <div style="text-align:center">
-            <span class="dot" onclick="clickDot(0)"></span>
-            <span class="dot" onclick="clickDot(1)"></span>
-            <span class="dot" onclick="clickDot(2)"></span>
-            <span class="dot" onclick="clickDot(3)"></span>
-            <span class="dot" onclick="clickDot(4)"></span>
-            <span class="dot" onclick="clickDot(5)"></span>
-            <span class="dot" onclick="clickDot(6)"></span>
-            <span class="dot" onclick="clickDot(7)"></span>
-            <span class="dot" onclick="clickDot(8)"></span>
-          </div>
-			<div id="sliderPrev" onclick="prevSlide();">&#10094;</div>
-			<div id="sliderNext" onclick="nextSlide();">&#10095;</div>
-		</div>
+    <div id="sliderNav">
+      <div style="text-align:center">
+        <span class="dot" onclick="clickDot(0)"></span>
+        <span class="dot" onclick="clickDot(1)"></span>
+        <span class="dot" onclick="clickDot(2)"></span>
+        <span class="dot" onclick="clickDot(3)"></span>
+        <span class="dot" onclick="clickDot(4)"></span>
+        <span class="dot" onclick="clickDot(5)"></span>
+        <span class="dot" onclick="clickDot(6)"></span>
+        <span class="dot" onclick="clickDot(7)"></span>
+        <span class="dot" onclick="clickDot(8)"></span>
+      </div>
+      <div id="sliderPrev" onclick="prevSlide();">&#10094;</div>
+      <div id="sliderNext" onclick="nextSlide();">&#10095;</div>
+    </div>
   </div>
 
   <footer id="homepage_footer_container">
 
-  <div id="homepage_footer_main_box">
+    <div id="homepage_footer_main_box">
       <div id="homepage_footer_mission_title">
-          "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical skill growth"
+        "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical
+        skill growth"
+      </div>
+      <div id="footer_icon_container">
+        <div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')">
+          <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
+          </div>
         </div>
-        <div id = "footer_icon_container">
-    <div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')" >
-      <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
-      </div>
-    </div>
-    <div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
-      <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
-      </div>
-    </div>
-    <div class="homepage_footer_icons" onmouseover = "showImg('wechat')" onmouseout = "hideImg('wechat')">
+        <div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
+          <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
+          </div>
+        </div>
+        <div class="homepage_footer_icons" onmouseover="showImg('wechat')" onmouseout="hideImg('wechat')">
 
-      <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
-          <img  id = 'wechat' src="../Images/wechatQR.JPG">
+          <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
+            <img id='wechat' src="../Images/wechatQR.JPG">
+          </div>
+
+        </div>
+
+        <div class="homepage_footer_icons" onclick="window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
+          <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
+          </div>
+        </div>
+
       </div>
     </div>
-
-    <div class="homepage_footer_icons"  onclick = "window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
-      <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
-      </div>
-    </div>
-
-  </div>
-  </div>
   </footer>
 
   <div id="copyright">
-      Copyright &copy 2019 UCSDTripleC.
+    Copyright &copy 2019 UCSDTripleC.
   </div>
   </div>
   </div>
-</div>
+  </div>
 
-<script>
-
-// Used to add a numeric id on slide creation to let us target the element later
-var slideIndex = 0;
-// Tells us which slide we are on
-var currentSlideIndex = 0;
-// An Array to hold all the slides
-var slideArray = [];
-
-
-// Template for creating a custom Slide object
-function Slide(title, subtitle, background ) {
-	this.title = title;
-	this.subtitle = subtitle;
-	this.background = background;
-	// we need an id to target later using getElementById
-	this.id = "slide" + slideIndex;
-	// Add one to the index for the next slide number
-	slideIndex++;
-	// Add this Slide to our array
-	slideArray.push(this);
-}
+  <script>
+    // Used to add a numeric id on slide creation to let us target the element later
+    var slideIndex = 0;
+    // Tells us which slide we are on
+    var currentSlideIndex = 0;
+    // An Array to hold all the slides
+    var slideArray = [];
 
 
-// Creating our slide objects, you can make as many as you want
-
-var num1 = new Slide(
-	"Triple C Family BBQ night",
-	"",
-	"../Images/activity1.jpeg"
-);
-
-var num2 = new Slide(
-	"Winter 2019 General Body Meeting",
-	"",
-	"../Images/activity2.jpeg"
-);
-
-var num3 = new Slide(
-	"pre-professional discussion that provided career guidance to junior students",
-	"",
-	"../Images/activity3.jpeg"
-);
-
-var num4 = new Slide(
-	"Career information speach with ByteDance",
-	"",
-	"../Images/activity4.jpeg"
-);
-
-var num5 = new Slide(
-	"Fall team building",
-	"",
-	"../Images/activity5.jpeg"
-);
-
-var num6 = new Slide(
-	"6",
-	"A show about loneliness",
-	"../Images/bg3.jpeg"
-);
-
-var num7 = new Slide(
-	"7",
-	"A show about loneliness",
-	"../Images/bg3.jpeg"
-);
-
-var num8 = new Slide(
-	"8",
-	"A show about loneliness",
-	"../Images/bg3.jpeg"
-);
-
-var num9 = new Slide(
-	"9",
-	"A show about loneliness",
-	"../Images/bg3.jpeg"
-);
+    // Template for creating a custom Slide object
+    function Slide(title, subtitle, background) {
+      this.title = title;
+      this.subtitle = subtitle;
+      this.background = background;
+      // we need an id to target later using getElementById
+      this.id = "slide" + slideIndex;
+      // Add one to the index for the next slide number
+      slideIndex++;
+      // Add this Slide to our array
+      slideArray.push(this);
+    }
 
 
+    // Creating our slide objects, you can make as many as you want
 
-function buildSlider(){
-	// A variable to hold all our HTML
-	var myHTML;
+    var num1 = new Slide(
+      "Triple C Family BBQ night",
+      "",
+      "../Images/activity1.jpeg"
+    );
 
-	// Go through the Array and add the code to our HTML
-	for(var i = 0; i < slideArray.length; i++) {
+    var num2 = new Slide(
+      "Winter 2019 General Body Meeting",
+      "",
+      "../Images/activity2.jpeg"
+    );
 
-		myHTML += "<div id='" + slideArray[i].id +
-		"' class='singleSlide' style='background-image:url(" + slideArray[i].background + ");'>"
-    + "<div class='title_bg'>" + "</div>"+
-		"<div class='slideOverlay'>" +
-		"<h1 class='titles' >" + slideArray[i].title + "</h1>" +
-		"<h4 class='subtitles'>" + slideArray[i].subtitle + "</h4>"  +
-		"</div>" +
-		"</div>";
+    var num3 = new Slide(
+      "pre-professional discussion that provided career guidance to junior students",
+      "",
+      "../Images/activity3.jpeg"
+    );
 
-	}
+    var num4 = new Slide(
+      "Career information speach with ByteDance",
+      "",
+      "../Images/activity4.jpeg"
+    );
 
-	// Print our HTML to the web page
-	document.getElementById("mySlider").innerHTML = myHTML;
+    var num5 = new Slide(
+      "Fall team building",
+      "",
+      "../Images/activity5.jpeg"
+    );
 
-	// Display the first slide
-	document.getElementById("slide" + currentSlideIndex).style.left = 0;
+    var num6 = new Slide(
+      "6",
+      "A show about loneliness",
+      "../Images/bg3.jpeg"
+    );
 
-}
+    var num7 = new Slide(
+      "7",
+      "A show about loneliness",
+      "../Images/bg3.jpeg"
+    );
 
-// Create our slider
-buildSlider();
+    var num8 = new Slide(
+      "8",
+      "A show about loneliness",
+      "../Images/bg3.jpeg"
+    );
 
+    var num9 = new Slide(
+      "9",
+      "A show about loneliness",
+      "../Images/bg3.jpeg"
+    );
+
+
+
+    function buildSlider() {
+      // A variable to hold all our HTML
+      var myHTML;
+
+      // Go through the Array and add the code to our HTML
+      for (var i = 0; i < slideArray.length; i++) {
+
+        myHTML += "<div id='" + slideArray[i].id +
+          "' class='singleSlide' style='background-image:url(" + slideArray[i].background + ");'>" +
+          "<div class='title_bg'>" + "</div>" +
+          "<div class='slideOverlay'>" +
+          "<h1 class='titles' >" + slideArray[i].title + "</h1>" +
+          "<h4 class='subtitles'>" + slideArray[i].subtitle + "</h4>" +
+          "</div>" +
+          "</div>";
+
+      }
+
+      // Print our HTML to the web page
+      document.getElementById("mySlider").innerHTML = myHTML;
+
+      // Display the first slide
+      document.getElementById("slide" + currentSlideIndex).style.left = 0;
+
+    }
+
+    // Create our slider
+    buildSlider();
 
 
 
 
-var current = 0;
 
-// Navigates to the previous slide in the list
-function prevSlide(){
-	// Figure out what the previous slide is
-	var nextSlideIndex;
-	// If we are at zero go to the last slide in the list
+    var current = 0;
 
-
-	if (currentSlideIndex === 0 ) {
-		nextSlideIndex = slideArray.length - 1;
-	} else {
-		// Otherwise the next one is this slide minus 1
-		nextSlideIndex = currentSlideIndex - 1;
-	}
-
-	// Setup the next slide and current slide for animations
-	document.getElementById("slide" + nextSlideIndex).style.left = "-100%";
-	document.getElementById("slide" + currentSlideIndex).style.left = 0;
-
-	// Add the appropriate animation class to the slide
-	document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInLeft");
-	document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutRight");
-
-	// Set current slide to the new current slide
-  dots[current].className = dots[current].className.replace(" active", "");
-  if(current==0){
-    current=8;
-  }
-	else{
-    current--
-  }
-
-  dots[current].className += " active";
-	currentSlideIndex = nextSlideIndex;
-  clearTimeout(timer);
-  timer = setTimeout(autoPlay, 3000);
-}
-
-var timer;
-var dots = document.getElementsByClassName("dot");
-dots[current].className += " active";
-// Navigates to the next slide in the list
-function nextSlide(){
-	// Figure out what the next slide is
-	var nextSlideIndex;
-	// If we are at the last slide the next one is the first (zero based)
-	if (currentSlideIndex === (slideArray.length - 1) ) {
-		nextSlideIndex = 0;
-	} else {
-		// Otherwise the next slide is the current one plus 1
-		nextSlideIndex = currentSlideIndex + 1;
-	}
-
-	// Setup the next slide and current slide for animations
-	document.getElementById("slide" + nextSlideIndex).style.left = "100%";
-	document.getElementById("slide" + currentSlideIndex).style.left = 0;
-
-	// Add the appropriate animation class to the slide
-	document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInRight");
-	document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutLeft");
-  dots[current].className = dots[current].className.replace(" active", "");
-	if(current==8){
-    current=0;
-  }
-	else{
-    current++
-  }
-  dots[current].className += " active";
-	// Set current slide to the new current slide
-	currentSlideIndex = nextSlideIndex;
-  clearTimeout(timer);
-  timer = setTimeout(autoPlay, 3000);
-}
+    // Navigates to the previous slide in the list
+    function prevSlide() {
+      // Figure out what the previous slide is
+      var nextSlideIndex;
+      // If we are at zero go to the last slide in the list
 
 
-function autoPlay(){
-	// Figure out what the next slide is
-	var nextSlideIndex;
-	// If we are at the last slide the next one is the first (zero based)
-	if (currentSlideIndex === (slideArray.length - 1) ) {
-		nextSlideIndex = 0;
-	} else {
-		// Otherwise the next slide is the current one plus 1
-		nextSlideIndex = currentSlideIndex + 1;
-	}
+      if (currentSlideIndex === 0) {
+        nextSlideIndex = slideArray.length - 1;
+      } else {
+        // Otherwise the next one is this slide minus 1
+        nextSlideIndex = currentSlideIndex - 1;
+      }
 
-	// Setup the next slide and current slide for animations
-	document.getElementById("slide" + nextSlideIndex).style.left = "100%";
-	document.getElementById("slide" + currentSlideIndex).style.left = 0;
+      // Setup the next slide and current slide for animations
+      document.getElementById("slide" + nextSlideIndex).style.left = "-100%";
+      document.getElementById("slide" + currentSlideIndex).style.left = 0;
 
-	// Add the appropriate animation class to the slide
-	document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInRight");
-	document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutLeft");
-  dots[current].className = dots[current].className.replace(" active", "");
-	if(current==8){
-    current=0;
-  }
-	else{
-    current++
-  }
-  dots[current].className += " active";
-	// Set current slide to the new current slide
-	currentSlideIndex = nextSlideIndex;
-  timer = setTimeout(autoPlay,3000)
+      // Add the appropriate animation class to the slide
+      document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInLeft");
+      document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutRight");
 
-}
+      // Set current slide to the new current slide
+      dots[current].className = dots[current].className.replace(" active", "");
+      if (current == 0) {
+        current = 8;
+      } else {
+        current--
+      }
 
-function clickDot(n){
-  var dots = document.getElementsByClassName("dot");
-  var diff = Math.abs(n - current);
-  //document.getElementsByClassName("slideInRight")[0].style.animation="slideIn 100s forwards;"
-  if(n>current){
-    for(i=0; i < diff;i++){
+      dots[current].className += " active";
+      currentSlideIndex = nextSlideIndex;
+      clearTimeout(timer);
+      timer = setTimeout(autoPlay, 3000);
+    }
+
+    var timer;
+    var dots = document.getElementsByClassName("dot");
+    dots[current].className += " active";
+    // Navigates to the next slide in the list
+    function nextSlide() {
       // Figure out what the next slide is
-	var nextSlideIndex;
-	// If we are at the last slide the next one is the first (zero based)
-	if (currentSlideIndex === (slideArray.length - 1) ) {
-		nextSlideIndex = 0;
-	} else {
-		// Otherwise the next slide is the current one plus 1
-		nextSlideIndex = currentSlideIndex + 1;
-	}
+      var nextSlideIndex;
+      // If we are at the last slide the next one is the first (zero based)
+      if (currentSlideIndex === (slideArray.length - 1)) {
+        nextSlideIndex = 0;
+      } else {
+        // Otherwise the next slide is the current one plus 1
+        nextSlideIndex = currentSlideIndex + 1;
+      }
 
-	// Setup the next slide and current slide for animations
-	document.getElementById("slide" + nextSlideIndex).style.left = "100%";
-	document.getElementById("slide" + currentSlideIndex).style.left = 0;
+      // Setup the next slide and current slide for animations
+      document.getElementById("slide" + nextSlideIndex).style.left = "100%";
+      document.getElementById("slide" + currentSlideIndex).style.left = 0;
 
-	// Add the appropriate animation class to the slide
-	document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInRight");
-	document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutLeft");
-  dots[current].className = dots[current].className.replace(" active", "");
-	if(current==8){
-    current=0;
-  }
-	else{
-    current++
-  }
-  dots[current].className += " active";
-	// Set current slide to the new current slide
-	currentSlideIndex = nextSlideIndex;
+      // Add the appropriate animation class to the slide
+      document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInRight");
+      document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutLeft");
+      dots[current].className = dots[current].className.replace(" active", "");
+      if (current == 8) {
+        current = 0;
+      } else {
+        current++
+      }
+      dots[current].className += " active";
+      // Set current slide to the new current slide
+      currentSlideIndex = nextSlideIndex;
+      clearTimeout(timer);
+      timer = setTimeout(autoPlay, 3000);
     }
-    for(i=0;i<9;i++){
-      dots[i].className = dots[i].className.replace(" active", "");
+
+
+    function autoPlay() {
+      // Figure out what the next slide is
+      var nextSlideIndex;
+      // If we are at the last slide the next one is the first (zero based)
+      if (currentSlideIndex === (slideArray.length - 1)) {
+        nextSlideIndex = 0;
+      } else {
+        // Otherwise the next slide is the current one plus 1
+        nextSlideIndex = currentSlideIndex + 1;
+      }
+
+      // Setup the next slide and current slide for animations
+      document.getElementById("slide" + nextSlideIndex).style.left = "100%";
+      document.getElementById("slide" + currentSlideIndex).style.left = 0;
+
+      // Add the appropriate animation class to the slide
+      document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInRight");
+      document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutLeft");
+      dots[current].className = dots[current].className.replace(" active", "");
+      if (current == 8) {
+        current = 0;
+      } else {
+        current++
+      }
+      dots[current].className += " active";
+      // Set current slide to the new current slide
+      currentSlideIndex = nextSlideIndex;
+      timer = setTimeout(autoPlay, 3000)
+
     }
-    dots[n].className += " active";
-  }
-  if(n<current){
-    for(i=0; i < diff;i++){
-	var nextSlideIndex;
-	// If we are at zero go to the last slide in the list
+
+    function clickDot(n) {
+      var dots = document.getElementsByClassName("dot");
+      var diff = Math.abs(n - current);
+      //document.getElementsByClassName("slideInRight")[0].style.animation="slideIn 100s forwards;"
+      if (n > current) {
+        for (i = 0; i < diff; i++) {
+          // Figure out what the next slide is
+          var nextSlideIndex;
+          // If we are at the last slide the next one is the first (zero based)
+          if (currentSlideIndex === (slideArray.length - 1)) {
+            nextSlideIndex = 0;
+          } else {
+            // Otherwise the next slide is the current one plus 1
+            nextSlideIndex = currentSlideIndex + 1;
+          }
+
+          // Setup the next slide and current slide for animations
+          document.getElementById("slide" + nextSlideIndex).style.left = "100%";
+          document.getElementById("slide" + currentSlideIndex).style.left = 0;
+
+          // Add the appropriate animation class to the slide
+          document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInRight");
+          document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutLeft");
+          dots[current].className = dots[current].className.replace(" active", "");
+          if (current == 8) {
+            current = 0;
+          } else {
+            current++
+          }
+          dots[current].className += " active";
+          // Set current slide to the new current slide
+          currentSlideIndex = nextSlideIndex;
+        }
+        for (i = 0; i < 9; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        dots[n].className += " active";
+      }
+      if (n < current) {
+        for (i = 0; i < diff; i++) {
+          var nextSlideIndex;
+          // If we are at zero go to the last slide in the list
 
 
-	if (currentSlideIndex === 0 ) {
-		nextSlideIndex = slideArray.length - 1;
-	} else {
-		// Otherwise the next one is this slide minus 1
-		nextSlideIndex = currentSlideIndex - 1;
-	}
+          if (currentSlideIndex === 0) {
+            nextSlideIndex = slideArray.length - 1;
+          } else {
+            // Otherwise the next one is this slide minus 1
+            nextSlideIndex = currentSlideIndex - 1;
+          }
 
-	// Setup the next slide and current slide for animations
-	document.getElementById("slide" + nextSlideIndex).style.left = "-100%";
-	document.getElementById("slide" + currentSlideIndex).style.left = 0;
+          // Setup the next slide and current slide for animations
+          document.getElementById("slide" + nextSlideIndex).style.left = "-100%";
+          document.getElementById("slide" + currentSlideIndex).style.left = 0;
 
-	// Add the appropriate animation class to the slide
-	document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInLeft");
-	document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutRight");
-	// Set current slide to the new current slide
-  dots[current].className = dots[current].className.replace(" active", "");
-  if(current==0){
-    current=8;
-  }
-	else{
-    current--
-  }
-  dots[current].className += " active";
-	currentSlideIndex = nextSlideIndex;
+          // Add the appropriate animation class to the slide
+          document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInLeft");
+          document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutRight");
+          // Set current slide to the new current slide
+          dots[current].className = dots[current].className.replace(" active", "");
+          if (current == 0) {
+            current = 8;
+          } else {
+            current--
+          }
+          dots[current].className += " active";
+          currentSlideIndex = nextSlideIndex;
+        }
+      }
+      clearTimeout(timer);
+      timer = setTimeout(autoPlay, 3000);
+      current = n
     }
-  }
-  clearTimeout(timer);
-  timer = setTimeout(autoPlay, 3000);
-  current=n
-}
 
-autoPlay()
-
-
-      </script>
+    autoPlay()
+  </script>
 </body>
 
 </html>
