@@ -20,12 +20,12 @@ a {
   clear: both;
 }
 
-#homepage_background {
-  background-image: url("../Images/background.jpg");
+#homepage_cover {
   background-size: cover;
   height: 100vh;
   width: 100%;
-  z-index: 50;
+  background-color: rgb(38, 38, 43);
+  padding-top: 20vh;
 }
 
 .nav {
@@ -121,149 +121,11 @@ a {
 }
 
 
-
-
-
-
-
-/* Navigation bar start */
-/* #navbar {
-  background-color: rgba(255, 255, 255, 0.913);
-  height: 40px;
-  
-  position: aboslute;
-  padding: 10px 0;
-  line-height: 40px;
-}
-
-
-
-#mobile_navbar {
-  text-align: right;
-  line-height: 40px;
-}
-
-#mobile_navbar label {
-  margin: 0 20px 0 0;
-  font-size: 20px;
-}
-
-#mobile_navbar * {
-  display: none;
-}
-
-@media only screen and (max-width:500px) {
-  #mobile_navbar label {
-    display: block;
-    cursor: pointer;
-    width: 26px;
-    float: right;
-
-  }
-
-  #menu {
-    text-align: center;
-    width: 100%;
-
-  }
-
-  #menu a {
-    clear: right;
-    padding-top: 0px;
-    height: 100%;
-    display: block;
-    margin: 0;
-    border-bottom: 1px solid black;
-
-
-  }
-
-  #toggle:checked+#menu {
-    display: block;
-  }
-}
-
-#navbar_logo_button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
-#navbar_logo {
-  height: 40px;
-  margin-top: 0 px;
-  margin-left: 50px;
-}
-
-
-
-
-#navbar_text {
-  height: 40px;
-  margin-top: 0px;
-  margin-left: 0px;
-}
-
-#navbar div {
-  margin: 0 0;
-  height: 100%;
-  list-style: none;
-  float: right;
-  display: flex;
-  margin-right: 90px;
-}
-
-#navbar div li {
-  margin-left: 70px;
-  display: table;
-
-
-
-
-
-}
-
-#navbar div li a {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  padding: 10px 10px;
-
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: inline-block;
-
-}
-
-#navbar div li a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: rgb(8, 170, 206);
-  transition: width .35s;
-}
-
-#navbar div li a:hover::after {
+#homepage_event_overview {
+  background-color: rgb(38, 38, 43);
+  height: 100vh;
   width: 100%;
-  transition: width .35s;
 }
-
-#navbar div li a:hover {
-  color: rgba(0, 0, 0, 0.448);
-} */
-
-/* Navigation bar end */
-
-
-
-
-
-
-
-
 
 /* events overview section start */
 
@@ -273,7 +135,7 @@ a {
 
 
   text-align: left;
-  color: black;
+  color: white;
 
   font-size: 60px;
 
@@ -283,7 +145,6 @@ a {
 .timeline {
   white-space: nowrap;
   overflow-x: hidden;
-  background-color: rgb(255, 255, 255);
 }
 
 .timeline ol {
@@ -398,91 +259,49 @@ a {
 
 /* events overview section end */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* sdsad */
-
+#logo-title {
+  display: flex;
+  width: 60%;
+  padding-left: 20%;
+  padding-right: 20%;
+  height: 300px;
+}
 
 #homepage_title {
   float: left;
-  margin: 27.5vh 0px 0px 0px;
   padding: 0;
-  width: 100%;
-
 }
 
 #homepage_title_text {
   color: white;
-  font-size: 64px;
+  font-size: 3em;
   font-weight: bold;
   margin: 0px;
   padding: 0;
-  text-align: center;
+  /* position: relative;
+  top: 48%; */
+  margin-top: 126px;
 }
 
-#homepage_subtitle {
-  float: left;
-  margin: 25px 0px 0px 0px;
-  padding: 0;
-  width: 100%;
-}
-
-#homepage_subtitle_text {
-  color: #DAA520;
-  font-size: 42px;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-#homepage_button {
-  float: left;
-  margin: 100px 0px 0px 0px;
-  width: 100%;
-}
-
-#homepage_button_widget {
-  background-color: transparent;
-  border: 4px solid white;
-  border-radius: 50px;
+#homepage_title_subtext {
   color: white;
-  font-size: 24px;
-  margin: 0px 0px 0px calc((100% - 230px) / 2);
-  padding: 15px 40px 15px 40px;
-  transition: 0.3s;
-  width: 230px;
-}
-
-#homepage_button_widget:hover {
-  background-color: white;
-  color: #26dcd0;
-  cursor: pointer;
+  font-size: 1.1em;
+  /* position: absolute;
+  top: 55%; */
+  margin-left: 20%;
+  /* margin-right: 22%; */
 }
 
 #homepage_icons {
-  margin: 40px 0px 0px calc((100% - 210px) / 2);
-  width: 210px;
+  position: absolute;
+  bottom: 3%;
+  left: 48%;
+  width: 100%;
 }
 
-#homepage_icon_project_widget {
-  background-image: url("../Images/project.png");
-  background-size: cover;
-}
-
-#homepage_icon_calendar_widget {
-  background-image: url("../Images/calendar.png");
+#homepage_down_arrow_widget {
+  background-image: url("../Images/down-arrow.png");
   background-size: cover;
 }
 
@@ -497,7 +316,7 @@ a {
 }
 
 .homepage_icon_widget {
-  background-color: white;
+  background-color: transparent;
   border-radius: 50%;
   float: left;
   margin: 0px 10px 0px 10px;
@@ -509,161 +328,6 @@ a {
   cursor: pointer;
   transform: scale(1.1);
 }
-
-#homepage_projects {
-  background-color: #e9ebee;
-  height: 100vh;
-  width: 100%;
-}
-
-#homepage_projects_box {
-  height: 52vh;
-  margin: 30px 0px 0px calc((100% - 1100px) / 2);
-  max-width: 1100px;
-}
-
-.homepage_projects_card {
-  background-color: white;
-  border: 2px solid #26dcd0;
-  border-radius: 5px;
-  float: left;
-  height: 400px;
-  margin: 0px calc((100% - 896px) / 8) 0px calc((100% - 896px) / 8);
-  width: 220px;
-}
-
-.homepage_projects_card_top_border {
-  background-color: #26dcd0;
-  height: 60px;
-  position: relative;
-  width: 100%;
-  z-index: 2;
-}
-
-.homepage_projects_card_join_button {
-  background-color: transparent;
-  border: 3px solid white;
-  border-radius: 25px;
-  color: white;
-  float: left;
-  font-size: 16px;
-  height: 34px;
-  margin: 12px 0px 0px 12px;
-  padding: 5px 25px 5px 25px;
-  transition: 0.5s;
-  width: calc(100% - 70px);
-}
-
-.homepage_projects_card_join_button:hover {
-  background-color: white;
-  color: #26dcd0;
-  cursor: pointer;
-}
-
-.homepage_projects_card_icon {
-  background-color: white;
-  border-radius: 50%;
-  float: right;
-  margin: 12px 12px 0px 0px;
-  padding: 7px;
-  transition: 0.5s;
-}
-
-.homepage_projects_card_icon:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.homepage_projects_github {
-  background-image: url("../Images/github.png");
-  background-size: cover;
-  height: 20px;
-  width: 20px;
-}
-
-.homepage_projects_background_image {
-  border-radius: 0px 0px 5px 5px;
-  height: 340px;
-  position: relative;
-  width: 100%;
-  z-index: 1;
-}
-
-#homepage_projects_computer_1 {
-  background-image: url("../Images/computer_1.jpg");
-  background-size: cover;
-  height: 340px;
-  position: relative;
-  width: 220px;
-}
-
-#homepage_projects_computer_1:before {
-  color: white;
-  content: "Web Application \A\A Looking for: \A Software Engineers \A (2 - 3 years) \A\A Experienced with: \A Express, \A MongoDB, \A React \A\A Time: 5 - 10 hrs/wk ";
-  font-size: 18px;
-  text-align: center;
-  padding-top: 30px;
-  white-space: pre-wrap;
-}
-
-#homepage_projects_computer_2 {
-  background-image: url("../Images/computer_2.jpg");
-  background-size: cover;
-  height: 360px;
-  margin: -20px 0px 0px 0px;
-  position: relative;
-  width: 220px;
-}
-
-#homepage_projects_computer_2:before {
-  color: white;
-  content: "Recommendation System \A\A Looking for: \A Software Engineers \A Project Managers \A Data Scientists \A (2 - 3 years) \A\A Experienced with: \A Python, \A Data Science, \A Machine Learning \A\A Time: 5 - 10 hrs/wk ";
-  font-size: 18px;
-  text-align: center;
-  top: 20px;
-  padding-top: 30px;
-  white-space: pre-wrap;
-}
-
-#homepage_projects_computer_3 {
-  background-image: url("../Images/computer_3.jpg");
-  background-size: cover;
-  height: 380px;
-  margin: -40px 0px 0px 0px;
-  position: relative;
-  width: 220px;
-}
-
-#homepage_projects_computer_3:before {
-  color: white;
-  content: "Android Application \A\A Looking for: \A Software Engineers \A Project Manager \A UI/UX Designers \A (0 - 4 years) \A\A Experienced with: \A Java \A\A Time: 5 - 10 hrs/wk ";
-  font-size: 18px;
-  text-align: center;
-  top: 40px;
-  padding-top: 30px;
-  white-space: pre-wrap;
-}
-
-
-#homepage_projects_computer_4 {
-  background-image: url("../Images/computer_4.jpg");
-  background-size: cover;
-  height: 385px;
-  margin: -45px 0px 0px 0px;
-  position: relative;
-  width: 220px;
-}
-
-#homepage_projects_computer_4:before {
-  color: white;
-  content: "Website \A\A Looking for: \A Software Engineers \A Cogs Sci Designer \A Project Manager \A (0 - 3 years) \A\A Experienced with: \A HTML5, \A CSS, \A React \A\A Time: 5 - 10 hrs/wk ";
-  font-size: 18px;
-  text-align: center;
-  top: 45px;
-  padding-top: 30px;
-  white-space: pre-wrap;
-}
-
 
 #homepage_sub_title {
   float: left;
@@ -679,63 +343,6 @@ a {
   margin: 0px 0px 0px calc((100% - 1100px)/2 + 25.5px);
 }
 
-#homepage_projects_tools_box {
-  float: right;
-  height: 70px;
-  margin: 20px calc((100% - 1100px)/2 + 25.5px) 0px 0px;
-  width: 500px;
-}
-
-.homepage_projects_tools_icons {
-  background-color: #37adad;
-  border-radius: 50%;
-  float: right;
-  margin: 0px 15px 0px 0px;
-  padding: 15px;
-  transition: 0.5s;
-}
-
-.homepage_projects_tools_icons:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.homepage_projectS_tools_widgets {
-  height: 40px;
-  width: 40px;
-}
-
-#homepage_projects_tools_icon_html {
-  background-image: url("../Images/HTML.png");
-  background-size: cover;
-}
-
-#homepage_projects_tools_icon_css {
-  background-image: url("../Images/CSS.png");
-  background-size: cover;
-}
-
-#homepage_projects_tools_icon_python {
-  background-image: url("../Images/python.png");
-  background-size: cover;
-}
-
-#homepage_projects_tools_icon_swift {
-  background-image: url("../Images/swift.png");
-  background-size: cover;
-}
-
-#homepage_projects_tools_icon_react {
-  background-image: url("../Images/react.png");
-  background-size: cover;
-}
-
-.homepage_projects_name {
-  color: #26dcd0;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px 0px 0px 0px;
-}
 
 .homepage_sub_teal_title_bar {
   background-color: #26dcd0;
@@ -758,141 +365,8 @@ a {
   width: 50px;
 }
 
-#homepage_calendar {
-  background-color: #26dcd0;
-  height: 100vh;
-  width: 100%;
-}
-
-#homepage_google_calendar {
-  border: 10px solid white;
-  border-radius: 10px;
-  margin: 30px 0px 0px calc((100% - 1080px) / 2);
-  height: 60vh;
-  width: 1080px;
-}
-
-#homepage_board {
-  background-color: #e9ebee;
-  height: 100vh;
-  width: 100%;
-}
-
-#homepage_board_box {
-  height: 55vh;
-  margin: 30px 0px 0px calc((100% - 1150px) / 2);
-}
-
-.board_widget {
-  border: 5px solid white;
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-}
-
-.board_widget_box {
-  background-color: #26dcd0;
-  border-radius: 100px 100px 2px 2px;
-  float: left;
-  height: 400px;
-  margin: 0px 25px 0px 25px;
-  padding: 10px;
-  position: relative;
-  width: 160px;
-}
-
-.board_widget_text_title {
-  color: white;
-  font-size: 24px;
-  text-align: center;
-}
-
-.board_widget_text {
-  color: white;
-  font-size: 18px;
-  text-align: center;
-}
-
-.board_widget_icon {
-  background-color: white;
-  border-radius: 50%;
-  bottom: 0;
-  cursor: pointer;
-  float: left;
-  margin: 0px 0px 0px calc((100% - 120px) / 2);
-  padding: 10px;
-  transition: 0.3s;
-}
-
-.board_widget_icon:hover {
-  transform: scale(1.1);
-}
-
-.email {
-  background-image: url("../Images/email.png");
-  background-size: cover;
-  height: 30px;
-  width: 30px;
-}
-
-.linkedin {
-  background-image: url("../Images/linkedin.png");
-  background-size: cover;
-  height: 30px;
-  width: 30px;
-}
-
-#president_widget {
-  background-image: url("../Images/Team/President.png");
-  background-size: cover;
-}
-
-#vice_president_widget {
-  background-image: url("../Images/Team/VicePresident.png");
-  background-size: cover;
-}
-
-#strategy_officer_widget {
-  background-image: url("../Images/Team/StrategyOfficer.png");
-  background-size: cover;
-}
-
-#human_resource_widget {
-  background-image: url("../Images/Team/HumanResource.png");
-  background-size: cover;
-}
-
-#technical_chair_widget {
-  background-image: url("../Images/Team/TechnicalChair.png");
-  background-size: cover;
-}
-
-#homepage_board_button {
-  float: left;
-  margin: 30px 0px 0px 0px;
-  width: 100%;
-}
-
-#homepage_board_button_widget {
-  background: transparent;
-  border: 3px solid #26dcd0;
-  border-radius: 50px;
-  color: #26dcd0;
-  font-size: 20px;
-  margin: 0px 0px 0px calc((100% - 270px) / 2);
-  padding: 15px 30px 15px 30px;
-  transition: 0.3s;
-  width: 270px;
-}
-
-#homepage_board_button_widget:hover {
-  background-color: #26dcd0;
-  color: white;
-  cursor: pointer;
-}
-
 #homepage_photos {
-  background-color: #26dcd0;
+  background-color: rgb(38, 38, 43);
   height: 100vh;
   width: 100%;
 }
@@ -922,17 +396,17 @@ a {
 
 	.singleSlide {
 
-		
+
 		height: 584px;
 		position: absolute;
 		left: 100%;
 		width: 100%;
 		top: 0px;
 	}
-	
-	
-	
-	
+
+
+
+
 
 #sliderNav {
 	position: relative;
@@ -941,7 +415,7 @@ a {
 
 	#sliderNav:hover { cursor: pointer; 	}
 
-  
+
   #sliderPrev, #sliderNext {
     cursor: pointer;
     position: absolute;
@@ -964,24 +438,24 @@ a {
     margin-right: 80px;
     border-radius: 5px;
   }
-  
+
   /* Position the "next button" to the right */
   #sliderNext {
     right: 20%;
     margin-right: 80px;
     border-radius: 5px;
   }
-  
+
   /* On hover, add a black background color with a little bit see-through */
   #sliderPrev:hover, #sliderNext:hover {
     background-color: rgba(0,0,0,0.8);
     opacity: 1;
   }
-  
-  
 
 
-	
+
+
+
 @-webkit-keyframes slideIn {
     100% { left: 0; }
 }
@@ -1046,7 +520,7 @@ a {
   left:30%;
   font-size: 30px;
 
- 
+
 }
 
 .title_bg{
@@ -1278,4 +752,73 @@ margin-top:290px
   font-family: "Sansation";
   src: url('../fonts/sansation_light-webfont.woff') format('woff'), url('../fonts/sansation_light-webfont.ttf') format('truetype');
   font-weight: light;
+}
+
+#logo-animation {
+  display: inline-block;
+  float: left;
+}
+/* logo animation  */
+#logo-animation svg{
+  display:block;
+}
+
+#logo-animation svg path,
+#logo-animation svg g{
+	transform-box: fill-box;
+}
+
+#inner,#outer,#middle{
+	animation-timing-function: cubic-bezier(.73,1.46,.95,.85);
+}
+#inner{
+	transform-origin:50% 50%;
+	-moz-transform-origin:50% 50%;
+	animation: flip_in 9s infinite forwards;
+}
+#middle{
+	transform-origin:43% 50%;
+	-moz-transform-origin:43% 50%;
+	animation: flip_mid 9s infinite forwards;
+	animation-delay: 1s;
+}
+
+#outer{
+	transform-origin:43% 50%;
+	-moz-transform-origin:43% 50%;
+	animation: flip_out 9s infinite forwards;
+	animation-delay: 2s;
+}
+
+
+@keyframes flip_in {
+    0% {transform: rotateY(90deg)}
+    25% {transform:rotateY(-45deg) }
+    50% {transform:rotateY(30deg)}
+    75% {transform: rotateY(-35deg)}
+    100% {transform: rotateY(0deg)}
+  }
+
+@keyframes flip_mid {
+  0% {transform: rotateY(90deg) skewY(-3.5deg)}
+  25% {transform:rotateY(-45deg) skewY(-1deg)}
+  50% {transform:rotateY(30deg) skewY(1deg)}
+  75% {transform:rotateY(-35deg) skewY(-1deg)}
+  100% {transform:rotateY(0deg)}
+}
+
+@keyframes flip_out {
+    0% {transform: rotateY(90deg)}
+    25% {transform:rotateY(-35deg) }
+    50% {transform:rotateY(30deg)}
+    75% {transform: rotateY(-35deg)}
+    100% {transform: rotateY(0deg)}
+}
+
+@media screen and (max-width: 1169px) {
+  #logo-title {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
