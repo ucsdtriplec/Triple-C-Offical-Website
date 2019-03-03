@@ -17,7 +17,7 @@ body {
 
 #input-container{
     width : 50%;
-    height : 350px;
+    height : 20%;
     background-color:white;
     margin-left:auto;
     margin-right:auto;
@@ -49,14 +49,14 @@ body {
     float:left;
     position:relative;
     top:13px;
-    left:230px;
+    left:27%;
 }
 
 .form-content{
     
     border:none;
     border-bottom: 2px solid #AAA;
-    width: 200px;
+    width:25%;
     height: 30px;
     margin-top: 30px;
     font-size: 17px;
@@ -66,12 +66,12 @@ body {
 
 #name{
     position: relative;
-    left:150px;
+    left:15%;
 }
 
 #E-mail{
     position: relative;
-    right:-280px;
+    right:-35%;
 }
 
 
@@ -93,11 +93,11 @@ transition: 0.3s ease;
 
 #register-title{
     font-size: 30px;
-    margin-left:300px;
+    margin-left:35%;
 }
 
 input[type="submit"] {
-    margin-top: 60px;
+    margin-top: 10%;
     width: 150px;
     height: 40px;
     background: #16a085;
@@ -109,7 +109,7 @@ input[type="submit"] {
     text-transform: uppercase;
     transition: 0.1s ease;
     cursor: pointer;
-    margin-left: 340px;
+    margin-left: 40%;
     position:relative;
     z-index: 1;
   }
@@ -293,17 +293,17 @@ input[type="submit"] {
 
   #name-tooltip{
       float:left;
-      position: relative;
-      left:150px;
-      top:20px;
+      position: absolute;
+      left:32%;
+      top:30%;
       visibility: hidden;
   }
 
   #email-tooltip{
       float:left;
-      position: relative;
-      margin-left:280px;
-      top:20px;
+      position: absolute;
+      left:55%;
+      top:30%;
       visibility: hidden;
   }
 
@@ -325,7 +325,7 @@ input[type="submit"] {
     text-transform: uppercase;
     transition: 0.1s ease;
     cursor: pointer;
-    margin-left: 100px;
+    margin-left: 10%;
     position:relative;
     z-index: 1;
     padding: 13px;
