@@ -44,9 +44,14 @@ a {
   src: url('fonts/sansation_regular-webfont.woff') format('woff'), url('fonts/sansation_regular-webfont.ttf') format('truetype');
 }
 
-#nav_bar_menu a {
+/* #nav_bar_menu a {
   text-decoration: none;
   color: #232323;
+  transition: color 0.3s ease;
+} */
+#menuToggle a {
+  text-decoration: none;
+  color: rgb(201, 201, 201);
   transition: color 0.3s ease;
 }
 
@@ -560,7 +565,7 @@ a {
   position: absolute;
   bottom: 3%;
   left: 48%;
-  width: 100%;
+  width: 5%;
 }
 
 #homepage_down_arrow_widget {
