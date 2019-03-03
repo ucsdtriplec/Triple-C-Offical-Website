@@ -109,7 +109,7 @@ input[type="submit"] {
     text-transform: uppercase;
     transition: 0.1s ease;
     cursor: pointer;
-    margin-left: 140px;
+    margin-left: 340px;
     position:relative;
     z-index: 1;
   }
