@@ -1,5 +1,5 @@
 * {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Sansation";
 }
 
 *:focus {
@@ -60,7 +60,6 @@ a {
   color: black;
   margin: 0 10px;
   line-height: 70px;
-  font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   font-weight: 90;
   font-size: 15px;
@@ -133,7 +132,6 @@ a {
 .event_overview_header p {
 
   letter-spacing: 6px;
-  font-family: "Roboto", sans-serif;
 
 
   text-align: left;
@@ -214,7 +212,6 @@ a {
   white-space: normal;
   color: black;
   background: white;
-  font-family: "Roboto", sans-serif;
   letter-spacing: 1.5px;
 }
 
@@ -237,7 +234,6 @@ a {
 
 .timeline ol li div h3 {
   margin: 5px 5px;
-  font-family: "Roboto", sans-serif;
   letter-spacing: 3px;
   color: rgb(57, 153, 160);
 
@@ -251,7 +247,6 @@ a {
   border-radius: 6px;
   background: none;
   border: 2px solid rgba(29, 85, 89, 0.767);
-  font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   font-weight: 40;
 
@@ -376,73 +371,175 @@ a {
   width: 100%;
 }
 
-.mySlides{
-  display: none;
-  height: 500px;
-  width: 1200px;
-  margin:auto}
 
-img {vertical-align: middle;}
 
-/* Slideshow container */
-.slideshow-container {
-  width: 80%;
-  height: 500px;
-  padding-top: 100px;
-  position: relative;
-  clear:both;
-  margin-left: auto;
-  margin-right: auto;
-}
+.singleSlide {
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
+  background-size: cover;
+  height: 300px;
   position: absolute;
-  width: auto;
-  padding: 30px;
-  margin-top: -300px;
-  margin-left: 80px;
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  opacity: 0.3;
+  left: 100%;
+  width: 100%;
+  top: 0px;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  margin-right: 80px;
-  border-radius: 3px 0 0 3px;
+#mySlider {
+	overflow: hidden;
+    position: relative;
+    height: 60%;
+    width: 60%;
+    top:5%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+    border-radius:10px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  opacity: 1;
+	.singleSlide {
+
+
+		height: 584px;
+		position: absolute;
+		left: 100%;
+		width: 100%;
+		top: 0px;
+	}
+
+
+
+
+
+#sliderNav {
+	position: relative;
+    top: -175px;
+}
+
+	#sliderNav:hover { cursor: pointer; 	}
+
+
+  #sliderPrev, #sliderNext {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 30px;
+    margin-top: -150px;
+    margin-left: 80px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    opacity: 0.3;
+    border-radius: 5px;
+  }
+
+  #sliderPrev {
+    left: 20%;
+    margin-right: 80px;
+    border-radius: 5px;
+  }
+
+  /* Position the "next button" to the right */
+  #sliderNext {
+    right: 20%;
+    margin-right: 80px;
+    border-radius: 5px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  #sliderPrev:hover, #sliderNext:hover {
+    background-color: rgba(0,0,0,0.8);
+    opacity: 1;
+  }
+
+
+
+
+
+@-webkit-keyframes slideIn {
+    100% { left: 0; }
+}
+
+@keyframes slideIn {
+    100% { left: 0; }
+}
+
+.slideInRight {
+	left: -100%;
+	-webkit-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+}
+
+.slideInLeft {
+	left: 100%;
+	-webkit-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+}
+
+@-webkit-keyframes slideOutLeft {
+    100% { left: -100%; }
+}
+
+@keyframes slideOutLeft {
+    100% { left: -100%; }
+}
+
+.slideOutLeft {
+	-webkit-animation: slideOutLeft 1s forwards;
+    animation: slideOutLeft 1s forwards;
+}
+
+@-webkit-keyframes slideOutRight {
+    100% { left: 100%; }
+}
+
+@keyframes slideOutRight {
+    100% { left: 100%; }
+}
+
+.slideOutRight {
+	-webkit-animation: slideOutRight 1s forwards;
+    animation: slideOutRight 1s forwards;
+}
+
+.titles{
+  color:white;
+  margin-left:100px;
+  position:relative;
+  left:0%;
+  font-size: 40px;
+  top:-200px;
+  float:left;
 }
 
 
+.subtitles{
+  color:white;
+  margin-left:100px;
+  position:relative;
+  left:30%;
+  font-size: 30px;
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 20px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 50;
+
 }
 
-/* The dots/bullets/indicators */
+.title_bg{
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 300px 0 0 1000px;
+border-color: transparent transparent transparent black;
+opacity: 0.5;
+margin-top:290px
+}
+
+
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
   position:relative;
-  top: 20px;
+  top: 180px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -455,34 +552,17 @@ img {vertical-align: middle;}
 }
 
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .2}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .2}
-  to {opacity: 1}
-}
 
 
 #homepage_footer_container {
   display: flex;
   justify-content: center;
-  background-color: #e9ebee;
+  background-color: #26262b;
   height: 270px;
   width: 100%;
 }
 
-#homepage_footer_left_box {
-  margin-left: -500px;
+#homepage_footer_main_box {
   height: 300px;
   width: 800px;
 }
@@ -556,19 +636,20 @@ img {vertical-align: middle;}
 #wechat{
   width:500px;
   height: 500px;
-  position: relative;
-  top: -350px;
-  left: 200px;
+  position: absolute;
+  top: -500px;
+  left: -200px;
   opacity: 0;
   transition: 0.5s;
-
+  z-index: -1;
 }
 
 #copyright{
   text-align: center;
-  background-color: #e9ebee;
+  background-color: #26262b;
   padding-top: 30px;
   height:50px;
+  color:white;
 }
 
 
@@ -661,6 +742,16 @@ img {vertical-align: middle;}
 .hvr-sweep-to-bottom:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url('../fonts/sansation_regular-webfont.woff') format('woff'), url('../fonts/sansation_regular-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Sansation";
+  src: url('../fonts/sansation_light-webfont.woff') format('woff'), url('../fonts/sansation_light-webfont.ttf') format('truetype');
+  font-weight: light;
 }
 
 #logo-animation {
