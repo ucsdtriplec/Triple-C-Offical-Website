@@ -47,7 +47,7 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
-  <link href="dist/hamburgers.css" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" href="/css/imagehover.min.css">
@@ -56,42 +56,89 @@
 </head>
 
 <body>
-  <!-- navbar start -->
-  <div class="nav">
-    <a href=""><img id="navbar_logo" src="./Images/logo.png" alt="">
-      <img id="navbar_logo_name" src="./Images/temp_name.png" alt=""></a>
-
-    <label for="toggle">&#9776;</label>
-    <input type="checkbox" id="toggle" />
-    <div class="menu">
-
-      <a class="nav_links" href="">About</a>
-      <a class="nav_links" href="#homepage_projects">Projects</a>
-      <a class="nav_links" href="#homepage_calendar">Calendar</a>
-      <a class="nav_links" href="#homepage_board">Photos</a>
-    </div>
-  </div>
-
-  <!-- navbar end -->
-
-
-
-
-
-
 
 
   <div id="homepage_background">
+    <div class="navbar_line">
+      <nav class="navbar">
+        <div>
+          <div class="navbar_title">
+            TRIPLE C
+          </div>
+        </div>
+        <div></div>
+        <div></div>
 
+        <ul class="menu_list">
+          <li>
+            <a href="">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <button>
+                Contact Us
+              </button>
+            </a>
+          </li>
+        </ul>
 
+      </nav>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="nav_bar_menu">
+          <a href="#">
+            <li>
+              <i class="fas fa-home"></i>
+              Home</li>
+          </a>
+          <a href="#event_overview_section">
+            <li>
+              <i class="far fa-calendar-alt"></i>
+              Event Timeline</li>
+          </a>
+          <a href="#homepage_photos">
+            <li>
+              <i class="far fa-images"></i>
+              Photo Gallery</li>
+          </a>
+          <a href="">
+            <li class="projects_list">
+              <i class="fas fa-briefcase"></i>
+              Projects
+              <i class="fas fa-angle-down"></i>
+              <ul>
+                <li>Flyer Fighters</li>
+                <li>Official Web</li>
+                <li>Android App</li>
+                <li>Data Sceince</li>
+              </ul>
+            </li>
 
-
-
-
-
-
-
-
+          </a>
+          <a href="">
+            <li>
+              <i class="fas fa-users"></i>
+              Team Members
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
 
 
 
@@ -114,7 +161,6 @@
     </div>
     <div class="clearfix">
     </div>
-
     <div id="homepage_icons">
       <a href="#homepage_projects" class="homepage_icon_widget">
         <div id="homepage_icon_project_widget" class="homepage_icon_widget_inner">
@@ -136,115 +182,83 @@
 
 
   <section class="event_overview_section">
-    <h1>Event Timeline</h1>
-
-
     <div class="flex_container">
-      <div class="Timeline">
-
+      <div class="timeline">
+        <h1 class="event_timeline_tittle">
+          Event Timeline
+        </h1>
         <svg height="20" width="0">
           <line x1="1" y1=" 0" x2="1" y2="20" style="stroke:#e89096;stroke-width:2" />
         </svg>
         <svg height="5" width="150">
           <line x1="75" y1="0" x2="150" y2="0" style="stroke:#628ece;stroke-width:20" />
-          Sorry, your browser does not support inline SVG.
         </svg>
-
-        <div class="event1">
-
-
-          <div id="event_button_1" class="event1Bubble">
-
-
+        <div class="event_1">
+          <div id="event_button_1" class="event_1_div">
             <button class="event_button" onclick="event1Funct() ">
               <i class="far fa-handshake"></i>
             </button>
           </div>
-
           <svg height="20" width="20">
             <circle cx="10" cy="11" r="5" fill="#628ece" />
           </svg>
-          <div class="time">Week 1</div>
-
+          <div class="event_time_1">WEEK 1</div>
         </div>
         <svg height="5" width="95">
           <line x1="0" y1="0" x2="95" y2="0" style="stroke:#d3ac58;stroke-width:20" />
-
         </svg>
-
-        <div class="event2">
-
-          <div id="event_button_2" class="event2Bubble">
+        <div class="event_2">
+          <div id="event_button_2" class="event_2_div">
             <button class="event_button" onclick="event2Funct() ">
               <i class="far fa-object-group"></i>
             </button>
           </div>
-
           <svg height="20" width="20">
             <circle cx="10" cy="11" r="5" fill="#d3ac58" />
           </svg>
-          <div class="time2">Week 3</div>
+          <div class="event_time_2">WEEK 3</div>
         </div>
-
         <svg height="5" width="95">
           <line x1="0" y1="0" x2="95" y2="0" style="stroke:#985b9a;stroke-width:20" />
-
         </svg>
-        <div class="event1">
-
-          <div id="event_button_3" class="event1Bubble">
-
+        <div class="event_1">
+          <div id="event_button_3" class="event_1_div">
             <button class="event_button" onclick="event3Funct() ">
               <i class="fas fa-users"></i>
             </button>
           </div>
-
           <svg height="20" width="20">
             <circle cx="10" cy="11" r="5" fill="#985b9a" />
           </svg>
-          <div class="time">Week 5</div>
-
+          <div class="event_time_1">WEEK 5</div>
         </div>
-
         <svg height="5" width="95">
           <line x1="0" y1="0" x2="95" y2="0" style="stroke: #7bccea;stroke-width:20" />
-
         </svg>
-        <div class="event2">
-
-          <div id="event_button_4" class="event2Bubble">
+        <div class="event_2">
+          <div id="event_button_4" class="event_2_div">
             <button class="event_button" onclick="event4Funct() ">
               <i class="far fa-calendar-alt"></i>
             </button>
           </div>
-
           <svg height="20" width="20">
             <circle cx="10" cy="11" r="5" fill="#7bccea" />
           </svg>
-          <div class="time2">Week 7</div>
+          <div class="event_time_2">WEEK 7</div>
         </div>
-
-
-
-
         <svg height="5" width="95">
           <line x1="0" y1="0" x2="95" y2="0" style="stroke: #85dc9d;stroke-width:20" />
-
         </svg>
-        <div class="event1">
-
-          <div id="event_button_5" class="event1Bubble">
-
+        <div class="event_1">
+          <div id="event_button_5" class="event_1_div">
             <button class="event_button" onclick="event5Funct() ">
               <i class="far fa-check-circle"></i>
             </button>
           </div>
-
           <svg height="20" width="20">
             <circle cx="10" cy="11" r="5" fill="#85dc9d" />
           </svg>
-          <div class="time">Week 9</div>
-
+          <div class="event_time_1">WEEK 9</div>
         </div>
         <svg height="5" width="50">
           <line x1="0" y1="0" x2="50" y2="0" style="stroke:#e89096;stroke-width:20" />
@@ -252,29 +266,16 @@
         <svg height="20" width="42">
           <line x1="1" y1="0" x2="1" y2="20" style="stroke:#e89096;stroke-width:2" />
         </svg>
-
-
       </div>
-      <!-- <div class="terminal_display">
-            <div>
-                <img src="./mac_display copy.png" alt="">
-            </div>
-        </div> -->
       <div class="terminal_display">
+
         <img src="/Images/macimage.png" alt="">
         <div id="mac_internal">
           Last login: Winter Quarter 2019 on ucsd<br>Chinese_Computer_Community:~TripleC$
-          ..Click Below
+          ..<font color="lightgreen">Click left buttons </font>
         </div>
       </div>
     </div>
-    <!-- <div class="mac_display">
-        <img src="./mac_display copy.png" alt="">
-    </div> -->
-
-
-
-
     <script>
       function event1Funct() {
         var x = document.getElementById("mac_internal");
