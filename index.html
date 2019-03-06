@@ -38,8 +38,7 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest" />
   <link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" />
@@ -50,8 +49,8 @@
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" />
   <link rel="stylesheet" href="css/imagehover.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css' />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css' /> -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   </link>
 </head>
@@ -68,6 +67,19 @@
       </div>
       <nav class="navbar">
         <ul class="navbar_ul_list" href="/">
+          <li style="height:50px;overflow:hidden;position:relative;">
+            <div id="hello_container">
+              <p id="hello_container_text">
+                Hello
+              </p>
+              <ul id="hello_container_list">
+                <li class="hello_container_list_item">World !</li>
+                <li class="hello_container_list_item">Triple C !</li>
+                <li class="hello_container_list_item">Developers !</li>
+                <li class="hello_container_list_item">Designers !</li>
+              </ul>
+            </div>
+          </li>
           <li class="navbar_desktop_li"><a href="">About</a></li>
           <li class="navbar_desktop_li"><a href="#announcement">Events</a></li>
           <li class="navbar_desktop_li"><a href="#homepage_photos">Photos</a></li>
@@ -183,7 +195,7 @@
       </div>
       <div id="homepage_title">
         <div id="homepage_title_text">
-          Innovation & Collaboration
+          <span style="border-bottom: 3px solid #CCA374;">Innovation & Collaboration</span>
         </div>
         <div id="homepage_title_subtext">
           Provide the Chinese Computer Science Community with opportunities in professional
@@ -193,8 +205,8 @@
     </div>
     <div class="clearfix">
     </div>
-    <div id="homepage_icons">
-      <a href="#announcement" class="homepage_icon_widget">
+    <div class="homepage_icons">
+      <a href="#homepage_aboutUs" class="homepage_icon_widget">
         <div id="homepage_down_arrow_widget" class="homepage_icon_widget_inner">
         </div>
       </a>
@@ -202,22 +214,50 @@
 
   </div>
 
+  <div id="homepage_aboutUs">
+    <div id="aboutus-title">About Us</div>
+    <div id="aboutus-content">
+      <p>We are Triple C (Chinese Computer Community), a Non-Profit Student Organization at UCSD, founded in September
+        2018.
+        We are a project-based, incubator community, contributing to Chinese speaking students who are interested in
+        the Internet
+        Industry and providing them the opportunities to learn more about Web development, UI/UX Design, Project
+        Management,
+        Data Science, and Artificial Intelligence project/research experience. At the same time, we help students reach
+        out to their future career network for a broader platform.
+      </p>
+      <p>
+        At Triple C, each project team is led by their own project manager. Members in Triple C could choose a
+        Project Team which either they are interested in or have experiences with that project basic qualifications,
+        and then collaborate with their team members. By here, we grant students with social practices of
+        innovations, collaborations, and leadership. We believe that technology produces value but it alone
+        is not enough. The core values of triple C is innovation and collaboration, implementing
+        innovative ideas through team collaboration.
+      </p>
+    </div>
+    <div id="aboutus-faculty">
+      <img id="faculty-avatar" src="/Images/Gao.jpeg" alt="Avatar">
+      <div id="faculty-name">Faculty Advisor</div>
+      <div id="faculty-description">
+        <p>Sicun Gao (Sean)</p>
+        <p>Assistant Professor, Computer Science and Engineering</p>
+      </div>
+    </div>
+    <div class="homepage_icons">
+      <a href="#announcement" class="homepage_icon_widget">
+        <div id="homepage_down_arrow_widget" class="homepage_icon_widget_inner">
+        </div>
+      </a>
+    </div>
+  </div>
 
 
 
   <section class="event_overview_section" id="announcement">
     <div class="flex_container">
-      <div class="event_timeline_title">
-        <h1>Event Timeline</h1>
-      </div>
+      <div class="event_timeline_title">Event Timeline</div>
 
       <div class="timeline">
-        <div class="event_timeline_title_default">
-          <h1>Event Timeline</h1>
-
-        </div>
-
-
         <svg height="20" width="0">
           <line x1="1" y1=" 0" x2="1" y2="20" style="stroke:#e89096;stroke-width:2" />
         </svg>
@@ -308,6 +348,12 @@
         </div>
       </div>
     </div>
+    <div class="homepage_icons">
+      <a href="#homepage_photos" class="homepage_icon_widget">
+        <div id="homepage_down_arrow_widget" class="homepage_icon_widget_inner">
+        </div>
+      </a>
+    </div>
     <script>
       function event1Funct() {
         var x = document.getElementById("mac_internal");
@@ -345,41 +391,11 @@
     </script>
   </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="clearfix">
-  </div>
-
   <div class="clearfix">
   </div>
 
   <div id="homepage_photos">
-    <div id="homepage_sub_title">
-      <p class="homepage_sub_white_title_text">
-        Photos
-      </p>
-      <div class="homepage_sub_white_title_bar">
-      </div>
-    </div>
+    <div id="homepage_photos_title">Photos</div>
 
     <div id="mySlider"></div>
     <div id="sliderNav">
