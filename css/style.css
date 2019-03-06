@@ -27,6 +27,55 @@ a {
   background-color: rgb(38, 38, 43);
 }
 
+#homepage_aboutUs {
+  height: 100vh;
+  width: 100%;
+  background-color: #343436;
+  position: relative;
+}
+
+#aboutus-content {
+  color:white;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  text-indent: 50px;
+}
+
+#aboutus-title {
+  color: rgb(245, 205, 70);
+  font-size: 40px;
+  padding-right: 100px;
+  padding-top: 30px;
+  text-align: right;
+}
+
+#aboutus-faculty {
+  margin: 0 25%;
+  margin-top: 40px;
+}
+
+#faculty-avatar {
+  width:200px;
+  border-radius:50%;
+  box-shadow: 0 0 5px 2px grey;
+  display: inline-block;
+  float: left;
+}
+
+#faculty-name {
+  color: rgb(245, 205, 70);
+  font-size: 30px;
+  margin-left: 300px;
+  padding-top: 30px;
+}
+
+#faculty-description {
+  margin-left: 300px;
+  color: white;
+}
 /* Navbar start */
 .navbar_title {
   color: white;
@@ -401,11 +450,11 @@ a {
   width: 100%;
 }
 
-.event_overview_section h1 {
+/* .event_overview_section h1 {
   font-family: "Roboto", sans-serif;
   letter-spacing: 5px;
   color: white;
-}
+} */
 
 .flex_container {
   display: flex;
@@ -434,9 +483,10 @@ a {
 
 .event_timeline_tittle {
   position: absolute;
-  top: 60px;
+  top: 50px;
   left: 65px;
-  font-size: 45px;
+  font-size: 40px;
+  color: rgb(245, 205, 70);
 }
 
 /* Event Button Start */
@@ -693,7 +743,7 @@ a {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   #logo-title {
     flex-wrap: wrap;
   }
@@ -712,10 +762,38 @@ a {
   #logo-animation {
      margin: auto;
   }
+
+  #faculty-avatar {
+    display: block;
+    float: none;
+    margin: auto;
+  }
+
+  #aboutus-faculty {
+    margin-top: 20px;
+  }
+
+  #faculty-name {
+    margin-left: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+  #faculty-description {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #aboutus-content {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 20px;
+  }
 }
 
 
-#homepage_icons {
+.homepage_icons {
   position: absolute;
   bottom: 3%;
   left: 48%;
@@ -751,40 +829,12 @@ a {
   transform: scale(1.1);
 }
 
-#homepage_sub_title {
-  float: left;
-  margin: 100px 0px 0px 0px;
-  width: 100%;
-}
-
-.homepage_sub_teal_title_text {
-  color: #26dcd0;
-  float: left;
-  font-size: 92px;
-  font-weight: bold;
-  margin: 0px 0px 0px calc((100% - 1100px)/2 + 25.5px);
-}
-
-
-.homepage_sub_teal_title_bar {
-  background-color: #26dcd0;
-  height: 15px;
-  margin: -10px 0px 0px calc((100% - 1100px)/2 + 25.5px);
-  width: 50px;
-}
-
-.homepage_sub_white_title_text {
-  color: white;
-  font-size: 92px;
-  font-weight: bold;
-  margin: 0px 0px 0px calc((100% - 1100px)/2 + 25.5px);
-}
-
-.homepage_sub_white_title_bar {
-  background-color: white;
-  height: 15px;
-  margin: -10px 0px 0px calc((100% - 1100px)/2 + 25.5px);
-  width: 50px;
+#homepage_photos_title {
+  color: rgb(245, 205, 70);
+  font-size: 40px;
+  padding-right: 100px;
+  padding-top: 30px;
+  text-align: right;
 }
 
 #homepage_photos {
