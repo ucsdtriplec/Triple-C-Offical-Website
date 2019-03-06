@@ -656,12 +656,14 @@ a {
 /* sdsad */
 #logo-title {
   display: flex;
+  /* flex-wrap: wrap; */
   width: 60%;
   padding-left: 20%;
   padding-right: 20%;
   height: 300px;
   padding-top: 20vh;
 }
+
 
 #homepage_title {
   float: left;
@@ -677,6 +679,8 @@ a {
   /* position: relative;
   top: 48%; */
   margin-top: 126px;
+  /* text-decoration: underline #CCA374; */
+  /* border-bottom: 3px solid #CCA374; */
 }
 
 #homepage_title_subtext {
@@ -684,9 +688,32 @@ a {
   font-size: 1.1em;
   /* position: absolute;
   top: 55%; */
-  margin-left: 20%;
-  /* margin-right: 22%; */
+  /* margin-left: 20%; */
+  margin-right: 40%;
+  margin-top: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  #logo-title {
+    flex-wrap: wrap;
+  }
+
+  #homepage_title_text {
+    margin-top: 10px;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #homepage_title_subtext {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  #logo-animation {
+     margin: auto;
+  }
+}
+
 
 #homepage_icons {
   position: absolute;
