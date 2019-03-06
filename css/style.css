@@ -51,7 +51,7 @@ a {
 }
 
 #aboutus-title {
-  color: rgb(245, 205, 70);
+  color: #CCA374;
   font-size: 40px;
   padding-right: 100px;
   padding-top: 30px;
@@ -72,7 +72,7 @@ a {
 }
 
 #faculty-name {
-  color: rgb(245, 205, 70);
+  color: #CCA374;
   font-size: 30px;
   margin-left: 300px;
   padding-top: 30px;
@@ -378,10 +378,10 @@ a {
 #hello_container_text {
   display: inline;
   color: #ecf0f1;
-  float: left;
+  /* float: left;
   margin-top: 0;
   margin-bottom: 0;
-  height: 50px;
+  height: 50px; */
   font-size: 19px;
   margin-left: 10px;
   font-weight: bold;
@@ -401,7 +401,7 @@ a {
 }
 
 .hello_container_list_item {
-  color: rgb(245, 205, 70);
+  color: #CCA374;
   float: none !important;
   list-style: none !important;
   line-height: 50px;
@@ -662,7 +662,8 @@ a {
   top: 50px;
   left: 65px;
   font-size: 40px;
-  color: rgb(245, 205, 70);
+  /* color: rgb(245, 205, 70); */
+  color: #CCA374;
 }
 
 /* Event Button Start */
@@ -1143,7 +1144,7 @@ a {
 }
 
 #homepage_photos_title {
-  color: rgb(245, 205, 70);
+  color: #CCA374;
   font-size: 40px;
   padding-right: 100px;
   padding-top: 30px;
