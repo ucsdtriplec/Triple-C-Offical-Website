@@ -174,10 +174,6 @@ a {
   display: block;
 }
 
-.projects_ul li a:hover {
-  background-color: rgba(8, 8, 22, 0.411);
-}
-
 .projects_ul {
   padding-left: 0px;
 }
@@ -243,7 +239,7 @@ a {
 }
 
 #nav_bar_menu a:hover {
-  color: #5BC5E3;
+  color: #CCA374;
 }
 
 #menuToggle {
@@ -332,7 +328,7 @@ a {
 }
 
 #nav_bar_menu li:hover {
-  color: #5BC5E3;
+  color: #CCA374;
 }
 
 
@@ -365,7 +361,7 @@ a {
   font-size: 25px;
   line-height: 50px;
 
-  color: #16a085;
+  color: #5BC5E3;
 
   -webkit-animation-name: opacity;
   -webkit-animation-duration: 2s;
@@ -662,7 +658,6 @@ a {
   top: 50px;
   left: 65px;
   font-size: 40px;
-  /* color: rgb(245, 205, 70); */
   color: #CCA374;
 }
 
@@ -841,6 +836,9 @@ a {
 /* Event Button End */
 /* Div containing event end */
 
+.mobile_event_title {
+  display: none;
+}
 
 .terminal_display {
   height: 90%;
@@ -877,6 +875,11 @@ a {
 
 /* event over view end */
 
+
+
+
+
+
 @media screen and (max-width: 600px) {
   #hello_container {
     display: none;
@@ -889,11 +892,32 @@ a {
     display: none;
   }
 
+  .navbar_logo_button {
+    margin-left: 50px;
+  }
+
+  #menuToggle {
+    display: block;
+  }
+
 }
 
 
 
-@media (max-width: 860px) {
+@media screen and (max-width: 860px) and (max-height: 100vh) {
+  .event_timeline_title {
+    display: none;
+  }
+
+  .mobile_event_title {
+    height: 10vh;
+    width: 100vw;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: #CCA374;
+    padding-top: 5px;
+  }
 
   .navbar_desktop_li {
     display: none;
@@ -917,26 +941,12 @@ a {
     display: none;
   }
 
-  .event_timeline_title {
-    display: block;
-    height: 10vh;
-    width: 100vw;
-    text-align: center;
-    font-size: 20px;
-  }
 
-  .event_timeline_title h1 {
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    font-family: inherit;
-    padding-top: 10px;
-  }
 
   .terminal_display {
     width: 200px;
-    height: 60vh;
-    margin: auto;
+    height: 55vh;
+    margin: 0px auto;
   }
 
   .phoneimage {
@@ -997,12 +1007,12 @@ a {
     width: 176.5px;
     height: 308px;
     position: absolute;
-    margin: auto;
+    margin: 0px auto;
     font-size: 18px;
   }
 
   .timeline {
-    height: 30vh;
+    height: 35vh;
     width: 100vw;
     margin-bottom: 0px;
     padding-bottom: 0px;
