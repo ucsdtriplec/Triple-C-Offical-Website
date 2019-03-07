@@ -1,7 +1,7 @@
 body {
 	width: 100%;
 	height: 100%;
-	color: #fff;
+	background-color: #343436;
   font-family: sans-serif;
 }
 
@@ -14,39 +14,48 @@ body {
     position: absolute;
     border-radius: inherit;
     width: 100%;
-    height: 350px;
+    height: 400px;
     top: 0;
     left: 0;
     background-repeat: repeat;
     opacity:0.8;
-		background: linear-gradient(-45deg,white,grey,#006A96,#182B49);
+		background: linear-gradient(-45deg,#A9A9A9,#343436,#006A96,#000000);
 		background-size: 400% 400%;
-		-webkit-animation: Gradient 5s ease infinite;
-		-moz-animation: Gradient 5s ease infinite;
-		animation: Gradient 5s ease infinite;
+		-webkit-animation: Gradient 8s ease infinite;
+		-moz-animation: Gradient 8s ease infinite;
+		animation: Gradient 8s ease infinite;
+}
+
+#banner .banner_img {
+  height: 400px;
+  background: url("/Images/bg1.jpg");
+  opacity: 1;
+  background-size: cover;
 }
 
 .head {
   text-align: center;
   padding-top:40px;
   font-size: 20px;
-	color: #006A96;
+	/* color: #006A96; */
+	color: rgb(95,198,235);
 }
 
 .head h3 {
   padding-top: 15px;
-	color: #C69214;
+	color: rgb(204,163,116);
 	font-weight: lighter;
 }
 
 #logo {
   position: absolute;
-  font-size: 60px;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   animation: fill 0.5s ease forwards 1.5s;
+	width: 20%;
+  height: 20%;
 }
 
 #contactUs-box{
@@ -116,7 +125,7 @@ input{
   padding: 6px;
   margin-bottom: 60px;
   font-size: 28px;
-  color: #006A96;
+  color: rgb(95,198,235);
   font-weight: bold;
   text-align: center;
   background-position: center;
@@ -127,13 +136,12 @@ textarea{
 }
 
 .button {
-		padding: 8px 20px;
-    background: #006A96;
+		padding: 10px 30px;
+    background: rgb(95,198,235);
     color: #fff;
     border-radius: 10px;
     border: none;
 		cursor: pointer;
-    margin-top: 1px;
 		text-align: center;
 	  text-decoration: none;
 }
@@ -152,12 +160,15 @@ textarea{
 
 
 .fa {
-  padding: 25px;
+  /* padding: 25px;
   font-size: 30px;
-  width: 30px;
+  width: 30px; */
+	padding: 20px;
+  font-size: 20px;
+  width: 25px;
   text-align: center;
   text-decoration: none;
-  margin: 8px 8px 1px 8px;
+  margin: 8px 8px 4px 18px;
   border-radius: 50%;
 }
 
@@ -170,7 +181,7 @@ textarea{
   color: white;
 }
 
-.fa-twitter {
+.fa-github {
   background: #55ACEE;
   color: white;
 }

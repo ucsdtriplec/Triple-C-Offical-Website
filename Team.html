@@ -8,7 +8,8 @@
 
   <body>
     <div id="banner">
-      <img src="/Images/banner.jpg" style="width:100%;height:350px;opacity:0.5;"/>
+      <!-- <img src="/Images/5.jpg" style="width:100%;height:400px;opacity:0.8;no-repeat center top;background-size:cover;"/> -->
+      <div class = "banner_img"></div>
       <div class = "overlay" style = "background-color":#182b49></div>
       <div>
         <!-- <h1>People in Triple C</h1> -->
@@ -55,7 +56,7 @@
     <div class="row text-center">
       <div class="col-md-12">
         <h2>Our Team</h2>
-        <h3 class="caption gray">Meet the people who make awesome stuffs</h3>
+        <h3 class="caption gray">" Meet the people who make awesome stuffs ! "</h3>
       </div>
 
       <div id="myBtnContainer">
@@ -101,7 +102,7 @@
               </figcaption>
             </figure>
             <h4>Yuanyi Zhou</h4>
-            <p>External VicePresident</p>
+            <p>External Vice President</p>
           </div>
 
           <!-- Roy Luo -->
@@ -120,7 +121,7 @@
               </figcaption>
             </figure>
             <h4>Yindong Luo</h4>
-            <p>Internal VicePresident</p>
+            <p>Internal Vice President</p>
           </div>
 
           <!-- Ryan Keng -->
@@ -141,7 +142,7 @@
           </div>
 
           <!-- Tony Tan -->
-          <div class="col-md-3 team-member internal androidApp flyerFighter">
+          <div class="col-md-3 team-member internal androidApp flyerFighter officialWebsite">
             <figure>
               <img src="../Images/Team/Tony.png" alt="" class="img-responsive">
               <figcaption>
@@ -154,7 +155,7 @@
               </figcaption>
             </figure>
             <h4>Xinpei Tan</h4>
-            <p>Product Manager</p>
+            <p>Product Manager Chair</p>
           </div>
 
           <!-- Haoming Zhang -->
@@ -174,7 +175,7 @@
           </div>
 
           <!-- Joey Hou -->
-          <div class="col-md-3 team-member external dataScience">
+          <div class="col-md-3 team-member external internal dataScience">
             <figure>
               <img src="../Images/Team/Joey.png" alt="" class="img-responsive">
               <figcaption>
@@ -187,7 +188,7 @@
               </figcaption>
             </figure>
             <h4>Joey Hou</h4>
-            <p>Operation Chair</p>
+            <p>Operation Chair/Data Scientist</p>
           </div>
 
           <!-- Joy Yang -->
@@ -203,7 +204,7 @@
               </figcaption>
             </figure>
             <h4>Joy Yang</h4>
-            <p>Business_Develop Chair</p>
+            <p>Business Develop Chair</p>
           </div>
 
           <!-- Wendi Wu -->
@@ -280,7 +281,7 @@
               </figcaption>
             </figure>
             <h4>Yufei Wang</h4>
-            <p>isual Designer</p>
+            <p>Visual Designer</p>
           </div>
 
           <!-- Yifei Ye -->
@@ -328,7 +329,7 @@
               </figcaption>
             </figure>
             <h4>Xinlu Zhou</h4>
-            <p>HR Chair</p>
+            <p>HR Chair/Web Developer</p>
           </div>
 
           <!-- KD -->
@@ -395,7 +396,7 @@
               </figcaption>
             </figure>
             <h4>Lu Xiang</h4>
-            <p>Data Sciencetist</p>
+            <p>Data Scientist</p>
           </div>
 
           <!-- Yucheng Peng -->
@@ -411,7 +412,7 @@
               </figcaption>
             </figure>
             <h4>Yucheng Peng</h4>
-            <p>Data Sciencetist</p>
+            <p>Data Scientist</p>
           </div>
 
           <!-- Xuege Gao -->
@@ -426,7 +427,7 @@
               </figcaption>
             </figure>
             <h4>Xuege Gao</h4>
-            <p>Data Sciencetist</p>
+            <p>Data Scientist</p>
           </div>
 
           <!-- Snow Chen -->
@@ -442,7 +443,7 @@
               </figcaption>
             </figure>
             <h4>Snow Chen</h4>
-            <p>Data Sciencetist</p>
+            <p>Data Scientist</p>
           </div>
 
           <!-- Haoshu Qin -->
@@ -459,7 +460,7 @@
               </figcaption>
             </figure>
             <h4>Haoshu Qin</h4>
-            <p>Data Sciencetist</p>
+            <p>Data Scientist</p>
           </div>
 
           <!-- Weihang Gao -->
@@ -476,7 +477,7 @@
               </figcaption>
             </figure>
             <h4>Weihang Gao</h4>
-            <p>Data Sciencetist</p>
+            <p>Data Scientist</p>
           </div>
 
           <!-- Jia Shi -->
@@ -493,7 +494,7 @@
               </figcaption>
             </figure>
             <h4>Jia Shi</h4>
-            <p>Data Sciencetist</p>
+            <p>Data Scientist</p>
           </div>
 
           <!-- Mingjie Zhu -->
@@ -667,5 +668,43 @@
   </div><!-- /.container -->
 </section><!-- /.our-team -->
 <script src="Team.js"></script>
+
+<footer id="homepage_footer_container">
+
+  <div id="homepage_footer_main_box">
+    <div id="homepage_footer_mission_title">
+      "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical
+      skill growth"
+    </div>
+    <div id="footer_icon_container">
+      <div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')">
+        <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
+        </div>
+      </div>
+      <div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
+        <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
+        </div>
+      </div>
+      <div class="homepage_footer_icons" onmouseover="showImg('wechat')" onmouseout="hideImg('wechat')">
+
+        <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
+          <img id='wechat' src="../Images/wechatQR.JPG">
+        </div>
+
+      </div>
+
+      <div class="homepage_footer_icons" onclick="window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
+        <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<div id="copyright">
+  Copyright &copy 2019 UCSDTripleC.
+</div>
+
 </body>
 </html>
