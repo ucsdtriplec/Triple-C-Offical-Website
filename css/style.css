@@ -174,10 +174,6 @@ a {
   display: block;
 }
 
-.projects_ul li a:hover {
-  background-color: rgba(8, 8, 22, 0.411);
-}
-
 .projects_ul {
   padding-left: 0px;
 }
@@ -243,7 +239,7 @@ a {
 }
 
 #nav_bar_menu a:hover {
-  color: #5BC5E3;
+  color: #CCA374;
 }
 
 #menuToggle {
@@ -332,7 +328,7 @@ a {
 }
 
 #nav_bar_menu li:hover {
-  color: #5BC5E3;
+  color: #CCA374;
 }
 
 
@@ -365,7 +361,7 @@ a {
   font-size: 25px;
   line-height: 50px;
 
-  color: #16a085;
+  color: #5BC5E3;
 
   -webkit-animation-name: opacity;
   -webkit-animation-duration: 2s;
@@ -887,6 +883,14 @@ a {
 @media (max-width: 1000px) {
   .navbar_desktop_li {
     display: none;
+  }
+
+  .navbar_logo_button {
+    margin-left: 50px;
+  }
+
+  #menuToggle {
+    display: block;
   }
 
 }
