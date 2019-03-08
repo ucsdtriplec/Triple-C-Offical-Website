@@ -389,9 +389,12 @@
       </div>
     </div>
 
-    <div id="mySlider"></div>
+    <div id="mySlider">
+        <div id="sliderPrev" onclick="prevSlide();">&#10094;</div>
+        <div id="sliderNext" onclick="nextSlide();">&#10095;</div>
+    </div>
     <div id="sliderNav">
-      <div style="text-align:center">
+      <div class = "dot_container" style="text-align:center">
         <span class="dot" onclick="clickDot(0)"></span>
         <span class="dot" onclick="clickDot(1)"></span>
         <span class="dot" onclick="clickDot(2)"></span>
@@ -402,9 +405,9 @@
         <span class="dot" onclick="clickDot(7)"></span>
         <span class="dot" onclick="clickDot(8)"></span>
       </div>
-      <div id="sliderPrev" onclick="prevSlide();">&#10094;</div>
-      <div id="sliderNext" onclick="nextSlide();">&#10095;</div>
+      
     </div>
+   
   </div>
 
   <footer id="homepage_footer_container">
@@ -423,6 +426,12 @@
           <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
           </div>
         </div>
+
+        <div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
+          <div id="homepage_footer_widget_facebook" class="homepage_footer_widgets">
+          </div>
+        </div>
+
         <div class="homepage_footer_icons" onmouseover="showImg('wechat')" onmouseout="hideImg('wechat')">
 
           <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
@@ -532,6 +541,7 @@
       // A variable to hold all our HTML
       var myHTML;
 
+      
       // Go through the Array and add the code to our HTML
       for (var i = 0; i < slideArray.length; i++) {
 
@@ -547,7 +557,7 @@
       }
 
       // Print our HTML to the web page
-      document.getElementById("mySlider").innerHTML = myHTML;
+      document.getElementById("mySlider").innerHTML += myHTML;
 
       // Display the first slide
       document.getElementById("slide" + currentSlideIndex).style.left = 0;
@@ -741,6 +751,9 @@
     }
 
     autoPlay()
+
+
+    
   </script>
 </body>
 
