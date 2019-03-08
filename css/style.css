@@ -1175,7 +1175,7 @@ a {
   width: 50px;
 }
 
-.homepage_sub_white_title_text {
+#homepage_photos_title {
 
     color: #CCA374;
     font-size: 80px;
@@ -1275,7 +1275,7 @@ a {
   }
 
 
- .homepage_sub_white_title_text {
+  #homepage_photos_title {
 
   font-size: 60px;
   padding-right: 15%;
@@ -1948,7 +1948,7 @@ justify-content: center;
    width: 100%;
  }
 
- .homepage_sub_white_title_text {
+ #homepage_photos_title{
 
   font-size: 40px;
   padding-right: 15%;
