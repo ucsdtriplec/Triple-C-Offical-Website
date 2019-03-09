@@ -10,6 +10,101 @@
 <body>
 
 		<header id="projectpage_background">
+			<div id="homepage_cover">
+    <div class="navbar_line">
+      <div class="navbar_logo">
+        <button class="navbar_logo_button">
+          <a href="/"><img src="Images/logo.png" alt="">
+            <span>Triple C</span></a>
+        </button>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar_ul_list" href="/">
+          <li style="height:50px;overflow:hidden;position:relative;">
+            <div id="hello_container">
+              <p id="hello_container_text">
+                Hello
+              </p>
+              <ul id="hello_container_list">
+                <li class="hello_container_list_item">World !</li>
+                <li class="hello_container_list_item">Triple C !</li>
+                <li class="hello_container_list_item">Developers !</li>
+                <li class="hello_container_list_item">Designers !</li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar_desktop_li"><a href="">About</a></li>
+          <li class="navbar_desktop_li"><a href="#announcement">Events</a></li>
+          <li class="navbar_desktop_li"><a href="#homepage_photos">Photos</a></li>
+          <li class="navbar_desktop_li"><a href="Team.html">Members</a></li>
+          <li class="navbar_desktop_li"><a href="">Projects
+              <i class=" fas fa-angle-down"></i>
+            </a>
+            <ul class="projects_li">
+              <li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
+              <li><a href="projectPage_androidtryway.html">Android App</a></li>
+              <li><a href="projectPage_datascience.html">Data Sceince</a></li>
+              <li><a href="projectPage_officialwebsite.html">Official Web</a></li>
+            </ul>
+          </li class="navbar_desktop_li">
+
+          <li class="navbar_mobile_li">
+            <a href="ContactUs.html">
+              <button id="nav_contact_button">
+                Contact Us
+              </button>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="nav_bar_menu">
+          <a href="/">
+            <li>
+              <i class="fas fa-home"></i>
+              Home
+            </li>
+          </a>
+          <a href="#announcement">
+            <li>
+              <i class="far fa-calendar-alt"></i>
+              Event Timeline
+            </li>
+          </a>
+          <a href="#homepage_photos">
+            <li>
+              <i class="far fa-images"></i>
+              Photo Gallery
+            </li>
+          </a>
+          <a href="Team.html">
+            <li>
+              <i class="fas fa-users"></i>
+              Team Members
+            </li>
+          </a>
+          <li id="projects_list">
+
+            <a href=""><i class="fas fa-briefcase"></i>
+              Projects
+              <i class="fas fa-angle-down"></i> </a>
+            <ul class="projects_ul">
+              <li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
+              <li><a href="projectPage_androidtryway.html">Android App</a></li>
+              <li><a href="projectPage_datascience.html">Data Sceince</a></li>
+              <li><a href="projectPage_officialwebsite.html">Official Web</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
 			<div id="projectpage_title">
 				<p id="projectpage_title_text">
 					Website Project
@@ -35,14 +130,21 @@
 		</header>
 
 		<main id="projectpage_description">
-			<div id="projectpage_description_subtitle">
-				<h2 class="projectpage_sub_title">Project Description
-				</h2>
-			</div>
-			<div id="projectpage_description_content">
-				<p class="des_content">
-				  Triple C’s official website is aimed at making the organization’s information more accessible to people who are interested in it. The information includes all the newest announcements, an events galleries, our project pages, a team members page, etc. The design of our website reflects the core value and mission of Triple C: innovation and collaboration. It also serves as a great platform for demonstrating ongoing projects and achievements Triple C has done so far. Besides simply serving static information, the website will also include some functional component, such as a registration form to satisfy the org’s needs.
-				</p>
+			
+			<div id="projectpage_description_content"> 
+
+				<div class="leftbox">
+					<div id="projectpage_description_subtitle">
+						<h2 class="projectpage_sub_title">Project Description
+						</h2>
+					</div>
+					<p class="des_content">
+					  Triple C’s official website is aimed at making the organization’s information more accessible to people who are interested in it. The information includes all the newest announcements, an events galleries, our project pages, a team members page, etc. <br><br>The design of our website reflects the core value and mission of Triple C: innovation and collaboration. It also serves as a great platform for demonstrating ongoing projects and achievements Triple C has done so far. Besides simply serving static information, the website will also include some functional component, such as a registration form to satisfy the org’s needs.
+					</p>
+				</div>
+				<div class = "rightbox">
+					<img class = "des_pic" src="Images/website_des.png">
+				</div>
 			</div>
 		</main>
 
@@ -161,6 +263,10 @@
 							 <div class="social">
 							 	<a href="https://www.linkedin.com/in/zhouxinlu/" target="_black">
 									<i class="fab fa-linkedin"></i>
+							 	</a>
+							 	
+							 	<a href="xiz261@ucsd.edu">
+									<i class="fas fa-envelope-square"></i>
 							 	</a>
 							 </div>
 						</div>
@@ -283,39 +389,41 @@
 	</div>
 	
 	<!-- footer section -->
-	<footer id="homepage_footer_container">
-    <img  id = 'wechat' src="Images/wechatQR.JPG">
-  
-  <div id="homepage_footer_left_box">
-      <div id="homepage_footer_mission_title">
-          "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical skill growth"
-        </div>
-        <div id = "footer_icon_container">
-    <div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')" >
-      <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
-      </div>
-    </div>
-    <div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
-      <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
-      </div>
-    </div>
-    <div class="homepage_footer_icons" onmouseover = "showImg('wechat')" onmouseout = "hideImg('wechat')">
-        
-      <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">  
-      </div>
-    </div> 
+	 <footer id="homepage_footer_container">
 
-    <div class="homepage_footer_icons"  onclick = "window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
-      <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
+    <div id="homepage_footer_main_box">
+      <div id="homepage_footer_mission_title">
+        "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical
+        skill growth"
+      </div>
+      <div id="footer_icon_container">
+        <div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')">
+          <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
+          </div>
+        </div>
+        <div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
+          <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
+          </div>
+        </div>
+        <div class="homepage_footer_icons" onmouseover="showImg('wechat')" onmouseout="hideImg('wechat')">
+
+          <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
+            <img id='wechat' src="../Images/wechatQR.JPG">
+          </div>
+
+        </div>
+
+        <div class="homepage_footer_icons" onclick="window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
+          <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
+          </div>
+        </div>
+
       </div>
     </div>
-    
-  </div>   
-  </div>
   </footer>
- 
+
   <div id="copyright">
-      Copyright &copy 2019 UCSDTripleC. 
+    Copyright &copy 2019 UCSDTripleC.
   </div>
 	
 </body>

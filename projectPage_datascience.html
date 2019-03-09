@@ -1,4 +1,4 @@
-g<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Triple C Project Page</title>
@@ -9,17 +9,109 @@ g<!DOCTYPE html>
 </head>
 <body>
 		<header id="projectpage_background">
+			<div id="homepage_cover">
+    <div class="navbar_line">
+      <div class="navbar_logo">
+        <button class="navbar_logo_button">
+          <a href="/"><img src="Images/logo.png" alt="">
+            <span>Triple C</span></a>
+        </button>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar_ul_list" href="/">
+          <li style="height:50px;overflow:hidden;position:relative;">
+            <div id="hello_container">
+              <p id="hello_container_text">
+                Hello
+              </p>
+              <ul id="hello_container_list">
+                <li class="hello_container_list_item">World !</li>
+                <li class="hello_container_list_item">Triple C !</li>
+                <li class="hello_container_list_item">Developers !</li>
+                <li class="hello_container_list_item">Designers !</li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar_desktop_li"><a href="">About</a></li>
+          <li class="navbar_desktop_li"><a href="#announcement">Events</a></li>
+          <li class="navbar_desktop_li"><a href="#homepage_photos">Photos</a></li>
+          <li class="navbar_desktop_li"><a href="Team.html">Members</a></li>
+          <li class="navbar_desktop_li"><a href="">Projects
+              <i class=" fas fa-angle-down"></i>
+            </a>
+            <ul class="projects_li">
+              <li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
+              <li><a href="projectPage_androidtryway.html">Android App</a></li>
+              <li><a href="projectPage_datascience.html">Data Sceince</a></li>
+              <li><a href="projectPage_officialwebsite.html">Official Web</a></li>
+            </ul>
+          </li class="navbar_desktop_li">
+
+          <li class="navbar_mobile_li">
+            <a href="ContactUs.html">
+              <button id="nav_contact_button">
+                Contact Us
+              </button>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="nav_bar_menu">
+          <a href="/">
+            <li>
+              <i class="fas fa-home"></i>
+              Home
+            </li>
+          </a>
+          <a href="#announcement">
+            <li>
+              <i class="far fa-calendar-alt"></i>
+              Event Timeline
+            </li>
+          </a>
+          <a href="#homepage_photos">
+            <li>
+              <i class="far fa-images"></i>
+              Photo Gallery
+            </li>
+          </a>
+          <a href="Team.html">
+            <li>
+              <i class="fas fa-users"></i>
+              Team Members
+            </li>
+          </a>
+          <li id="projects_list">
+
+            <a href=""><i class="fas fa-briefcase"></i>
+              Projects
+              <i class="fas fa-angle-down"></i> </a>
+            <ul class="projects_ul">
+              <li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
+              <li><a href="projectPage_androidtryway.html">Android App</a></li>
+              <li><a href="projectPage_datascience.html">Data Sceince</a></li>
+              <li><a href="projectPage_officialwebsite.html">Official Web</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
 			<div id="projectpage_title">
 				<p id="projectpage_title_text">
 					Data Science Project
 			 	</p>
 			 	<div class="tech">
-						<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_black">
-							<i class="fab fa-html5"></i>
-					 	</a>
-					 	<a href="https://www.w3schools.com/css/">
-							<i class="fab fa-css3-alt"></i>						 
-						</a>			 	
+						<a href="https://www.python.org/" target="_black">
+							<i class="fab fa-python"></i>
+					 	</a>			 	
 				</div>
 			</div>
 			
@@ -34,44 +126,41 @@ g<!DOCTYPE html>
 		</header>
 
 		<main id="projectpage_description">
-			<div id="projectpage_description_subtitle">
-				<h2 class="projectpage_sub_title">Project Description
-				</h2>
-			</div>
-			<div id="projectpage_description_content">
-				<p class="des_content">
-				  Triple C’s official website is aimed at making the organization’s information more accessible to people who are interested in it. The information includes all the newest announcements, an events galleries, our project pages, a team members page, etc. The design of our website reflects the core value and mission of Triple C: innovation and collaboration. It also serves as a great platform for demonstrating ongoing projects and achievements Triple C has done so far. Besides simply serving static information, the website will also include some functional component, such as a registration form to satisfy the org’s needs.
-				</p>
+			
+			<div id="projectpage_description_content"> 
+
+				<div class="leftbox">
+					<div class="projectpage_des_content"> 
+						<div class="projectpage_des_content_box">
+							<div id="projectpage_description_subtitle">
+									<h2 class="projectpage_sub_title">Study at UCSD</h2>
+							</div>
+							<div class="github"> 
+									<i class="fab fa-github"></i>
+									<a href="https://github.com/ucsdtriplec/dataAnalysis-Cape" target="_black">Github Repo</a>
+							</div>
+							<div class="des_content">
+						  Our project delivers various interesting analysis on UCSD students’ study life, including student class satisfaction, departements’ program ranking based courses’ average GPA and workload, study hours and grade tendency, and quarterly differences analysis on selected courses and majors.  All analysis are based on all the past UCSD cape review data. 
+							</div>
+						</div>
+						
+						<!-- <div id="projectpage_description_subtitle">
+							<h2 class="projectpage_sub_title">Study at UCSD</h2>
+						</div>
+						<div class="github"> 
+								<i class="fab fa-github"></i>
+								<a href="https://github.com/ucsdtriplec/dataAnalysis-Cape" target="_black">Github Repo</a>
+						</div>
+						<div class="des_content">
+						  Our project delivers various interesting analysis on UCSD students’ study life, including student class satisfaction, departements’ program ranking based courses’ average GPA and workload, study hours and grade tendency, and quarterly differences analysis on selected courses and majors.  All analysis are based on all the past UCSD cape review data. 
+						</div> -->
+					</div>
+				</div>
+				<div class = "rightbox">
+					<img class = "des_pic" src="Images/Flyerfighter.png">
+				</div>
 			</div>
 		</main>
-
-		<div id="projectpage_demo">
-			<div id="projectpage_demo_subtitle">
-				<h1 class="projectpage_sub_title">Project Demo
-				</h1>
-			</div>
-			<div class="github"> 
-				<i class="fab fa-github"></i>
-				<a href="https://github.com/ucsdtriplec/ucsdtriplec.github.io" target="_black">Github Repo</a>
-			</div>
-			
-			<div id="imgstack"> 
-				<a href="Images/website_demo1.png" target="_black"><img src="Images/website_demo1.png" alt /></a>
-				<a href="Images/website_demo2.png" target="_black"><img src="Images/website_demo2.png" alt /></a>
-				<a href="Images/website_demo3.png" target="_black"><img src="Images/website_demo3.png" alt /></a>
-			</div>
-			
-			<div id="imgstack2"> 
-				<a href="Images/website_mobile1.png" target="_black"><img src="Images/website_mobile1.png" alt /></a>
-				<a href="Images/website_mobile2.png" target="_black"><img src="Images/website_mobile2.png" alt /></a>
-				<a href="Images/website_mobile3.png" target="_black"><img src="Images/website_mobile3.png" alt /></a>
-			</div>	
-			<!-- <div id="imgstack2"> 
-				<a href="#"><img src="Images/website_mobile1.png" alt /></a>
-				<a href="#"><img src="Images/website_mobile2.png" alt /></a>
-				<a href="#"><img src="Images/website_mobile3.png" alt /></a>
-			</div> -->
-		</div>
 
 		<div id="projectpage_timeline">
 			<div id="projectpage_team_subtitle">
@@ -81,30 +170,30 @@ g<!DOCTYPE html>
 			<div class="timeline">
   				<div class="container left">
    					<div class="content">
-   						<span class="desc">Project Proposal</span>	
-   						<span class="date">week 0 win19</span>		 					
+   						<span class="desc">Project proposal, Finished on data collection</span>	
+   						<span class="date">week 3 win19</span>		 					
     				</div>
 
   				</div>
   				<div class="container right">
     				<div class="content">
-      					<span class="desc">Team Formation</span>	
-   						<span class="date">week 3 win19</span>	
+      					<span class="desc">Brainstorm ideas and Start on data analysis</span>	
+   						<span class="date">week 4 win19</span>	
      				 	
     				</div>
   				</div>
 
   				<div class="container left">
    					<div class="content">
-     					 <span class="desc">Setup Trello, Slack, Task Assignment</span>	
-   						<span class="date">week 4 win19</span>	
+     					 <span class="desc">Finished on Data Visualization and analysis Report Draft</span>	
+   						<span class="date">week 7 win19</span>	
      					 
     				</div>
   				</div>
   				<div class="container right">
     				<div class="content">
-      					<span class="desc">Optimize Components, First Merge</span>	
-   						<span class="date">week 5 win19</span>					 	
+      					<span class="desc">Data supplemented and final Analysis Report</span>	
+   						<span class="date">week 8 win19</span>					 	
     				</div>
   				</div>
   				<div class="container left">
@@ -115,8 +204,140 @@ g<!DOCTYPE html>
   				</div>
   				<div class="container right">
     				<div class="content">
-      					<span class="desc">UI/UX Home Page Design</span>	
+      					<span class="desc">Demo Day</span>	
+   						<span class="date">week 10 win19</span>					 	
+    				</div>
+  				</div>
+			</div>
+		</div>
+
+		<main id="projectpage_description">
+			
+			<div id="projectpage_description_content"> 
+
+				<div>
+					<div id="projectpage_description_subtitle">
+						<h2 class="projectpage_sub_title">RateMySelfie
+						</h2>
+					</div>
+					<div class="github"> 
+							<i class="fab fa-github"></i>
+							<a href="https://github.com/ucsdtriplec/dataAnalysis-Cape" target="_black">Github Repo</a>
+					</div>
+					<p class="des_content">
+					 The project aims to build up an algorithm, implementing CNN (Convolutional Neural Network), to rate different selfies and give specific scores in terms of angle, composition, light conditions to “direct” the users to take a good selfie. With the algorithm, we will develop a mobile app for selfie. By comparing the different screenshots the camera gets when the user turning/waving their phone, it can tell the user the perfect angle, distance and even expressions to take a good selfie.
+					</p>
+				</div>
+				<div class = "rightbox">
+					<img class = "des_pic" src="Images/Flyerfighter.png">
+				</div>
+			</div>
+		</main>
+
+		<div id="projectpage_timeline">
+			<div id="projectpage_team_subtitle">
+				<h2 class="projectpage_sub_title">Project Timeline</h2>
+			</div>
+
+			<div class="timeline">
+  				<div class="container left">
+   					<div class="content">
+   						<span class="desc">Project proposal and held the first member meeting</span>	
+   						<span class="date">week 3 win19</span>		 					
+    				</div>
+
+  				</div>
+  				<div class="container right">
+    				<div class="content">
+      					<span class="desc">Finish the project plan</span>	
+   						<span class="date">week 4 win19</span>	
+     				 	
+    				</div>
+  				</div>
+
+  				<div class="container left">
+   					<div class="content">
+     					 <span class="desc">Read related papers, research and collect data</span>	
+   						<span class="date">week 5 win19</span>	
+     					 
+    				</div>
+  				</div>
+  				<div class="container right">
+    				<div class="content">
+      					<span class="desc">Read related papers, research and collect data</span>	
+   						<span class="date">week 6 win19</span>					 	
+    				</div>
+  				</div>
+  				<div class="container left">
+    				<div class="content">
+      					<span class="desc">Read related papers, research and collect data</span>	
    						<span class="date">week 7 win19</span>					 	
+    				</div>
+  				</div>
+  				<div class="container right">
+    				<div class="content">
+      					<span class="desc">Demo day</span>	
+   						<span class="date">week 10 win19</span>					 	
+    				</div>
+  				</div>
+			</div>
+		</div>
+
+		<main id="projectpage_description">
+			
+			<div id="projectpage_description_content"> 
+
+				<div>
+					<div id="projectpage_description_subtitle">
+						<h2 class="projectpage_sub_title">Little Little Car
+						</h2>
+					</div>
+					<div class="github"> 
+							<i class="fab fa-github"></i>
+							<a href="https://github.com/ucsdtriplec/Data-Analysis-Car" target="_black">Github Repo</a>
+					</div>
+					<p class="des_content">
+					  Our project conducts analysis on used car prices in the U.S. in order to predict the price of a given car in the future. The features we identify in each car consist of the make, model, the year used, and mileage of a given car. We used BeautifulSoup to fetch 1.9 million used car data from the website car.com and corresponding original MSRP from autotrader.com.
+					</p>
+				</div>
+				<div class = "rightbox">
+					<img class = "des_pic" src="Images/Flyerfighter.png">
+				</div>
+			</div>
+		</main>
+
+		<div id="projectpage_timeline">
+			<div id="projectpage_team_subtitle">
+				<h2 class="projectpage_sub_title">Project Timeline</h2>
+			</div>
+
+			<div class="timeline">
+  				<div class="container left">
+   					<div class="content">
+   						<span class="desc">First group meeting; started to work on the project proposal</span>	
+   						<span class="date">week 3 win19</span>		 					
+    				</div>
+
+  				</div>
+  				<div class="container right">
+    				<div class="content">
+      					<span class="desc">Finished all the data gathering and data cleaning</span>	
+   						<span class="date">week 5 win19</span>	
+     				 	
+    				</div>
+  				</div>
+
+  				<div class="container left">
+   					<div class="content">
+     					 <span class="desc">Started to work on training the prediction model</span>	
+   						<span class="date">week 7 win19</span>	
+     					 
+    				</div>
+  				</div>
+  				<div class="container right">
+    				<div class="content">
+      					<span class="desc">Demo day</span>	
+   						<span class="date">week 10 win19</span>					 	
     				</div>
   				</div>
 			</div>
@@ -129,20 +350,17 @@ g<!DOCTYPE html>
 			<div class="row">
 				<div class="column">
 				<div class="card">
-			    <img class="card_avatar" src="Images/Arow.png" alt="Arow" style="width:100%">
+			    <img class="card_avatar" src="Images/Xuege.jpg" alt="Arow" style="width:100%">
 						<div class="memberBox">
-			        	<h2>Arow Zhou</h2>
-			      	 	 <p class="title">Product Manager</p>
+			        	<h2>Xuege Gao</h2>
+			      	 	 <p class="title">Cape Project Team: Member</p>
 							
 							  <div class="social">
-							 	<a href="https://www.linkedin.com/in/xinruizhou" target="_black">
-									<i class="fab fa-linkedin"></i>
-							 	</a>
-							 	<a href="https://github.com/XINRUIZHOU" target="_black">
+							 	<a href="https://github.com/xue396872" target="_black">
 									<i class="fab fa-github"></i>
 							 	</a>
 							 	</a>
-							 	<a href="mailto: x9zhou@ucsd.edu">
+							 	<a href="mailto: xug016@ucsd.edu">
 									<i class="fas fa-envelope-square"></i>
 							 	</a>
 							 </div>
@@ -152,32 +370,37 @@ g<!DOCTYPE html>
 
 				<div class="column">
 				<div class="card">
-			    <img class="card_avatar" src="Images/Daisy.png" style="width:100%">
+			    <img class="card_avatar" src="Images/Zhaoyi.jpg" style="width:100%">
 						<div class="memberBox">
-			        	<h2>Daisy Zhou</h2>
-			      	 	 <p class="title">Web developer</p>
+			        	<h2>Zhaoyi Hou</h2>
+			      	 	 <p class="title">Member</p>
+			      	 	 
 							
 							 <div class="social">
-							 	<a href="https://www.linkedin.com/in/zhouxinlu/" target="_black">
-									<i class="fab fa-linkedin"></i>
+							 	<a href="https://github.com/Joeyhou" target="_black">
+									<i class="fab fa-github"></i>
+							 	</a>
+							 	<a href="mailto: z9hou@ucsd.edu">
+									<i class="fas fa-envelope-square"></i>
 							 	</a>
 							 </div>
+
 						</div>
 				</div>
 				</div>
 				<div class="column">
 				<div class="card">
-			    <img class="card_avatar" src="Images/Tony.png" alt="Tony" style="width:100%">
+			    <img class="card_avatar" src="Images/Haoshu.jpg" alt="Tony" style="width:100%">
 						<div class="memberBox">
-			        	<h2>Tony Tan</h2>
-			      	 	 <p class="title">Project Manager</p>
+			        	<h2>Haoshu Qin</h2>
+			      	 	 <p class="title">Member</p>
 							 <div class="social">
-							 	<a href="https://github.com/widmonstertony" target="_black">
+							 	<a href="https://github.com/scottqin123" target="_black">
 									<i class="fab fa-github"></i>
 							 	</a>
 							 	
 							 	
-							 	<a href="xit054@ucsd.edu">
+							 	<a href="h5qin@ucsd.edu">
 									<i class="fas fa-envelope-square"></i>
 							 	</a>
 							 </div>
@@ -190,19 +413,16 @@ g<!DOCTYPE html>
 			<div class="row">
 				<div class="column">
 				<div class="card">
-			    <img class="card_avatar" src="Images/Quinton.png" alt="Quinton" style="width:100%">
+			    <img class="card_avatar" src="Images/Yucheng.jpg" alt="Quinton" style="width:100%">
 						<div class="memberBox">
-			        	<h2>Quinton Zeng</h2>
-			      	 	 <p class="title">Web developer</p>
+			        	<h2>Yucheng Peng</h2>
+			      	 	 <p class="title">Member</p>
 							 <div class="social">
-							 	<a href="https://www.linkedin.com/in/kuiduan-zeng-82aaaa175/" target="_black">
-									<i class="fab fa-linkedin"></i>
-							 	</a>
-							 	<a href="https://github.com/kuzeng" target="_black">
+							 	<a href="https://github.com/ppengster" target="_black">
 									<i class="fab fa-github"></i>
 							 	</a>
 							 	</a>
-							 	<a href="mailto: kuzeng@ucsd.edu" target="_black">
+							 	<a href="mailto: yup074@ucsd.edu" target="_black">
 									<i class="fas fa-envelope-square"></i>
 							 	</a>
 							 </div>
@@ -212,20 +432,20 @@ g<!DOCTYPE html>
 
 				<div class="column">
 				<div class="card">
-			    <img class="card_avatar" src="Images/Gary.png" style="width:100%">
+			    <img class="card_avatar" src="Images/Jiashi.jpg" style="width:100%">
 						<div class="memberBox">
-			        	<h2>Gary Han</h2>
-			      	 	 <p class="title">Web developer</p>
+			        	<h2>Jia Shi</h2>
+			      	 	 <p class="title">Member</p>
 							
 							 <div class="social">
-							 	<a href="https://www.linkedin.com/in/jiarui-han-04b5a1173/" target="_black">
+							 	<a href="www.linkedin.com/in/elvishelvisshi" target="_black">
 									<i class="fab fa-linkedin"></i>
 							 	</a>
-							 	<a href="https://github.com/hjr17001" target="_black">
+							 	<a href="https://github.com/ElvishElvis" target="_black">
 									<i class="fab fa-github"></i>
 							 	</a>
 							 	</a>
-							 	<a href="mailto: jhan@ucsd.edu" target="_black">
+							 	<a href="mailto: jis283@ucsd.edu" target="_black">
 									<i class="fas fa-envelope-square"></i>
 							 	</a>
 							 </div>
@@ -235,20 +455,17 @@ g<!DOCTYPE html>
 
 				<div class="column">
 				<div class="card">
-			    <img class="card_avatar" src="Images/Ethan.png" style="width:100%">
+			    <img class="card_avatar" src="Images/Yu.jpeg" style="width:100%">
 						<div class="memberBox">
-			        	<h2>Ethan Yuan</h2>
-			      	 	 <p class="title">Web developer</p>
+			        	<h2>Yu-Chieh Chen</h2>
+			      	 	 <p class="title">Member</p>
 							 
 							 <div class="social">
-							 	<a href="https://www.linkedin.com/in/ethanyuanzy" target="_black">
-									<i class="fab fa-linkedin"></i>
-							 	</a>
-							 	<a href="https://github.com/Ethannn-Yuan" target="_black">
+							 	<a href="https://github.com/yuc399" target="_black">
 									<i class="fab fa-github"></i>
 							 	</a>
 							 	</a>
-							 	<a href="mailto: Etyuan@ucsd.edu">
+							 	<a href="mailto: yuc399@ucsd.edu">
 									<i class="fas fa-envelope-square"></i>
 							 	</a>
 							 </div>
@@ -262,22 +479,85 @@ g<!DOCTYPE html>
 
 				<div class="column">
 				<div class="card">
-			    <img class="card_avatar" src="Images/Yabo.png" style="width:100%">
+			    <img class="card_avatar" src="Images/Unknown.png" style="width:100%">
 						<div class="memberBox">
-			        	<h2>Yabo Shi</h2>
-			      	 	 <p class="title">UI/UX Designer</p>					
+			        	<h2>Yijun Liu</h2>
+			      	 	 <p class="title">Member</p>					
 							 <div class="social">
-							 	<a href="https://shiyabo1997.wixsite.com/mysite" target="_black">
-									<i class="fas fa-portrait"></i>
-							 	</a>
 							 	
-							 	<a href="mailto: yas089@ucsd.edu">
+							 	<a href="mailto: yil724@ucsd.edu">
 									<i class="fas fa-envelope-square"></i>
 							 	</a>
 							 </div>
 						</div>
 				</div>
-				</div>			
+				</div>	
+
+				<div class="column">
+				<div class="card">
+			    <img class="card_avatar" src="Images/Snow.JPG" style="width:100%">
+						<div class="memberBox">
+			        	<h2>Snow Chen</h2>
+			      	 	 <p class="title">Cape Project Team: Project Manager/Data Scientist</p>
+							 
+							 <div class="social">
+							 	<a href="https://www.linkedin.com/in/snow-chen/" target="_black">
+									<i class="fab fa-linkedin"></i>
+							 	</a>
+							 	<a href="https://github.com/yuc309" target="_black">
+									<i class="fab fa-github"></i>
+							 	</a>
+							 	</a>
+							 	<a href="mailto: yuc309@ucsd.edu">
+									<i class="fas fa-envelope-square"></i>
+							 	</a>
+							 </div>
+						</div>
+				</div>
+				</div>		
+
+				<div class="column">
+				<div class="card">
+			    <img class="card_avatar" src="Images/Xiang.jpg" style="width:100%">
+						<div class="memberBox">
+			        	<h2>Xiang Lu</h2>
+			      	 	 <p class="title">Cape Project Team: Member</p>
+							 
+							 <div class="social">
+							 	<a href="https://www.linkedin.com/in/xiang-lu-392964152/" target="_black">
+									<i class="fab fa-linkedin"></i>
+							 	</a>
+							 	<a href="https://github.com/Xiangluxiang" target="_black">
+									<i class="fab fa-github"></i>
+							 	</a>
+							 	</a>
+							 	<a href="mailto: xil621@ucsd.edu">
+									<i class="fas fa-envelope-square"></i>
+							 	</a>
+							 </div>
+						</div>
+				</div>
+				</div>
+
+				<div class="column">
+				<div class="card">
+			    <img class="card_avatar" src="Images/Guolong.jpg" style="width:100%">
+						<div class="memberBox">
+			        	<h2>Guolong Li</h2>
+			      	 	 <p class="title">Cape Project Team: Member</p>
+							 
+							 <div class="social">
+							 	<a href="https://github.com/gul055" target="_black">
+									<i class="fab fa-github"></i>
+							 	</a>
+							 	</a>
+							 	<a href="mailto: gul055@ucsd.edu">
+									<i class="fas fa-envelope-square"></i>
+							 	</a>
+							 </div>
+						</div>
+				</div>
+				</div>				
 			</div>
 	</div>
 	
