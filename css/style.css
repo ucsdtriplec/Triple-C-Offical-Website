@@ -1009,6 +1009,8 @@ a {
     position: absolute;
     margin: 0px auto;
     font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.468);
+    padding-left: 4px;
   }
 
   .timeline {
