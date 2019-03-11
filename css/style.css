@@ -94,6 +94,7 @@ a {
 .navbar_line {
   position: relative;
   height: 50px;
+  z-index: 999;
 }
 
 .navbar_logo_button {
@@ -189,20 +190,22 @@ a {
 }
 
 /* Nav contact button start */
+
 #nav_contact_button {
   background-color: #5BC5E3;
   font-family: inherit;
   padding: 0 0 0 0;
-  height: 30px;
-  margin-right: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin-right: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: white;
   position: relative;
   overflow: hidden;
   border: none;
   z-index: 5;
   font-size: 20px;
+  line-height: 30px;
+  height: 30px;
 }
 
 #nav_contact_button::before {
@@ -1009,6 +1012,8 @@ a {
     position: absolute;
     margin: 0px auto;
     font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.468);
+    padding-left: 4px;
   }
 
   .timeline {
