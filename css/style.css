@@ -94,7 +94,6 @@ a {
 .navbar_line {
   position: relative;
   height: 50px;
-  z-index: 999;
 }
 
 .navbar_logo_button {
@@ -190,14 +189,14 @@ a {
 }
 
 /* Nav contact button start */
-
 #nav_contact_button {
   background-color: #5BC5E3;
   font-family: inherit;
   padding: 0 0 0 0;
-  margin-right: 2px;
-  padding-left: 10px;
-  padding-right: 10px;
+  height: 30px;
+  margin-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: white;
   position: relative;
   overflow: hidden;
@@ -1014,8 +1013,6 @@ a {
     position: absolute;
     margin: 0px auto;
     font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.468);
-    padding-left: 4px;
   }
 
   .timeline {
@@ -1472,6 +1469,7 @@ a {
   font-size: 40px;
   top: -230px;
   float: left;
+  /* margin-top:-150px; */
 }
 
 
@@ -1841,9 +1839,9 @@ a {
   }
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1200px) {
   .titles {
-    top: -400px;
+    top: -350px;
     font-size: 30px;
   }
 
@@ -1857,12 +1855,6 @@ a {
   }
 }
 
-@media only screen and (max-width: 625px) {
-  .titles {
-    top: -450px;
-    font-size: 20px;
-  }
-}
 
 
 @media screen and (max-width: 1450px) {
@@ -1886,8 +1878,6 @@ a {
     height: 10px;
     width: 10px;
   }
-
-
 }
 
 
@@ -1997,5 +1987,22 @@ a {
     margin-right: 10px;
     padding: 10px;
     transition: 0.5s;
+  }
+}
+
+
+
+@media screen and (max-height: 800px) {
+  .titles {
+    top: -300px;
+    font-size: 40px;
+  }
+}
+
+
+@media only screen and (max-width: 625px) {
+  .titles {
+    top: -520px;
+    font-size: 15px;
   }
 }
