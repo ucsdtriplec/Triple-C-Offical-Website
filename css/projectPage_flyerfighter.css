@@ -26,6 +26,7 @@ header section
   background-size: cover;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 
 }
 
@@ -730,6 +731,7 @@ header section
   background-attachment: fixed;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 
@@ -737,8 +739,9 @@ header section
   position: absolute;
   margin-top: 25%;
   margin-left: 35%;
-  width: 100%;
+  width: 50%;
   height: 50vh;
+  overflow: hidden;
 }
 
 
@@ -747,9 +750,11 @@ header section
   color: white;
   font-size: 5vw;
   font-weight: bold;
-  margin: 0px;
+  margin: 0 0 0 0;
   padding: 0;
   text-align: right;
+  margin-left: 6vw;
+
   width: 100vw;
 }
 
@@ -834,6 +839,7 @@ header section
     left: 50%;
     transform: translate(-50%, -50%);
     width: 66vw;
+    margin-left: 0;
   }
 
   #projectpage_navigation {
@@ -1298,7 +1304,6 @@ p {
 }
 
 #projectpage_team {
-  background-color: #C0C0C0;
   height: 1945px;
   width: 100%;
 }
