@@ -94,6 +94,7 @@ a {
 .navbar_line {
   position: relative;
   height: 50px;
+  z-index: 999;
 }
 
 .navbar_logo_button {
@@ -189,6 +190,7 @@ a {
 }
 
 /* Nav contact button start */
+
 #nav_contact_button {
   background-color: #5BC5E3;
   font-family: inherit;
@@ -203,6 +205,7 @@ a {
   border: none;
   z-index: 5;
   font-size: 20px;
+  line-height: 30px;
 }
 
 #nav_contact_button::before {
