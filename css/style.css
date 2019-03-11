@@ -203,6 +203,7 @@ a {
   border: none;
   z-index: 5;
   font-size: 20px;
+  line-height: 32px;
 }
 
 #nav_contact_button::before {
