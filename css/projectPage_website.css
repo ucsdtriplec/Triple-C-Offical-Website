@@ -1754,3 +1754,209 @@ p {
     display: block;
   }
 }
+
+
+
+
+
+#homepage_footer_container {
+  display: flex;
+  justify-content: center;
+  background-color: #26262b;
+  width: 100%;
+}
+
+#homepage_footer_main_box {
+  width: 50%;
+}
+
+#homepage_footer_title {
+  color: grey;
+  font-size: 72px;
+  font-weight: bold;
+  margin: 40px 0px 0px 0px;
+}
+
+#homepage_footer_subtitle {
+  color: grey;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0px 0px 0px;
+}
+
+.homepage_footer_icons {
+  background-color: grey;
+  border-radius: 50%;
+  float: left;
+  margin-top: 20px; 
+  margin-left: 10px; 
+  margin-right: 10px; 
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.homepage_footer_icons:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.homepage_footer_widgets {
+  height: 30px;
+  width: 30px;
+}
+
+#homepage_footer_widget_mail {
+  background-image: url("../Images/email_white.png");
+  background-size: cover;
+}
+
+#homepage_footer_widget_github {
+  background-image: url("../Images/github2.png");
+  background-size: cover;
+}
+
+#homepage_footer_widget_facebook {
+  background-image: url("../Images/facebook2.png");
+  background-size: cover;
+}
+
+#homepage_footer_widget_wechat {
+  background-image: url("../Images/wechat.png");
+  background-size: cover;
+}
+
+#homepage_footer_widget_linkedin {
+  background-image: url("../Images/linkedin_white.png");
+  background-size: cover;
+}
+
+
+#logo_footer {
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+  margin-left: 120px;
+}
+
+#footer_icon_container {
+  height: 70px;
+  /* margin-top: 20px; */
+  width:100%;
+  display: flex;
+justify-content: center;
+}
+
+
+
+
+
+
+#wechat {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: -500px;
+  left: -200px;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+#copyright {
+  text-align: center;
+  background-color: #26262b;
+  padding-top:20px;
+  padding-bottom:20px;
+  color: white;
+  font-size: 15px;
+}
+
+
+#homepage_footer_mission_title {
+  color: #A9A9A9;
+  font-size: 20px;
+  margin: 75px auto 0px auto;
+  text-align: center;
+  width: 75%;
+}
+
+#homepage_footer_links_title {
+  border-bottom: 2px solid grey;
+  color: grey;
+  font-size: 32px;
+  margin: 75px 0px 15px 75px;
+  padding: 0px 0px 5px 0px;
+}
+
+.homepage_footer_links_box {
+  margin: 5px 0px 0px 55px;
+  width: 145px;
+}
+
+.homepage_footer_links {
+  color: grey;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  transition: 0.5s;
+}
+
+.homepage_footer_links_box:hover {
+  background-color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  #wechat {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -300px;
+    left: -200px;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  #homepage_footer_main_box{
+    width:85%;
+    
+  }
+  #homepage_footer_mission_title {
+    font-size: 15px;
+  }
+
+  .titles {
+    top: -400px;
+    font-size: 30px;
+  }
+
+  #copyright {
+    font-size: 10px;
+  }
+
+  .homepage_footer_widgets {
+    height: 20px;
+    width: 20px;
+  }
+
+  .homepage_footer_icons {
+    background-color: grey;
+    border-radius: 50%;
+    float: left;
+    margin-top: 20px; 
+    margin-bottom: 10px;
+    margin-left: 10px; 
+    margin-right: 10px; 
+    padding: 10px;
+    transition: 0.5s;
+  }
+}

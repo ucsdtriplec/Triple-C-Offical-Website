@@ -235,7 +235,7 @@ a:hover{
   color: #a5a5a5;
 }
 .team{
-  margin:40px;
+  margin: 40px 40px 0px 40px;
 }
 
 .team-member {
@@ -364,17 +364,17 @@ a:hover{
 
 
 
+
+
 #homepage_footer_container {
   display: flex;
   justify-content: center;
   background-color: #26262b;
-  height: 270px;
   width: 100%;
 }
 
 #homepage_footer_main_box {
-  height: 300px;
-  width: 800px;
+  width: 50%;
 }
 
 #homepage_footer_title {
@@ -395,7 +395,9 @@ a:hover{
   background-color: grey;
   border-radius: 50%;
   float: left;
-  margin: 20px 20px 0px 0px;
+  margin-top: 20px; 
+  margin-left: 10px; 
+  margin-right: 10px; 
   padding: 10px;
   transition: 0.5s;
 }
@@ -420,6 +422,11 @@ a:hover{
   background-size: cover;
 }
 
+#homepage_footer_widget_facebook {
+  background-image: url("../Images/facebook2.png");
+  background-size: cover;
+}
+
 #homepage_footer_widget_wechat {
   background-image: url("../Images/wechat.png");
   background-size: cover;
@@ -439,10 +446,17 @@ a:hover{
 }
 
 #footer_icon_container {
-  margin-top: 20px;
-  padding-left: 270px;
-  padding-right: 200px;
+  height: 70px;
+  /* margin-top: 20px; */
+  width:100%;
+  display: flex;
+justify-content: center;
 }
+
+
+
+
+
 
 #wechat {
   width: 500px;
@@ -458,18 +472,19 @@ a:hover{
 #copyright {
   text-align: center;
   background-color: #26262b;
-  padding-top: 30px;
-  height: 50px;
+  padding-top:20px;
+  padding-bottom:20px;
   color: white;
+  font-size: 15px;
 }
 
 
 #homepage_footer_mission_title {
-  color: grey;
-  font-size: 26px;
-  margin: 75px 17.5% 0px 17.5%;
+  color: #A9A9A9;
+  font-size: 20px;
+  margin: 75px auto 0px auto;
   text-align: center;
-  width: 75%;
+  width: 100%;
 }
 
 #homepage_footer_links_title {
@@ -497,4 +512,58 @@ a:hover{
   border-radius: 25px;
   cursor: pointer;
   opacity: 0.7;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  #wechat {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -300px;
+    left: -200px;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  #homepage_footer_main_box{
+    width:85%;
+    
+  }
+  #homepage_footer_mission_title {
+    font-size: 15px;
+  }
+
+  .titles {
+    top: -400px;
+    font-size: 30px;
+  }
+
+  #copyright {
+    font-size: 10px;
+  }
+
+  .homepage_footer_widgets {
+    height: 20px;
+    width: 20px;
+  }
+
+  .homepage_footer_icons {
+    background-color: grey;
+    border-radius: 50%;
+    float: left;
+    margin-top: 20px; 
+    margin-bottom: 10px;
+    margin-left: 10px; 
+    margin-right: 10px; 
+    padding: 10px;
+    transition: 0.5s;
+  }
 }

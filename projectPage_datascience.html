@@ -599,25 +599,25 @@
 			  <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
 			  </div>
 			</div>
-
+	
 			<div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
 			  <div id="homepage_footer_widget_facebook" class="homepage_footer_widgets">
 			  </div>
 			</div>
-
+	
 			<div class="homepage_footer_icons" onmouseover="showImg('wechat')" onmouseout="hideImg('wechat')">
-
+	
 			  <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
 				<img id='wechat' src="../Images/wechatQR.JPG">
 			  </div>
-
+	
 			</div>
-
+	
 			<div class="homepage_footer_icons" onclick="window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
 			  <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
 			  </div>
 			</div>
-
+	
 		  </div>
 		  <div id="copyright">
 			Copyright &copy 2019 UCSDTripleC.
@@ -625,10 +625,21 @@
 		</div>
 	  </footer>
 
-  <div id="copyright">
-      Copyright &copy 2019 UCSDTripleC.
-  </div>
 
 </body>
+
+<script>
+	 function showImg(id)
+      {
+        document.getElementById(id).style.opacity = 1;
+        document.getElementById(id).style.zIndex = "1";
+      }
+
+      function hideImg(id){
+        document.getElementById(id).style.opacity = 0;
+        document.getElementById(id).style.zIndex = "-1";
+
+      }
+</script>
 
 </html>
