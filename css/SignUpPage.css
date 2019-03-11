@@ -23,8 +23,10 @@ body{
     background-size: cover;
 }
 
+
+
 #form-container{
-    width: 40%;
+    width: 700px;
     height : 70vh;
     display:flex;
     justify-items: center;
@@ -44,6 +46,8 @@ body{
     width:50%;
 
 }
+
+
 
 
 #logo{
@@ -184,3 +188,108 @@ button.login-option:hover{
     src: url('../fonts/sansation_light-webfont.woff') format('woff'), url('../fonts/sansation_light-webfont.ttf') format('truetype');
     font-weight: light;
   }
+
+  @media only screen and (max-width: 700px) {
+    
+
+    #form-container{
+        width:550px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    
+
+    #form-container{
+        width:300px;
+        height:65vh;
+        flex-direction: column;
+    }
+
+    #signup-text{
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    #logo{
+        left: 80px;
+        top:35px;
+        height:60px;
+    }
+
+
+#left-container{
+    width:100%;
+
+}
+
+#right-container{
+    width:100%;
+}
+
+#social-media-text{
+    top:0px;
+    left:80px;
+    width:200px;
+    font-size: 10px;
+}
+
+#facebook{
+    margin-top: 0px;
+}
+
+
+.login-option{
+    margin-left:80px;
+    width: 140px;
+    height: 20px;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.form-content{
+    height:15px;
+    margin-top:20px;
+    font-size:10px;
+    width:140px;
+}
+    
+input[type="submit"] {
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+    
+    margin-left:80px;
+  }
+
+  #signin-link{
+      font-size:10px;
+  }
+
+
+}
+
+@media only screen and (max-height: 750px){
+
+    #form-container{
+        width:300px;
+        height:75vh;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-height: 600px){
+
+    #form-container{
+        width:300px;
+        height:90vh;
+        flex-direction: column;
+    }
+}
+
+

@@ -38,8 +38,7 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest" />
   <link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" />
@@ -50,47 +49,55 @@
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" />
   <link rel="stylesheet" href="css/imagehover.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css' />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css' /> -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   </link>
 </head>
 
 <body>
-  <!-- navbar start -->
 
-
-  <!-- navbar end -->
   <div id="homepage_cover">
     <div class="navbar_line">
+      <div class="navbar_logo">
+        <button class="navbar_logo_button">
+          <a href="/"><img src="/Images/logo.png" alt="">
+            <span>Triple C</span></a>
+        </button>
+      </div>
       <nav class="navbar">
-        <div>
-          <div class="navbar_title">
-            TRIPLE C
-          </div>
-        </div>
-        <div></div>
-        <div></div>
+        <ul class="navbar_ul_list" href="/">
+          <li style="height:50px;overflow:hidden;position:relative;">
+            <div id="hello_container">
+              <p id="hello_container_text">
+                Hello
+              </p>
+              <ul id="hello_container_list">
+                <li class="hello_container_list_item">World !</li>
+                <li class="hello_container_list_item">Triple C !</li>
+                <li class="hello_container_list_item">Developers !</li>
+                <li class="hello_container_list_item">Designers !</li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar_desktop_li"><a href="">About</a></li>
+          <li class="navbar_desktop_li"><a href="#announcement">Events</a></li>
+          <li class="navbar_desktop_li"><a href="#homepage_photos">Photos</a></li>
+          <li class="navbar_desktop_li"><a href="Team.html">Members</a></li>
+          <li class="navbar_desktop_li"><a href="">Projects
+              <i class=" fas fa-angle-down"></i>
+            </a>
+            <ul class="projects_li">
+              <li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
+              <li><a href="projectPage_androidtryway.html">Android App</a></li>
+              <li><a href="projectPage_datascience.html">Data Sceince</a></li>
+              <li><a href="projectPage_officialwebsite.html">Official Web</a></li>
+            </ul>
+          </li class="navbar_desktop_li">
 
-        <ul class="menu_list">
-          <li>
-            <a href="">
-              <i class="fab fa-twitter-square"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <button>
+          <li class="navbar_mobile_li">
+            <a href="ContactUs.html">
+              <button id="nav_contact_button">
                 Contact Us
               </button>
             </a>
@@ -104,42 +111,44 @@
         <span></span>
         <span></span>
         <ul id="nav_bar_menu">
-          <a href="#">
+          <a href="/">
             <li>
               <i class="fas fa-home"></i>
-              Home</li>
+              Home
+            </li>
           </a>
-          <a href="#event_overview_section">
+          <a href="#announcement">
             <li>
               <i class="far fa-calendar-alt"></i>
-              Event Timeline</li>
+              Event Timeline
+            </li>
           </a>
           <a href="#homepage_photos">
             <li>
               <i class="far fa-images"></i>
-              Photo Gallery</li>
-          </a>
-          <a href="">
-            <li class="projects_list">
-              <i class="fas fa-briefcase"></i>
-              Projects
-              <i class="fas fa-angle-down"></i>
-              <ul>
-                <li>Flyer Fighters</li>
-                <li>Official Web</li>
-                <li>Android App</li>
-                <li>Data Sceince</li>
-              </ul>
+              Photo Gallery
             </li>
-
           </a>
-          <a href="">
+          <a href="Team.html">
             <li>
               <i class="fas fa-users"></i>
               Team Members
             </li>
           </a>
+          <li id="projects_list">
+
+            <a href=""><i class="fas fa-briefcase"></i>
+              Projects
+              <i class="fas fa-angle-down"></i> </a>
+            <ul class="projects_ul">
+              <li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
+              <li><a href="projectPage_androidtryway.html">Android App</a></li>
+              <li><a href="projectPage_datascience.html">Data Sceince</a></li>
+              <li><a href="projectPage_officialwebsite.html">Official Web</a></li>
+            </ul>
+          </li>
         </ul>
+
       </div>
     </div>
 
@@ -182,13 +191,11 @@
             <path class="cls-2" d="M698.74,467.15c-8.23,2.1-16.35-.89-22.54-9.29-1.46-2-3.56-3.48-5.34-5.23-3.89-3.83-5.71-3.84-9.56,0l-51.67,51.46c-1.54,1.53-3,3.09-4.6,4.59-2.67,2.58-2.73,5.12-.08,7.76q28.47,28.41,56.95,56.82c2.83,2.83,5.68,3.32,8.49-.07a2.94,2.94,0,0,1,.36-.34c5.24-4.85,9.3-12.5,15.71-14.18,8.43-2.21,17.85-.64,26.84-.66.93,0,2.25-.3,2.44,1,.1.6-.65,1.46-1.2,2q-23,22.92-46,45.79c-2.59,2.57-4.92,2.62-7.67-.09-14.48-14.25-29.08-28.38-43.62-42.56S588.4,536,574,521.94c-1-.93-2-1.81-2.86-2.78-4.9-5.2-4.89-8.11.21-13.1,10.22-10,20.5-20,30.74-30q28.78-28.08,57.54-56.19c4.85-4.73,5.34-4.73,10-.09q22,21.76,43.91,43.6c.87.86,2.64,1.5,1.8,3.1-.6,1.13-2.12.59-3.23.61C708.29,467.18,704.46,467.15,698.74,467.15Z"
               transform="translate(-427.9 -280.9)" />
           </g>
-          <path class="cls-3" d="M852.13,560c-13.61,0-27.23,0-40.84-.07-1.76,0-3.69.63-5.24-.83,1.43-1.15,3.14-.86,4.77-.87,12.26,0,24.51,0,36.76.1C849.09,558.39,851.58,557,852.13,560Z"
-            transform="translate(-427.9 -280.9)" />
         </svg>
       </div>
       <div id="homepage_title">
         <div id="homepage_title_text">
-          Innovation & Collaboration
+          <span style="border-bottom: 3px solid #CCA374;">Innovation & Collaboration</span>
         </div>
         <div id="homepage_title_subtext">
           Provide the Chinese Computer Science Community with opportunities in professional
@@ -198,8 +205,8 @@
     </div>
     <div class="clearfix">
     </div>
-    <div id="homepage_icons">
-      <a href="#homepage_event_overview" class="homepage_icon_widget">
+    <div class="homepage_icons">
+      <a href="#homepage_aboutUs" class="homepage_icon_widget">
         <div id="homepage_down_arrow_widget" class="homepage_icon_widget_inner">
         </div>
       </a>
@@ -207,15 +214,51 @@
 
   </div>
 
+  <div id="homepage_aboutUs">
+    <div id="aboutus-title">About Us</div>
+    <div id="aboutus-content">
+      <p>We are Triple C (Chinese Computer Community), a Non-Profit Student Organization at UCSD, founded in September
+        2018.
+        We are a project-based, incubator community, contributing to Chinese speaking students who are interested in
+        the Internet
+        Industry and providing them the opportunities to learn more about Web development, UI/UX Design, Project
+        Management,
+        Data Science, and Artificial Intelligence project/research experience. At the same time, we help students reach
+        out to their future career network for a broader platform.
+      </p>
+      <p>
+        At Triple C, each project team is led by their own project manager. Members in Triple C could choose a
+        Project Team which either they are interested in or have experiences with that project basic qualifications,
+        and then collaborate with their team members. By here, we grant students with social practices of
+        innovations, collaborations, and leadership. We believe that technology produces value but it alone
+        is not enough. The core values of triple C is innovation and collaboration, implementing
+        innovative ideas through team collaboration.
+      </p>
+    </div>
+    <div id="aboutus-faculty">
+      <img id="faculty-avatar" src="/Images/Gao.jpeg" alt="Avatar">
+      <div id="faculty-name">Faculty Advisor</div>
+      <div id="faculty-description">
+        <p>Sicun Gao (Sean)</p>
+        <p>Assistant Professor, Computer Science and Engineering</p>
+      </div>
+    </div>
+    <div class="homepage_icons">
+      <a href="#announcement" class="homepage_icon_widget">
+        <div id="homepage_down_arrow_widget" class="homepage_icon_widget_inner">
+        </div>
+      </a>
+    </div>
+  </div>
 
 
 
-  <section class="event_overview_section">
+  <section class="event_overview_section" id="announcement">
+    <div class="event_timeline_title">Event Timeline</div>
     <div class="flex_container">
+
+      <div class="mobile_event_title">Event Timeline</div>
       <div class="timeline">
-        <h1 class="event_timeline_tittle">
-          Event Timeline
-        </h1>
         <svg height="20" width="0">
           <line x1="1" y1=" 0" x2="1" y2="20" style="stroke:#e89096;stroke-width:2" />
         </svg>
@@ -231,7 +274,7 @@
           <svg height="20" width="20">
             <circle cx="10" cy="11" r="5" fill="#628ece" />
           </svg>
-          <div class="event_time_1">WEEK 1</div>
+          <div class="event_time_1">4mo ago</div>
         </div>
         <svg height="5" width="95">
           <line x1="0" y1="0" x2="95" y2="0" style="stroke:#d3ac58;stroke-width:20" />
@@ -245,7 +288,7 @@
           <svg height="20" width="20">
             <circle cx="10" cy="11" r="5" fill="#d3ac58" />
           </svg>
-          <div class="event_time_2">WEEK 3</div>
+          <div class="event_time_2">3mo ago</div>
         </div>
         <svg height="5" width="95">
           <line x1="0" y1="0" x2="95" y2="0" style="stroke:#985b9a;stroke-width:20" />
@@ -259,7 +302,7 @@
           <svg height="20" width="20">
             <circle cx="10" cy="11" r="5" fill="#985b9a" />
           </svg>
-          <div class="event_time_1">WEEK 5</div>
+          <div class="event_time_1">1mo ago</div>
         </div>
         <svg height="5" width="95">
           <line x1="0" y1="0" x2="95" y2="0" style="stroke: #7bccea;stroke-width:20" />
@@ -273,7 +316,7 @@
           <svg height="20" width="20">
             <circle cx="10" cy="11" r="5" fill="#7bccea" />
           </svg>
-          <div class="event_time_2">WEEK 7</div>
+          <div class="event_time_2">2weeks ago</div>
         </div>
         <svg height="5" width="95">
           <line x1="0" y1="0" x2="95" y2="0" style="stroke: #85dc9d;stroke-width:20" />
@@ -287,7 +330,7 @@
           <svg height="20" width="20">
             <circle cx="10" cy="11" r="5" fill="#85dc9d" />
           </svg>
-          <div class="event_time_1">WEEK 9</div>
+          <div class="event_time_1">soon</div>
         </div>
         <svg height="5" width="50">
           <line x1="0" y1="0" x2="50" y2="0" style="stroke:#e89096;stroke-width:20" />
@@ -298,89 +341,69 @@
       </div>
       <div class="terminal_display">
 
-        <img src="Images/macimage.png" alt="">
+        <img class="macimage" src="Images/macimage.png" alt="">
+        <img class="phoneimage" src="Images/phone_display.png" alt="">
         <div id="mac_internal">
           Last login: Winter Quarter 2019 on ucsd<br>Chinese_Computer_Community:~TripleC$
           ..<font color="lightgreen">Click left buttons </font>
         </div>
       </div>
     </div>
+    <div class="homepage_icons">
+      <a href="#homepage_photos" class="homepage_icon_widget">
+        <div id="homepage_down_arrow_widget" class="homepage_icon_widget_inner">
+        </div>
+      </a>
+    </div>
     <script>
       function event1Funct() {
         var x = document.getElementById("mac_internal");
         x.innerHTML =
-          "<font color='lightgreen'>Event Name$:</font> GBM<br><font color='lightgreen'>Location$:</font> Price Center<br><font color='lightgreen'>Date$:</font> 03/17/2019<br><font color='lightgreen'>Description:$</font> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+          "<font color='lightgreen'>Event Name$:</font> ByteDance Talk<br><font color='lightgreen'>Location$:</font> Center Hall<br><font color='lightgreen'>Date$:</font> 10/16/2018<br><font color='lightgreen'>Description:$</font> On October 26, Triple C (Chinese Computer Community) had invited ByteDance, a well-known Chinese Internet technology company operating several #machinelearning content platforms to our UCSD campus and given career information to our incoming Alumni. Through all of our marketing crews best effort, we had over 250 students signed up for this event which exceeds the estimated target. Triple C wish all students here the best on their brilliant future career path and brighter tomorrow. ";
       }
     </script>
     <script>
       function event2Funct() {
         var x = document.getElementById("mac_internal");
         x.innerHTML =
-          "<font color='lightgreen'>Event Name$:</font> GBM<br><font color='lightgreen'>Location$:</font> Price Center<br><font color='lightgreen'>Date$:</font> 03/17/2019<br><font color='lightgreen'>Description:$</font> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+          "<font color='lightgreen'>Event Name$:</font> Internship Experiences Sharing <br><font color='lightgreen'>Location$:</font> Price Center<br><font color='lightgreen'>Date$:</font> 3 months ago<br><font color='lightgreen'>Description:$</font> On Tuesday, Triple C (Chinese Computer Community) had invited and gathered six senior students that had interned at Top internet companies such as Amazon, Salesforce, Facebook...etc to be our panelists. We held this panel as a pre-professional discussion that provided career guidance to junior students. Each student could build intimate connection through interacting with our panelists. Plus, Triple C had also offered each student a referral opportunity to their interested internship position at Tencent, Baidu, Bytedance, JD, Huawei.";
       }
     </script>
     <script>
       function event3Funct() {
         var x = document.getElementById("mac_internal");
         x.innerHTML =
-          "<font color='lightgreen'>Event Name$:</font> GBM<br><font color='lightgreen'>Location$:</font> Price Center<br><font color='lightgreen'>Date$:</font> 03/17/2019<br><font color='lightgreen'>Description:$</font> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+          "<font color='lightgreen'>Event Name$:</font> Winter 2019 GBM<br><font color='lightgreen'>Location$:</font> Center hall 220<br><font color='lightgreen'>Date$:</font> 01/15/2019<br><font color='lightgreen'>Description:$</font> On January 15, Triple C (Chinese Computer Community) had a 'Winter 2019 General Body Meeting' with our incoming staff and our new project contributors. We had 30 students coming for joining our group. By here, we introduced our origination's culture and goals, recruiting talented new staff, showed two of our Website Projects proudly completed by the end of last quarter. We all had a delightful night and finally found where our dream is at together. For further inquiries or if you intend to join our organization, feel free to contact with us via Triple C official email: ucsdtriplec@gmail.com.";
       }
     </script>
     <script>
       function event4Funct() {
         var x = document.getElementById("mac_internal");
         x.innerHTML =
-          "<font color='lightgreen'>Event Name$:</font> GBM<br><font color='lightgreen'>Location$:</font> Price Center<br><font color='lightgreen'>Date$:</font> 03/17/2019<br><font color='lightgreen'>Description:$</font> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+          "<font color='lightgreen'>Event Name$:</font> Winter Quarter Team Bonding<br><font color='lightgreen'>Location$:</font> San Diego<br><font color='lightgreen'>Date$:</font> 02/17/2019<br><font color='lightgreen'>Description:$</font> On February 17th, Twenty-five core members of our Winter Family spent a wonderful barbecue night together for celebrating what we have done so far. Thank you all for being here and taking part of our future.";
       }
     </script>
     <script>
       function event5Funct() {
         var x = document.getElementById("mac_internal");
         x.innerHTML =
-          "<font color='lightgreen'>Event Name$:</font> GBM<br><font color='lightgreen'>Location$:</font> Price Center<br><font color='lightgreen'>Date$:</font> 03/17/2019<br><font color='lightgreen'>Description:$</font> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati odit ab ipsam doloribus exercitationem, ratione accusamus provident dolores officia nisi asperiores officiis, quae magnam repudiandae non alias! Voluptatem, dolores?";
+          "<font color='lightgreen'>Event Name$:</font> ... <br><font color='lightgreen'>Location$:</font> ... <br><font color='lightgreen'>Date$:</font> ... <br><font color='lightgreen'>Description:$</font> ...";
       }
     </script>
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="clearfix">
-  </div>
 
   <div class="clearfix">
   </div>
 
   <div id="homepage_photos">
-    <div id="homepage_sub_title">
-      <p class="homepage_sub_white_title_text">
-        Photos
-      </p>
-      <div class="homepage_sub_white_title_bar">
-      </div>
-    </div>
+    <div id="homepage_photos_title">Photos</div>
 
-    <div id="mySlider"></div>
+    <div id="mySlider">
+        <div id="sliderPrev" onclick="prevSlide();">&#10094;</div>
+        <div id="sliderNext" onclick="nextSlide();">&#10095;</div>
+    </div>
     <div id="sliderNav">
-      <div style="text-align:center">
+      <div class = "dot_container" style="text-align:center">
         <span class="dot" onclick="clickDot(0)"></span>
         <span class="dot" onclick="clickDot(1)"></span>
         <span class="dot" onclick="clickDot(2)"></span>
@@ -391,9 +414,9 @@
         <span class="dot" onclick="clickDot(7)"></span>
         <span class="dot" onclick="clickDot(8)"></span>
       </div>
-      <div id="sliderPrev" onclick="prevSlide();">&#10094;</div>
-      <div id="sliderNext" onclick="nextSlide();">&#10095;</div>
+      
     </div>
+   
   </div>
 
   <footer id="homepage_footer_container">
@@ -412,6 +435,12 @@
           <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
           </div>
         </div>
+
+        <div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
+          <div id="homepage_footer_widget_facebook" class="homepage_footer_widgets">
+          </div>
+        </div>
+
         <div class="homepage_footer_icons" onmouseover="showImg('wechat')" onmouseout="hideImg('wechat')">
 
           <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
@@ -521,6 +550,7 @@
       // A variable to hold all our HTML
       var myHTML;
 
+      
       // Go through the Array and add the code to our HTML
       for (var i = 0; i < slideArray.length; i++) {
 
@@ -536,7 +566,7 @@
       }
 
       // Print our HTML to the web page
-      document.getElementById("mySlider").innerHTML = myHTML;
+      document.getElementById("mySlider").innerHTML += myHTML;
 
       // Display the first slide
       document.getElementById("slide" + currentSlideIndex).style.left = 0;
@@ -730,6 +760,9 @@
     }
 
     autoPlay()
+
+
+    
   </script>
 </body>
 

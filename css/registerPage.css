@@ -9,14 +9,14 @@ body {
 
 #container{
     width : 100%;
-    height : 200vh;
+    height : 160vh;
     background-image: url(../Images/register7.jpeg);
     display: flex;
     flex-direction: column;
 }
 
 #input-container{
-    width : 50%;
+    width : 900px;
     height : 350px;
     background-color:white;
     margin-left:auto;
@@ -27,7 +27,7 @@ body {
 }
 
 #table-container{
-    width:50%;
+    width:900px;
     height: 700px;
     margin-left:auto;
     margin-right:auto;
@@ -49,14 +49,14 @@ body {
     float:left;
     position:relative;
     top:13px;
-    left:230px;
+    left:27%;
 }
 
 .form-content{
     
     border:none;
     border-bottom: 2px solid #AAA;
-    width: 200px;
+    width:25%;
     height: 30px;
     margin-top: 30px;
     font-size: 17px;
@@ -66,12 +66,12 @@ body {
 
 #name{
     position: relative;
-    left:150px;
+    left:15%;
 }
 
 #E-mail{
     position: relative;
-    right:-280px;
+    right:-35%;
 }
 
 
@@ -93,11 +93,11 @@ transition: 0.3s ease;
 
 #register-title{
     font-size: 30px;
-    margin-left:300px;
+    margin-left:35%;
 }
 
 input[type="submit"] {
-    margin-top: 60px;
+    margin-top: 10%;
     width: 150px;
     height: 40px;
     background: #16a085;
@@ -109,7 +109,7 @@ input[type="submit"] {
     text-transform: uppercase;
     transition: 0.1s ease;
     cursor: pointer;
-    margin-left: 340px;
+    margin-left: 40%;
     position:relative;
     z-index: 1;
   }
@@ -219,8 +219,8 @@ input[type="submit"] {
   }
 
   #hover_success{
-      height: 300px;
-      width: 600px;
+      height: 90%;
+      width: 70%;
       margin: 0px auto;
       margin-top:-300px;
       background-color:white;
@@ -263,13 +263,6 @@ input[type="submit"] {
     border: 1px solid #ddd;
   }
 
-  #customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-  }
 
   #info tr:nth-child(even){background-color: #f2f2f2;}
   td:hover {background-color:#f5f5f5;}
@@ -293,17 +286,17 @@ input[type="submit"] {
 
   #name-tooltip{
       float:left;
-      position: relative;
-      left:150px;
-      top:20px;
+      position: absolute;
+      left:32%;
+      top:280px;
       visibility: hidden;
   }
 
   #email-tooltip{
       float:left;
-      position: relative;
-      margin-left:280px;
-      top:20px;
+      position: absolute;
+      left:55%;
+      top:280px;
       visibility: hidden;
   }
 
@@ -325,7 +318,7 @@ input[type="submit"] {
     text-transform: uppercase;
     transition: 0.1s ease;
     cursor: pointer;
-    margin-left: 100px;
+    margin-left: 10%;
     position:relative;
     z-index: 1;
     padding: 13px;
@@ -363,4 +356,129 @@ input[type="submit"] {
     font-family: "Sansation";
     src: url('../fonts/sansation_light-webfont.woff') format('woff'), url('../fonts/sansation_light-webfont.ttf') format('truetype');
     font-weight: light;
+  }
+
+
+@media screen and (max-width: 420px) {
+    #input-container{
+        width:300px;
+        height:200px;
+    }
+
+    #register-title{
+        font-size:20px;
+        margin-left:80px;
+        margin-top:25px;
+    }
+
+    #logo{
+        height:50px;
+        float:left;
+        position:relative;
+        top:15px;
+        left:40px;
+    }
+
+
+#name{
+    position: relative;
+    left:30px;
+    font-size: 15px;
+}
+
+
+#E-mail{
+    position: relative;
+    right:-25%;
+    font-size: 15px;
+}
+
+.form-content{
+    
+    border:none;
+    border-bottom: 2px solid #AAA;
+    width:100px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 17px;
+    background-color: white;
+    z-index: 1;
+}
+
+
+input[type="submit"] {
+    margin-top: 40px;
+    width: 100px;
+    height: 30px;
+    background: #16a085;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+    margin-left: 100px;
+    position:relative;
+    z-index: 1;
+  }
+
+  #name-tooltip{
+    float:left;
+    position: absolute;
+    left:80px;
+    top:220px;;
+    visibility: hidden;
+}
+
+#email-tooltip{
+    float:left;
+    position: absolute;
+    left:230px;
+    top:220px;
+    visibility: hidden;
+}
+
+.tooltip{
+    color:white;
+    padding: 3px;
+    font-size: 7px;
+    background-color: #dc3545;
+    border-radius: 3px;
+}
+
+.tooltip::after {
+    border-width: 3px;
+  }
+
+  #success_title{
+      display:none;
+  }
+
+
+  #success_text{
+      display:none;
+  }
+
+  .close{
+      display:none;
+  }
+
+  #hover_success{
+      display:none;
+  }
+
+  #table-container{
+      width:300px;
+  }
+
+   
+  th, td {
+    background-color:  white;
+    padding: 10px;
+    padding-left: 50px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
   }
