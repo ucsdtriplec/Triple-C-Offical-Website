@@ -84,6 +84,7 @@ body {
 
 }
 
+
 textarea.form-element {
 	  height: 80px;
 }
@@ -160,9 +161,6 @@ textarea{
 
 
 .fa {
-  /* padding: 25px;
-  font-size: 30px;
-  width: 30px; */
 	padding: 20px;
   font-size: 20px;
   width: 25px;

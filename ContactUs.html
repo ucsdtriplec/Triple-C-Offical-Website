@@ -3,9 +3,107 @@
   <head>
     <title>Contact us</title>
     <link href="/css/ContactUs.css"  type="text/css" rel="stylesheet">
+    <link href="/css/style.css"  type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 <body>
+
+  <div class="navbar_line">
+    <div class="navbar_logo">
+      <button class="navbar_logo_button">
+        <a href="/"><img src="/Images/logo.png" alt="">
+          <span>Triple C</span></a>
+      </button>
+    </div>
+    <nav class="navbar">
+      <ul class="navbar_ul_list" href="/">
+        <li style="height:50px;overflow:hidden;position:relative;">
+          <div id="hello_container">
+            <p id="hello_container_text">
+              Hello
+            </p>
+            <ul id="hello_container_list">
+              <li class="hello_container_list_item">World !</li>
+              <li class="hello_container_list_item">Triple C !</li>
+              <li class="hello_container_list_item">Developers !</li>
+              <li class="hello_container_list_item">Designers !</li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar_desktop_li"><a href="">About</a></li>
+        <li class="navbar_desktop_li"><a href="#announcement">Events</a></li>
+        <li class="navbar_desktop_li"><a href="#homepage_photos">Photos</a></li>
+        <li class="navbar_desktop_li"><a href="Team.html">Members</a></li>
+        <li class="navbar_desktop_li"><a href="">Projects
+            <i class=" fas fa-angle-down"></i>
+          </a>
+          <ul class="projects_li">
+            <li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
+            <li><a href="projectPage_androidtryway.html">Android App</a></li>
+            <li><a href="projectPage_datascience.html">Data Sceince</a></li>
+            <li><a href="projectPage_officialwebsite.html">Official Web</a></li>
+          </ul>
+        </li class="navbar_desktop_li">
+
+        <li class="navbar_mobile_li">
+          <a href="ContactUs.html">
+            <button id="nav_contact_button">
+              Contact Us
+            </button>
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="nav_bar_menu">
+        <a href="/">
+          <li>
+            <i class="fas fa-home"></i>
+            Home
+          </li>
+        </a>
+        <a href="#announcement">
+          <li>
+            <i class="far fa-calendar-alt"></i>
+            Event Timeline
+          </li>
+        </a>
+        <a href="#homepage_photos">
+          <li>
+            <i class="far fa-images"></i>
+            Photo Gallery
+          </li>
+        </a>
+        <a href="Team.html">
+          <li>
+            <i class="fas fa-users"></i>
+            Team Members
+          </li>
+        </a>
+        <li id="projects_list">
+
+          <a href=""><i class="fas fa-briefcase"></i>
+            Projects
+            <i class="fas fa-angle-down"></i> </a>
+          <ul class="projects_ul">
+            <li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
+            <li><a href="projectPage_androidtryway.html">Android App</a></li>
+            <li><a href="projectPage_datascience.html">Data Sciånce</a></li>
+            <li><a href="projectPage_officialwebsite.html">Official Web</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
   <div id="banner">
     <div class = "banner_img"></div>
     <div class= "overlay"</div>
