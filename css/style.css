@@ -1482,12 +1482,10 @@ a {
   display: flex;
   justify-content: center;
   background-color: #26262b;
-  height: 200px;
   width: 100%;
 }
 
 #homepage_footer_main_box {
-  height: 230px;
   width: 50%;
 }
 
@@ -1509,7 +1507,9 @@ a {
   background-color: grey;
   border-radius: 50%;
   float: left;
-  margin: 20px 0px 0px 20px;
+  margin-top: 20px; 
+  margin-left: 10px; 
+  margin-right: 10px; 
   padding: 10px;
   transition: 0.5s;
 }
@@ -1565,72 +1565,9 @@ a {
 justify-content: center;
 }
 
-@media only screen and (max-width: 480px) {
-  #homepage_footer_container {
-    height:330px;
-  }
-
-  .titles {
-    top: -400px;
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 1180px) {
-  #homepage_footer_container {
-    height:230px;
-  }
-  .titles {
-    top: -400px;
-    font-size: 30px;
-  }
-
-}
-
-@media only screen and (max-width: 790px) {
-  #homepage_footer_container {
-    height:250px;
-  }
-
-  .titles {
-    top: -450px;
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 625px) {
-  #homepage_footer_container {
-    height:270px;
-  }
-
-  .titles {
-    top: -450px;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 515px) {
-
-  #homepage_footer_main_box{
-    height:350px;
-  }
-  #homepage_footer_container {
-    height:330px;
-  }
 
 
-}
 
-@media only screen and (max-width: 480px) {
-
-  #homepage_footer_main_box{
-    height:350px;
-  }
-  #homepage_footer_container {
-    height:380px;
-  }
-
-}
 
 
 #wechat {
@@ -1647,8 +1584,8 @@ justify-content: center;
 #copyright {
   text-align: center;
   background-color: #26262b;
-  padding-top: 30px;
-  height: 50px;
+  padding-top:20px;
+  padding-bottom:20px;
   color: white;
   font-size: 15px;
 }
@@ -1864,6 +1801,30 @@ justify-content: center;
   }
 }
 
+@media only screen and (max-width: 1180px) {
+  .titles {
+    top: -400px;
+    font-size: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 790px) {
+
+  .titles {
+    top: -450px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .titles {
+    top: -450px;
+    font-size: 20px;
+  }
+}
+
+
 @media screen and (max-width: 1450px) {
   #logo-title {
     width: 80%;
@@ -1889,20 +1850,7 @@ justify-content: center;
 }
 
 
-@media only screen and (max-width: 600px) {
 
-  #wechat {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: -300px;
-    left: -200px;
-    opacity: 0;
-    transition: 0.5s;
-    z-index: -1;
-  }
-
-}
 
 
 @media only screen and (max-width: 600px) {
@@ -1957,4 +1905,55 @@ justify-content: center;
   margin-bottom: 10px;
   text-align: right;
 }
+}
+
+@media only screen and (max-width: 600px) {
+
+  #wechat {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -300px;
+    left: -200px;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  #homepage_footer_main_box{
+    width:85%;
+    
+  }
+  #homepage_footer_mission_title {
+    font-size: 15px;
+  }
+
+  .titles {
+    top: -400px;
+    font-size: 30px;
+  }
+
+  #copyright {
+    font-size: 10px;
+  }
+
+  .homepage_footer_widgets {
+    height: 20px;
+    width: 20px;
+  }
+
+  .homepage_footer_icons {
+    background-color: grey;
+    border-radius: 50%;
+    float: left;
+    margin-top: 20px; 
+    margin-bottom: 10px;
+    margin-left: 10px; 
+    margin-right: 10px; 
+    padding: 10px;
+    transition: 0.5s;
+  }
 }
