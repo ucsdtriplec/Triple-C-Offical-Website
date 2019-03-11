@@ -1,28 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Triple C Project Page</title>
 	<link rel="stylesheet" type="text/css" href="css/projectPage_android.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	 crossorigin="anonymous">
 </head>
+
 <body>
-		<header id="projectpage_background">
-			<div id="projectpage_title">
-				<p id="projectpage_title_text">
-					Android Project
-			 	</p>
-			 	<div class="tech">
-						<a href="https://www.java.com/en/" target="_black">
-							<i class="fab fa-java"></i>
-					 	</a>
-					 	<a href="https://www.android.com/">
-							<i class="fab fa-android"></i>				 
-						</a>			 	
+	<header id="projectpage_background">
+		<div id="homepage_cover">
+			<div class="navbar_line">
+				<div class="navbar_logo">
+					<button class="navbar_logo_button">
+						<a href="/"><img src="Images/logo.png" alt="">
+							<span>Triple C</span></a>
+					</button>
+				</div>
+				<nav class="navbar">
+					<ul class="navbar_ul_list" href="/">
+						<li style="height:50px;overflow:hidden;position:relative;">
+							<div id="hello_container">
+								<p id="hello_container_text">
+									Hello
+								</p>
+								<ul id="hello_container_list">
+									<li class="hello_container_list_item">World !</li>
+									<li class="hello_container_list_item">Triple C !</li>
+									<li class="hello_container_list_item">Developers !</li>
+									<li class="hello_container_list_item">Designers !</li>
+								</ul>
+							</div>
+						</li>
+						<li class="navbar_desktop_li"><a href="">About</a></li>
+						<li class="navbar_desktop_li"><a href="#announcement">Events</a></li>
+						<li class="navbar_desktop_li"><a href="#homepage_photos">Photos</a></li>
+						<li class="navbar_desktop_li"><a href="Team.html">Members</a></li>
+						<li class="navbar_desktop_li"><a href="">Projects
+								<i class=" fas fa-angle-down"></i>
+							</a>
+							<ul class="projects_li">
+								<li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
+								<li><a href="projectPage_androidtryway.html">Android App</a></li>
+								<li><a href="projectPage_datascience.html">Data Sceince</a></li>
+								<li><a href="projectPage_officialwebsite.html">Official Web</a></li>
+							</ul>
+						</li class="navbar_desktop_li">
+
+						<li class="navbar_mobile_li">
+							<a href="ContactUs.html">
+								<button id="nav_contact_button">
+									Contact Us
+								</button>
+							</a>
+						</li>
+					</ul>
+
+				</nav>
+				<div id="menuToggle">
+					<input type="checkbox" />
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul id="nav_bar_menu">
+						<a href="/">
+							<li>
+								<i class="fas fa-home"></i>
+								Home
+							</li>
+						</a>
+						<a href="#announcement">
+							<li>
+								<i class="far fa-calendar-alt"></i>
+								Event Timeline
+							</li>
+						</a>
+						<a href="#homepage_photos">
+							<li>
+								<i class="far fa-images"></i>
+								Photo Gallery
+							</li>
+						</a>
+						<a href="Team.html">
+							<li>
+								<i class="fas fa-users"></i>
+								Team Members
+							</li>
+						</a>
+						<li id="projects_list">
+
+							<a href=""><i class="fas fa-briefcase"></i>
+								Projects
+								<i class="fas fa-angle-down"></i> </a>
+							<ul class="projects_ul">
+								<li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
+								<li><a href="projectPage_androidtryway.html">Android App</a></li>
+								<li><a href="projectPage_datascience.html">Data Sceince</a></li>
+								<li><a href="projectPage_officialwebsite.html">Official Web</a></li>
+							</ul>
+						</li>
+					</ul>
+
 				</div>
 			</div>
-			
+
+			<div id="projectpage_title">
+				<span id="projectpage_title_text" style="border-bottom: 3px solid #CCA374;">Android Project</span>
+				<div class="tech">
+				</div>
+			</div>
+
 			<div id="projectpage_navigation">
 				<nav>
 					<a href="#projectpage_description">Description</a>
@@ -31,238 +121,270 @@
 					<a href="#projectpage_team">Team</a>
 				</nav>
 			</div>
-		</header>
+	</header>
 
-		<main id="projectpage_description">
-			<div id="projectpage_description_subtitle">
-				<h2 class="projectpage_sub_title">Project Description
-				</h2>
-			</div>
-			<div id="projectpage_description_content">
-				<p class="des_content">
-				  Triway is an Android Application that can help users generate a road trip based on the location the user entered. Using a designed algorithm to search a optimized traviling path in an area. This travel App provides the most convenient travel service for you.
-				</p>
-			</div>
-		</main>
 
-		<div id="projectpage_demo">
-			<div id="projectpage_demo_subtitle">
-				<h1 class="projectpage_sub_title">Project Demo
-				</h1>
+	<!-- <main id="projectpage_description">			
+				<div>
+					<div id="projectpage_description_subtitle">
+						<h2 class="projectpage_sub_title">Project Description
+						</h2>
+					</div>
+					<p class="des_content">
+					 Triway is an Android Application that can help users generate a road trip based on the location the user entered. Using a designed algorithm to search a optimized traviling path in an area. This travel App provides the most convenient travel service for you.
+					</p>
+				</div>
+				<div class = "rightbox">
+					<img class = "des_pic" src="Images/android_des.png">
+				</div>
 			</div>
-			<div class="github"> 
-				<i class="fab fa-github"></i>
-				<a href="https://github.com/ucsdtriplec/Android---TriWay" target="_black">Github Repo</a>
+		</main> -->
+	<main id="projectpage_description">
+
+		<div id="projectpage_description_content">
+
+			<div class="leftbox">
+				<div class="projectpage_des_content">
+					<div class="projectpage_des_content_box">
+						<div id="projectpage_description_subtitle">
+							<h2 class="projectpage_sub_title">Study at UCSD</h2>
+						</div>
+						<div class="des_content">
+							Triway is an Android Application that can help users generate a road trip based on the location the user
+							entered. Using a designed algorithm to search a optimized traviling path in an area. This travel App provides
+							the most convenient travel service for you.
+						</div>
+					</div>
+
+				</div>
 			</div>
-			
-			<div id="imgstack"> 
-				<a href="Images/android_demo1.png" target="_black"><img src="Images/android_demo1.png" alt /></a>
-				<a href="Images/android_demo2.png" target="_black"><img src="Images/android_demo2.png" alt /></a>
-				<a href="Images/android_demo3.png" target="_black"><img src="Images/android_demo3.png" alt /></a>
+			<div class="rightbox">
+				<img class="des_pic" src="Images/android_des.png">
 			</div>
-			
-			<div id="imgstack2"> 
-				<a href="Images/android_demo4.png" target="_black"><img src="Images/android_demo4.png" alt /></a>
-				<a href="Images/android_demo5.png" target="_black"><img src="Images/android_demo5.png" alt /></a>
-				<a href="Images/android_demo6.png" target="_black"><img src="Images/android_demo6.png" alt /></a>
-			</div>	
-			<!-- <div id="imgstack2"> 
+		</div>
+	</main>
+
+	<div id="projectpage_demo">
+		<div id="projectpage_demo_subtitle">
+			<h1 class="projectpage_sub_title">Project Demo
+			</h1>
+		</div>
+		<div class="github">
+			<i class="fab fa-github"></i>
+			<a href="https://github.com/ucsdtriplec/Android---TriWay" target="_black">Github Repo</a>
+		</div>
+
+		<div id="imgstack">
+			<a href="Images/android_demo1.png" target="_black"><img src="Images/android_demo1.png" alt /></a>
+			<a href="Images/android_demo2.png" target="_black"><img src="Images/android_demo2.png" alt /></a>
+			<a href="Images/android_demo3.png" target="_black"><img src="Images/android_demo3.png" alt /></a>
+		</div>
+
+		<div id="imgstack2">
+			<a href="Images/android_demo4.png" target="_black"><img src="Images/android_demo4.png" alt /></a>
+			<a href="Images/android_demo5.png" target="_black"><img src="Images/android_demo5.png" alt /></a>
+			<a href="Images/android_demo6.png" target="_black"><img src="Images/android_demo6.png" alt /></a>
+		</div>
+		<!-- <div id="imgstack2"> 
 				<a href="#"><img src="Images/website_mobile1.png" alt /></a>
 				<a href="#"><img src="Images/website_mobile2.png" alt /></a>
 				<a href="#"><img src="Images/website_mobile3.png" alt /></a>
 			</div> -->
-		</div>
-
-		<div id="projectpage_timeline">
-			<div id="projectpage_team_subtitle">
-				<h2 class="projectpage_sub_title">Project Timeline</h2>
-			</div>
-
-			<div class="timeline">
-  				<div class="container left">
-   					<div class="content">
-   						<span class="desc">Gathering developers</span>	
-   						<span class="date">week 1 win19</span>		 					
-    				</div>
-
-  				</div>
-  				<div class="container right">
-    				<div class="content">
-      					<span class="desc">Project Start</span>	
-   						<span class="date">week 3 win19</span>	
-     				 	
-    				</div>
-  				</div>
-
-  				<div class="container left">
-   					<div class="content">
-     					 <span class="desc">Read document, project plan, start coding</span>	
-   						<span class="date">week 5 win19</span>	
-     					 
-    				</div>
-  				</div>
-  				<div class="container right">
-    				<div class="content">
-      					<span class="desc">Set up framework and some functionality</span>	
-   						<span class="date">week 7 win19</span>					 	
-    				</div>
-  				</div>
-  				<div class="container left">
-    				<div class="content">
-      					<span class="desc">Finalizing and bug fixing</span>	
-   						<span class="date">week 9 win19</span>					 	
-    				</div>
-  				</div>
-  				
-			</div>
-		</div>
-
-		<div id="projectpage_team">
-			<div id="projectpage_team_subtitle">
-				<h2 class="projectpage_sub_title"><span id="changeColor">Our</span> Team</h2>
-			</div>
-			<div class="row">
-				<div class="column">
-				<div class="card">
-			    <img class="card_avatar" src="Images/Mingqi.png" alt="Arow" style="width:100%">
-						<div class="memberBox">
-			        	<h2>Mingqi Zhang</h2>
-			      	 	 <p class="title">Android Developer</p>
-							
-							  <div class="social">
-							 	<a href="https://github.com/jameszmq" target="_black">
-									<i class="fab fa-github"></i>
-							 	</a>
-							 	</a>
-							 	<a href="mailto: miz082@ucsd.edu">
-									<i class="fas fa-envelope-square"></i>
-							 	</a>
-							 </div>
-						</div>
-				</div>
-				</div>
-
-				<div class="column">
-				<div class="card">
-			    <img class="card_avatar" src="Images/Unknown.png" style="width:100%">
-						<div class="memberBox">
-			        	<h2>Mingyu Chen</h2>
-			      	 	 <p class="title">Android Developer</p>
-							
-							 <div class="social">
-							 	<a href="https://github.com/kaylenqrli" target="_black">
-									<i class="fab fa-github"></i>
-							 	</a>
-							 	<a href="mailto: mic215@ucsd.edu">
-									<i class="fas fa-envelope-square"></i>
-							 	</a>
-							 </div>
-						</div>
-				</div>
-				</div>
-				<div class="column">
-				<div class="card">
-			    <img class="card_avatar" src="Images/Tony.png" alt="Tony" style="width:100%">
-						<div class="memberBox">
-			        	<h2>Xinpei Tan</h2>
-			      	 	 <p class="title">Project Manager</p>
-							 <div class="social">
-							 	<a href="https://github.com/widmonstertony" target="_black">
-									<i class="fab fa-github"></i>
-							 	</a>
-							 	
-							 	
-							 	<a href="xit054@ucsd.edu">
-									<i class="fas fa-envelope-square"></i>
-							 	</a>
-							 </div>
-						</div>
-				</div>
-				</div>
-			</div>	
-
-			<!-- second row -->
-			<div class="row">
-				<div class="column">
-				<div class="card">
-			    <img class="card_avatar" src="Images/Mingjie.png" alt="Quinton" style="width:100%">
-						<div class="memberBox">
-			        	<h2>Mingjie Zhu</h2>
-			      	 	 <p class="title">Android Developer</p>
-							 <div class="social">
-							 	<a href="https://github.com/MingjieZhuEmily" target="_black">
-									<i class="fab fa-github"></i>
-							 	</a>
-							 	</a>
-							 	<a href="mailto: miz155@ucsd.edu" >
-									<i class="fas fa-envelope-square"></i>
-							 	</a>
-							 </div>
-						</div>
-				</div>
-				</div>
-
-				<div class="column">
-				<div class="card">
-			    <img class="card_avatar" src="Images/Qingran.png" style="width:100%">
-						<div class="memberBox">
-			        	<h2>Qingran Li</h2>
-			      	 	 <p class="title">Android developer</p>
-							
-							 <div class="social">
-							 	<a href="linkedin.com/in/kaylen-qingran-li/" target="_black">
-									<i class="fab fa-linkedin"></i>
-							 	</a>
-							 	<a href="https://github.com/kaylenqrli" target="_black">
-									<i class="fab fa-github"></i>
-							 	</a>
-							 	</a>
-							 	<a href="mailto: qil183@ucsd.edu"">
-									<i class="fas fa-envelope-square"></i>
-							 	</a>
-							 </div>
-						</div>
-				</div>
-				</div>
-			</div>
-			<!-- Third row -->
 	</div>
-	
+
+	<div id="projectpage_timeline">
+		<div id="projectpage_team_subtitle">
+			<h2 class="projectpage_sub_title">Project Timeline</h2>
+		</div>
+
+		<div class="timeline">
+			<div class="container left">
+				<div class="content">
+					<span class="desc">Gathering developers</span>
+					<span class="date">week 1 win19</span>
+				</div>
+
+			</div>
+			<div class="container right">
+				<div class="content">
+					<span class="desc">Project Start</span>
+					<span class="date">week 3 win19</span>
+
+				</div>
+			</div>
+
+			<div class="container left">
+				<div class="content">
+					<span class="desc">Read document, project plan, start coding</span>
+					<span class="date">week 5 win19</span>
+
+				</div>
+			</div>
+			<div class="container right">
+				<div class="content">
+					<span class="desc">Set up framework and some functionality</span>
+					<span class="date">week 7 win19</span>
+				</div>
+			</div>
+			<div class="container left">
+				<div class="content">
+					<span class="desc">Finalizing and bug fixing</span>
+					<span class="date">week 9 win19</span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="projectpage_team">
+		<div id="projectpage_team_subtitle">
+			<h2 class="projectpage_sub_title"><span id="changeColor">Our</span> Team</h2>
+		</div>
+		<div class="row">
+			<div class="column">
+				<div class="card">
+					<img class="card_avatar" src="Images/Mingqi.png" alt="Arow" style="width:100%">
+					<div class="memberBox">
+						<h2>Mingqi Zhang</h2>
+						<p class="title">Android Developer</p>
+
+						<div class="social">
+							<a href="https://github.com/jameszmq" target="_black">
+								<i class="fab fa-github"></i>
+							</a>
+							</a>
+							<a href="mailto: miz082@ucsd.edu">
+								<i class="fas fa-envelope-square"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="card">
+					<img class="card_avatar" src="Images/androidmissingperson.jpeg" style="width:100%">
+					<div class="memberBox">
+						<h2>Mingyu Chen</h2>
+						<p class="title">Android Developer</p>
+
+						<div class="social">
+							<a href="https://github.com/kaylenqrli" target="_black">
+								<i class="fab fa-github"></i>
+							</a>
+							<a href="mailto: mic215@ucsd.edu">
+								<i class="fas fa-envelope-square"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card">
+					<img class="card_avatar" src="Images/Tony.png" alt="Tony" style="width:100%">
+					<div class="memberBox">
+						<h2>Xinpei Tan</h2>
+						<p class="title">Project Manager</p>
+						<div class="social">
+							<a href="https://github.com/widmonstertony" target="_black">
+								<i class="fab fa-github"></i>
+							</a>
+
+
+							<a href="xit054@ucsd.edu">
+								<i class="fas fa-envelope-square"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- second row -->
+		<div class="row">
+			<div class="column">
+				<div class="card">
+					<img class="card_avatar" src="Images/Mingjie.png" alt="Quinton" style="width:100%">
+					<div class="memberBox">
+						<h2>Mingjie Zhu</h2>
+						<p class="title">Android Developer</p>
+						<div class="social">
+							<a href="https://github.com/MingjieZhuEmily" target="_black">
+								<i class="fab fa-github"></i>
+							</a>
+							</a>
+							<a href="mailto: miz155@ucsd.edu">
+								<i class="fas fa-envelope-square"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="card">
+					<img class="card_avatar" src="Images/Qingran.png" style="width:100%">
+					<div class="memberBox">
+						<h2>Qingran Li</h2>
+						<p class="title">Android developer</p>
+
+						<div class="social">
+							<a href="linkedin.com/in/kaylen-qingran-li/" target="_black">
+								<i class="fab fa-linkedin"></i>
+							</a>
+							<a href="https://github.com/kaylenqrli" target="_black">
+								<i class="fab fa-github"></i>
+							</a>
+							</a>
+							<a href="mailto: qil183@ucsd.edu"">
+									<i class=" fas fa-envelope-square"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Third row -->
+	</div>
+
 	<!-- footer section -->
 	<footer id="homepage_footer_container">
-    <img  id = 'wechat' src="Images/wechatQR.JPG">
-  
-  <div id="homepage_footer_left_box">
-      <div id="homepage_footer_mission_title">
-          "Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical skill growth"
-        </div>
-        <div id = "footer_icon_container">
-    <div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')" >
-      <div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
-      </div>
-    </div>
-    <div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
-      <div id="homepage_footer_widget_github" class="homepage_footer_widgets">
-      </div>
-    </div>
-    <div class="homepage_footer_icons" onmouseover = "showImg('wechat')" onmouseout = "hideImg('wechat')">
-        
-      <div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">  
-      </div>
-    </div> 
 
-    <div class="homepage_footer_icons"  onclick = "window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
-      <div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
-      </div>
-    </div>
-    
-  </div>   
-  </div>
-  </footer>
- 
-  <div id="copyright">
-      Copyright &copy 2019 UCSDTripleC. 
-  </div>
-	
+		<div id="homepage_footer_main_box">
+			<div id="homepage_footer_mission_title">
+				"Provide the Chinese Computer Science Community at UCSD opportunities in professional networking and technical
+				skill growth"
+			</div>
+			<div id="footer_icon_container">
+				<div class="homepage_footer_icons" onclick="window.open('mailto:ucsdtriplec@gmail.com')">
+					<div id="homepage_footer_widget_mail" class="homepage_footer_widgets">
+					</div>
+				</div>
+				<div class="homepage_footer_icons" onclick="window.open ('https://github.com/ucsdtriplec')">
+					<div id="homepage_footer_widget_github" class="homepage_footer_widgets">
+					</div>
+				</div>
+				<div class="homepage_footer_icons" onmouseover="showImg('wechat')" onmouseout="hideImg('wechat')">
+
+					<div id="homepage_footer_widget_wechat" class="homepage_footer_widgets">
+						<img id='wechat' src="../Images/wechatQR.JPG">
+					</div>
+
+				</div>
+
+				<div class="homepage_footer_icons" onclick="window.open('https://www.linkedin.com/company/ucsd-chinese-computer-community/')">
+					<div id="homepage_footer_widget_linkedin" class="homepage_footer_widgets">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<div id="copyright">
+		Copyright &copy 2019 UCSDTripleC.
+	</div>
+
 </body>
+
 </html>
