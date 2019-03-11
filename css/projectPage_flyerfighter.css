@@ -19,6 +19,22 @@ a {
   text-decoration: none;
 }
 
+* {
+  font-family: "Sansation";
+  src: url('../fonts/sansation_regular-webfont.woff') format('woff'), url('../fonts/sansation_regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url('../fonts/sansation_regular-webfont.woff') format('woff'), url('../fonts/sansation_regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url('../fonts/sansation_light-webfont.woff') format('woff'), url('../fonts/sansation_light-webfont.ttf') format('truetype');
+  font-weight: light;
+}
+
 /** 
 header section
 **/
@@ -26,6 +42,7 @@ header section
   background-size: cover;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 
 }
 
@@ -730,6 +747,7 @@ header section
   background-attachment: fixed;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 
@@ -737,19 +755,21 @@ header section
   position: absolute;
   margin-top: 25%;
   margin-left: 35%;
-  width: 100%;
+  width: 60%;
   height: 50vh;
+  overflow: hidden;
 }
-
 
 #projectpage_title_text {
   position: relative;
   color: white;
   font-size: 5vw;
   font-weight: bold;
-  margin: 0px;
+  margin: 0 0 0 0;
   padding: 0;
   text-align: right;
+  margin-left: 6vw;
+
   width: 100vw;
 }
 
@@ -817,11 +837,11 @@ header section
 
 @media screen and (max-width: 600px) {
   #projectpage_title {
-    margin-top: 0;
-    margin-left: 0;
+    margin: 0 auto;
     text-align: center;
     /* margin: 27.5vh 0px 0px 0px;
     padding: 0;*/
+    width: 100vw;
   }
 
 
@@ -834,6 +854,7 @@ header section
     left: 50%;
     transform: translate(-50%, -50%);
     width: 66vw;
+    margin-left: 0px;
   }
 
   #projectpage_navigation {
@@ -965,7 +986,7 @@ header section
 
 .des_content {
   width: 100%;
-  font-size: 1em;
+  font-size: .850em;
   font-weight: 400;
   letter-spacing: .011em;
   animation: fade-in-reveal 0.8s 1 1s;
@@ -973,7 +994,7 @@ header section
   display: block;
   padding: 0px 5vw 0px 5vw;
   overflow: auto;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .rightbox {
@@ -1276,8 +1297,8 @@ p {
 
   .des_content {
     width: 80%;
-    font-size: 1.0em;
     margin-left: 5%;
+    font-size: 1em;
   }
 
 
@@ -1298,7 +1319,6 @@ p {
 }
 
 #projectpage_team {
-  background-color: #C0C0C0;
   height: 1945px;
   width: 100%;
 }
