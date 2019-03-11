@@ -206,6 +206,7 @@ a {
   font-size: 20px;
   line-height: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 #nav_contact_button::before {
@@ -907,6 +908,7 @@ a {
 
 
 
+
 @media screen and (max-width: 860px) and (max-height: 100vh) {
   .event_timeline_title {
     display: none;
@@ -1030,6 +1032,38 @@ a {
   }
 }
 
+@media screen and (max-height: 725px) {
+  .flex_container {
+    height: 120vh;
+  }
+
+  .terminal_display {
+    height: 75vh;
+  }
+
+  .event_overview_section {
+    height: 120vh;
+  }
+
+  .phoneimage {
+    height: 400px;
+
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .navbar_logo_button span {
+    display: none;
+
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .navbar_logo_button {
+    display: none;
+
+  }
+}
 
 /* sdsad */
 #logo-title {
@@ -1182,18 +1216,18 @@ a {
 
 #homepage_photos_title {
 
-    color: #CCA374;
-    font-size: 80px;
-    padding-right: 20%;
-    padding-top: 30px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    text-align: right;
+  color: #CCA374;
+  font-size: 80px;
+  padding-right: 20%;
+  padding-top: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: right;
 }
 
 
 #homepage_photos {
- background-color: rgb(38, 38, 43);
+  background-color: rgb(38, 38, 43);
   height: 100vh;
   width: 100%;
 }
@@ -1230,7 +1264,7 @@ a {
     width: 1200px;
   }
 
-  .homepage_footer_widgets{
+  .homepage_footer_widgets {
     height: 10px;
     width: 10px;
   }
@@ -1256,7 +1290,8 @@ a {
     height: 430px;
     width: 900px;
   }
-  .homepage_footer_widgets{
+
+  .homepage_footer_widgets {
     height: 10px;
     width: 10px;
   }
@@ -1274,7 +1309,7 @@ a {
     width: 10px;
   }
 
-  .homepage_footer_widgets{
+  .homepage_footer_widgets {
     height: 10px;
     width: 10px;
   }
@@ -1282,13 +1317,13 @@ a {
 
   #homepage_photos_title {
 
-  font-size: 60px;
-  padding-right: 15%;
-  padding-top: 30px;
-  margin-top: -30px;
-  margin-bottom: 10px;
-  text-align: right;
-}
+    font-size: 60px;
+    padding-right: 15%;
+    padding-top: 30px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    text-align: right;
+  }
 
 
 }
@@ -1512,9 +1547,9 @@ a {
   background-color: grey;
   border-radius: 50%;
   float: left;
-  margin-top: 20px; 
-  margin-left: 10px; 
-  margin-right: 10px; 
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 10px;
   transition: 0.5s;
 }
@@ -1565,9 +1600,9 @@ a {
 #footer_icon_container {
   height: 70px;
   /* margin-top: 20px; */
-  width:100%;
+  width: 100%;
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 
@@ -1589,8 +1624,8 @@ justify-content: center;
 #copyright {
   text-align: center;
   background-color: #26262b;
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
   font-size: 15px;
 }
@@ -1846,6 +1881,7 @@ justify-content: center;
     height: 300px;
     width: 600px;
   }
+
   .homepage_icon_widget_inner {
     height: 10px;
     width: 10px;
@@ -1872,44 +1908,44 @@ justify-content: center;
   }
 
 
-.homepage_sub_white_title_text{
-  font-size: 50px;
-}
+  .homepage_sub_white_title_text {
+    font-size: 50px;
+  }
 
-.homepage_sub_white_title_bar{
-  font-size: 50px;
-}
+  .homepage_sub_white_title_bar {
+    font-size: 50px;
+  }
 
 
-.dot_container{
+  .dot_container {
 
     display: none;
 
-}
+  }
 
-#sliderNext {
-  display: none;
-}
+  #sliderNext {
+    display: none;
+  }
 
-#sliderPrev {
-  display: none;
-}
+  #sliderPrev {
+    display: none;
+  }
 
-#homepage_photos {
-  background-color: rgb(38, 38, 43);
-   height: 50vh;
-   width: 100%;
- }
+  #homepage_photos {
+    background-color: rgb(38, 38, 43);
+    height: 50vh;
+    width: 100%;
+  }
 
- #homepage_photos_title{
+  #homepage_photos_title {
 
-  font-size: 40px;
-  padding-right: 15%;
-  padding-top: 30px;
-  margin-top: -30px;
-  margin-bottom: 10px;
-  text-align: right;
-}
+    font-size: 40px;
+    padding-right: 15%;
+    padding-top: 30px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    text-align: right;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1928,10 +1964,11 @@ justify-content: center;
 }
 
 @media only screen and (max-width: 480px) {
-  #homepage_footer_main_box{
-    width:85%;
-    
+  #homepage_footer_main_box {
+    width: 85%;
+
   }
+
   #homepage_footer_mission_title {
     font-size: 15px;
   }
@@ -1954,10 +1991,10 @@ justify-content: center;
     background-color: grey;
     border-radius: 50%;
     float: left;
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: 10px; 
-    margin-right: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 10px;
     transition: 0.5s;
   }
