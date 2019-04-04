@@ -23,7 +23,8 @@ a {
 
 #homepage_cover {
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 840px;
   width: 100%;
   background-color: rgb(38, 38, 43);
 
@@ -38,7 +39,8 @@ a {
 }
 
 #homepage_aboutUs {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 840px;
   width: 100%;
   background-color: #343436;
   position: relative;
@@ -62,7 +64,7 @@ a {
   text-align: right;
 }
 
-#aboutus-faculty {
+/* #aboutus-faculty {
   margin: 0 25%;
   margin-top: 40px;
 }
@@ -85,7 +87,7 @@ a {
 #faculty-description {
   margin-left: 300px;
   color: white;
-}
+} */
 
 /* Navbar start */
 .navbar {
@@ -309,7 +311,8 @@ a {
   margin: -100px 0 0 -50px;
   top: 135px;
   padding: 5px 5px 5px 25px;
-  height: calc(100vh - 50px);
+  /* height: calc(100vh - 50px); */
+  height: 790px;
   background: transparent;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -589,7 +592,8 @@ a {
 
 /* Event over view Start */
 .event_overview_section {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 840px;
   position: relative;
   width: 100%;
   background-color: rgb(38, 38, 43);
@@ -912,7 +916,8 @@ a {
 
   .flex_container {
     flex-flow: wrap;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 840px;
     width: 100vw;
   }
 
@@ -1122,7 +1127,7 @@ a {
   #aboutus-content {
     padding-left: 30px;
     padding-right: 30px;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 20px;
     padding-top: 20px;
   }
@@ -1131,18 +1136,14 @@ a {
 .homepage_icons {
   position: absolute;
   bottom: 3%;
-  left: 48%;
-  width: 5%;
+  /* left: 48%; */
+  width: 100vw;
 }
 
 #homepage_down_arrow_widget {
   background-image: url("../Images/down-arrow.png");
   background-size: cover;
-}
-
-#homepage_icon_photos_widget {
-  background-image: url("../Images/photo.png");
-  background-size: cover;
+  margin:auto;
 }
 
 .homepage_icon_widget_inner {
@@ -1152,11 +1153,11 @@ a {
 
 .homepage_icon_widget {
   background-color: transparent;
-  border-radius: 50%;
+  /* border-radius: 50%;
   float: left;
   margin: 0px 10px 0px 10px;
   padding: 10px;
-  transition: 0.3s;
+  transition: 0.3s; */
 }
 
 .homepage_icon_widget:hover {
@@ -1197,7 +1198,8 @@ a {
 
 #homepage_photos {
   background-color: rgb(38, 38, 43);
-  height: 100vh;
+  /* height: 100vh; */
+  height: 840px;
   width: 100%;
 }
 
@@ -1794,8 +1796,8 @@ a {
   }
 
   .homepage_icon_widget_inner {
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
   }
 }
 
