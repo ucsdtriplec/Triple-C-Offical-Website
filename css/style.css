@@ -835,11 +835,13 @@ a {
   position: relative;
   margin-top: 13.5vh;
   overflow: hidden;
+  min-height: 600px;
 }
 
 .macimage {
   height: 660px;
   width: 100%;
+  min-height: 600px;
 }
 
 .phoneimage {
@@ -1007,7 +1009,6 @@ a {
 
   .terminal_display {
     /* height: 75vh; */
-    height: 67.5vh;
   }
 
   .event_overview_section {
