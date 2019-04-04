@@ -90,7 +90,7 @@
             <ul class="projects_li">
               <li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
               <li><a href="projectPage_androidtryway.html">Android App</a></li>
-              <li><a href="projectPage_datascience.html">Data Sceince</a></li>
+              <li><a href="projectPage_datascience.html">Data Science</a></li>
               <li><a href="projectPage_officialwebsite.html">Official Web</a></li>
             </ul>
           </li class="navbar_desktop_li">
@@ -111,10 +111,10 @@
         <span></span>
         <span></span>
         <ul id="nav_bar_menu">
-          <a href="/">
+          <a href="#homepage_aboutUs">
             <li>
               <i class="fas fa-home"></i>
-              Home
+              About Us
             </li>
           </a>
           <a href="#announcement">
@@ -143,7 +143,7 @@
             <ul class="projects_ul">
               <li><a href="projectPage_flyerfighter.html">FlyerFighter</a></li>
               <li><a href="projectPage_androidtryway.html">Android App</a></li>
-              <li><a href="projectPage_datascience.html">Data Sceince</a></li>
+              <li><a href="projectPage_datascience.html">Data Science</a></li>
               <li><a href="projectPage_officialwebsite.html">Official Web</a></li>
             </ul>
           </li>
@@ -407,7 +407,7 @@
         <span class="dot" onclick="clickDot(5)"></span>
         <span class="dot" onclick="clickDot(6)"></span>
         <span class="dot" onclick="clickDot(7)"></span>
-        <span class="dot" onclick="clickDot(8)"></span>
+        <!-- <span class="dot" onclick="clickDot(8)"></span> -->
       </div>
 
     </div>
@@ -521,27 +521,27 @@
 
     var num6 = new Slide(
       "",
-      "A show about loneliness",
+      "",
       "../Images/activity6.jpeg"
     );
 
     var num7 = new Slide(
       "Chinese spring festival",
-      "A show about loneliness",
+      "",
       "../Images/activity7.jpeg"
     );
 
     var num8 = new Slide(
-      "TripleC daily training",
-      "A show about loneliness",
+      "Gym day",
+      "",
       "../Images/activity8.jpeg"
     );
 
-    var num9 = new Slide(
-      "",
-      "",
-      "../Images/activity4.jpeg"
-    );
+    // var num9 = new Slide(
+    //   "Tony",
+    //   "",
+    //   "../Images/activity9.jpeg"
+    // );
 
 
 
@@ -606,7 +606,7 @@
       // Set current slide to the new current slide
       dots[current].className = dots[current].className.replace(" active", "");
       if (current == 0) {
-        current = 8;
+        current = 7;
       } else {
         current--
       }
@@ -640,7 +640,7 @@
       document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInRight");
       document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutLeft");
       dots[current].className = dots[current].className.replace(" active", "");
-      if (current == 8) {
+      if (current == 7) {
         current = 0;
       } else {
         current++
@@ -672,7 +672,7 @@
       document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInRight");
       document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutLeft");
       dots[current].className = dots[current].className.replace(" active", "");
-      if (current == 8) {
+      if (current == 7) {
         current = 0;
       } else {
         current++
@@ -708,7 +708,7 @@
           document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInRight");
           document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutLeft");
           dots[current].className = dots[current].className.replace(" active", "");
-          if (current == 8) {
+          if (current == 7) {
             current = 0;
           } else {
             current++
@@ -717,7 +717,7 @@
           // Set current slide to the new current slide
           currentSlideIndex = nextSlideIndex;
         }
-        for (i = 0; i < 9; i++) {
+        for (i = 0; i < 8; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
         }
         dots[n].className += " active";
@@ -745,7 +745,7 @@
           // Set current slide to the new current slide
           dots[current].className = dots[current].className.replace(" active", "");
           if (current == 0) {
-            current = 8;
+            current = 7;
           } else {
             current--
           }
