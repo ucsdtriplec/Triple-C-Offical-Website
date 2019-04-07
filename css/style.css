@@ -1143,7 +1143,7 @@ a {
 #homepage_down_arrow_widget {
   background-image: url("../Images/down-arrow.png");
   background-size: cover;
-  margin:auto;
+  margin: auto;
 }
 
 .homepage_icon_widget_inner {
@@ -1188,11 +1188,9 @@ a {
 
 #homepage_photos_title {
   color: #cca374;
-  font-size: 80px;
-  padding-right: 20%;
+  font-size: 40px;
+  padding-right: 100px;
   padding-top: 30px;
-  margin-top: 0px;
-  margin-bottom: 10px;
   text-align: right;
 }
 
@@ -1731,14 +1729,14 @@ a {
     width: 700px;
   }
 
-  #homepage_photos_title {
+  /* #homepage_photos_title {
     font-size: 60px;
     padding-right: 15%;
     padding-top: 30px;
     margin-top: -30px;
     margin-bottom: 10px;
     text-align: right;
-  }
+  } */
 
   .titles {
     top: -450px;
@@ -1840,12 +1838,12 @@ a {
   }
 
   #homepage_photos_title {
-    font-size: 40px;
-    padding-right: 15%;
-    padding-top: 30px;
-    margin-top: -30px;
-    margin-bottom: 10px;
-    text-align: right;
+    text-align: center;
+    padding-right: 0px;
+  }
+  #aboutus-title {
+    text-align: center;
+    padding-right: 0px;
   }
 }
 
