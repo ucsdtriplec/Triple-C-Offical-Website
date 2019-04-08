@@ -604,6 +604,16 @@ a {
   overflow: hidden;
 }
 
+.draw1 {
+  position: absolute;
+  bottom: 0px;
+  height: 250px;
+}
+
+.draw1img {
+  height: 100%;
+}
+
 /* .event_overview_section h1 {
   font-family: "Roboto", sans-serif;
   letter-spacing: 5px;
@@ -1007,6 +1017,18 @@ a {
 
   .event_button i {
     font-size: 26px;
+  }
+
+  .draw1 {
+    height: 29vw;
+  }
+
+  .draw1img {
+    height: 100%;
+  }
+
+  .illustrationright {
+    height: 29vw;
   }
 }
 
@@ -1806,7 +1828,7 @@ a {
 @media only screen and (max-width: 600px) {
   #mySlider {
     height: 170px;
-    width: 350px;
+    width: inherit;
   }
 
   .titles {
@@ -1907,10 +1929,5 @@ a {
     margin-right: 10px;
     padding: 10px;
     transition: 0.5s;
-  }
-
-  .draw1img {
-    height: 250px;
-    width: 370px;
   }
 }
