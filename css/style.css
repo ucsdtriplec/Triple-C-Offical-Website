@@ -614,11 +614,16 @@ a {
   height: 100%;
 }
 
-/* .event_overview_section h1 {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 5px;
-  color: white;
-} */
+.draw2 {
+  position: absolute;
+  bottom: 0px;
+  height: 225px;
+  right: 10px;
+}
+
+.draw2img {
+  height: 100%;
+}
 
 .flex_container {
   display: flex;
@@ -1027,6 +1032,14 @@ a {
     height: 100%;
   }
 
+  .draw2 {
+    height: 29vw;
+  }
+
+  .draw2img {
+    height: 100%;
+  }
+
   .illustrationright {
     height: 29vw;
   }
@@ -1225,6 +1238,7 @@ a {
   /* height: 100vh; */
   height: 840px;
   width: 100%;
+  position: relative;
 }
 
 .singleSlide {
@@ -1859,7 +1873,7 @@ a {
 
   #homepage_photos {
     background-color: rgb(38, 38, 43);
-    height: 50vh;
+    height: 60vh;
     width: 100%;
   }
 
